@@ -1,6 +1,6 @@
 /datum/action/cooldown/spell/undirected/jaunt/ethereal_jaunt
 	name = "Ethereal Jaunt"
-	desc = "This spell turns your form ethereal, temporarily making you invisible and able to pass through walls."
+	desc = "This spell turns your form ethereal, temporarily making you invisible and able to pass through walls. Requires a spellbook to be cast, due to the complexity of the spell."
 	button_icon_state = "jaunt"
 	sound = 'sound/magic/ethereal_enter.ogg'
 

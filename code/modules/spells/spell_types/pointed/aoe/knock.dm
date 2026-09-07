@@ -1,7 +1,7 @@
 
 /datum/action/cooldown/spell/aoe/knock
 	name = "Knock"
-	desc = "This spell opens nearby doors and closets."
+	desc = "This spell opens nearby doors and closets. Requires a spellbook to be cast, due to the complexity of the spell."
 	button_icon_state = "knock"
 	click_to_activate = FALSE
 
