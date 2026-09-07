@@ -33,6 +33,7 @@ GLOBAL_LIST_EMPTY(boss_healthbar_components)
 		qdel(src)
 		return
 	sync_viewers()
+	on_health_update()
 
 /datum/component/boss_healthbar/proc/sync_viewers()
 	var/mob/living/boss = parent

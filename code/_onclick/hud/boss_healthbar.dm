@@ -10,6 +10,8 @@
 	x_off = -200
 	y_off = -16
 
+	var/last_health_step = 0
+
 	var/mob/living/boss
 	var/atom/movable/screen/health_fill/fill
 	var/atom/movable/screen/boss_name/title
@@ -33,13 +35,42 @@
 	QDEL_NULL(title)
 	return ..()
 
+/atom/movable/screen/movable/boss_health/Click(location, control, params)
+	var/list/modifiers = params2list(params)
+	if(LAZYACCESS(modifiers, RIGHT_CLICK))
+		reset_position()
+		return
+	return ..()
+
+/atom/movable/screen/movable/boss_health/proc/reset_position()
+	moved = FALSE
+	var/mob/viewer = usr
+	if(istype(viewer))
+		for(var/datum/component/boss_healthbar/comp as anything in GLOB.boss_healthbar_components)
+			if(comp.bars_by_viewer[viewer] == src)
+				comp.restack_viewer(viewer)
+				return
+	set_stack_index(0)
+
+/atom/movable/screen/movable/boss_health/proc/get_health_ratio()
+	if(QDELETED(boss) || boss.maxHealth <= 0)
+		return 0
+	var/by_health = boss.health / boss.maxHealth
+	var/raw_damage = boss.getBruteLoss() + boss.getFireLoss()
+	var/by_damage = 1 - (raw_damage / boss.maxHealth)
+	return CLAMP(min(by_health, by_damage), 0, 1)
+
 /atom/movable/screen/movable/boss_health/proc/update_boss_health()
 	if(QDELETED(boss))
 		return
-	var/ratio = 0
-	if(boss.maxHealth > 0)
-		ratio = CLAMP(boss.health / boss.maxHealth, 0, 1)
+	var/ratio = get_health_ratio()
+	var/step = CLAMP(round((1 - ratio) * 10) * 10, 0, 100)
 	fill.update_ratio(ratio)
+	if(step > last_health_step)
+		title?.flash_hurt()
+	else if(step < last_health_step)
+		title?.flash_heal()
+	last_health_step = step
 
 /atom/movable/screen/movable/boss_health/MouseDrop(over_object, src_location, over_location, src_control, over_control, params)
 	if(locked)
@@ -55,6 +86,16 @@
 	screen_loc = "WEST,NORTH:[-40 - (index * 28)]"
 	if(title)
 		title.screen_loc = screen_loc
+
+/atom/movable/screen/boss_name/proc/flash_hurt()
+	color = "#FFFFFF"
+	animate(src, color = "#FF2020", time = 0.12 SECONDS)
+	animate(color = "#FFFFFF", time = 0.35 SECONDS)
+
+/atom/movable/screen/boss_name/proc/flash_heal()
+	color = "#FFFFFF"
+	animate(src, color = "#40FF40", time = 0.12 SECONDS)
+	animate(color = "#FFFFFF", time = 0.35 SECONDS)
 
 /atom/movable/screen/health_fill
 	icon = 'icons/UI_Icons/bosshealthbar.dmi'
