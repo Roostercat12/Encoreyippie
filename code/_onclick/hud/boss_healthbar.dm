@@ -55,10 +55,17 @@
 /atom/movable/screen/movable/boss_health/proc/get_health_ratio()
 	if(QDELETED(boss) || boss.maxHealth <= 0)
 		return 0
+
+	var/total_damage = 0
+	total_damage += boss.getBruteLoss()
+	total_damage += boss.getFireLoss()
+	total_damage += boss.getToxLoss()
+	total_damage += boss.getOxyLoss()
+	total_damage += boss.getCloneLoss()
+
+	var/by_damage = 1 - (total_damage / boss.maxHealth)
 	var/by_health = boss.health / boss.maxHealth
-	var/raw_damage = boss.getBruteLoss() + boss.getFireLoss()
-	var/by_damage = 1 - (raw_damage / boss.maxHealth)
-	return CLAMP(min(by_health, by_damage), 0, 1)
+	return CLAMP(min(by_damage, by_health), 0, 1)
 
 /atom/movable/screen/movable/boss_health/proc/update_boss_health()
 	if(QDELETED(boss))
