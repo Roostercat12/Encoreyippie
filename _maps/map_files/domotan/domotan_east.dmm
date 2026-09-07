@@ -1190,6 +1190,10 @@
 "nR" = (
 /turf/closed/mineral/bedrock,
 /area/under/cavelava)
+"nS" = (
+/obj/effect/landmark/map_load_mark/mountain_tile/micro,
+/turf/open/floor/grass/cold,
+/area/outdoors/mountains/decap)
 "nU" = (
 /obj/structure/fluff/steamvent,
 /obj/machinery/light/fueled/torchholder/r,
@@ -1248,6 +1252,10 @@
 /obj/structure/flora/ausbushes/ppflowers,
 /turf/open/floor/grass/yel,
 /area/outdoors/seculton)
+"pc" = (
+/obj/effect/landmark/map_load_mark/mountain_tile,
+/turf/open/floor/dirt/road,
+/area/outdoors/mountains/decap)
 "pd" = (
 /obj/structure/fluff/railing/border{
 	dir = 8
@@ -1296,6 +1304,10 @@
 	},
 /turf/open/floor/churchrough,
 /area/indoors/seculton)
+"pM" = (
+/obj/effect/landmark/map_load_mark/mountain_tile/micro/three_level,
+/turf/open/water/ocean/abyss,
+/area/outdoors/mountains/decap)
 "pT" = (
 /obj/machinery/light/fueled/lanternpost,
 /turf/open/floor/grass/yel,
@@ -1919,6 +1931,10 @@
 /obj/structure/flora/ausbushes/lavendergrass,
 /turf/open/floor/grass/red,
 /area/outdoors/seculton)
+"xX" = (
+/obj/effect/landmark/map_load_mark/mountain_tile/micro,
+/turf/open/floor/grass/cold,
+/area/outdoors/mountains)
 "yd" = (
 /turf/closed/mineral/deep,
 /area/outdoors/mountains)
@@ -1998,6 +2014,10 @@
 /obj/structure/leyline,
 /turf/open/floor/blocks/green,
 /area/outdoors/mountains)
+"zk" = (
+/obj/effect/landmark/map_load_mark/mountain_tile/micro,
+/turf/open/floor/naturalstone,
+/area/outdoors/mountains/decap)
 "zr" = (
 /turf/open/floor/dirt/road,
 /area/outdoors/mountains/decap/miracle_caldera)
@@ -2318,6 +2338,10 @@
 /obj/effect/landmark/quest_spawner/hard,
 /turf/open/floor/dirt/road,
 /area/outdoors/mountains)
+"EW" = (
+/obj/effect/landmark/map_load_mark/mountain_tile,
+/turf/open/floor/snow/rough,
+/area/outdoors/mountains/decap)
 "Fb" = (
 /obj/structure/flora/newtree/snow,
 /turf/open/floor/grass/yel,
@@ -2610,6 +2634,10 @@
 /obj/machinery/light/fueled/torchholder/l,
 /turf/open/floor/churchrough,
 /area/indoors/hellwatch)
+"Ip" = (
+/obj/effect/landmark/map_load_mark/mountain_tile/micro,
+/turf/open/floor/grass/yel,
+/area/outdoors/mountains/decap)
 "Iu" = (
 /obj/machinery/light/fueled/torchholder/l,
 /turf/open/floor/ruinedwood,
@@ -3214,6 +3242,10 @@
 "Py" = (
 /turf/open/floor/naturalstone,
 /area/outdoors/mountains)
+"PA" = (
+/obj/effect/landmark/map_load_mark/mountain_tile,
+/turf/open/floor/snow,
+/area/outdoors/mountains/decap/miracle_caldera)
 "PG" = (
 /turf/open/water/ocean/abyss,
 /area/outdoors/mountains/decap)
@@ -3563,6 +3595,10 @@
 /obj/structure/fluff/statue/tdummy,
 /turf/open/floor/grass/yel,
 /area/outdoors/seculton)
+"TH" = (
+/obj/effect/landmark/map_load_mark/mountain_tile,
+/turf/open/floor/snow,
+/area/outdoors/mountains/decap)
 "TM" = (
 /obj/structure/closet/crate/chest/old_crate,
 /turf/open/floor/ruinedwood/darker,
@@ -40033,7 +40069,7 @@ PG
 PG
 PG
 PG
-PG
+pM
 PG
 PG
 PG
@@ -60242,7 +60278,7 @@ bv
 bv
 bN
 bv
-bv
+xX
 bv
 bv
 bv
@@ -60652,7 +60688,7 @@ fC
 fC
 bv
 bv
-GE
+bv
 bv
 bv
 bv
@@ -61273,7 +61309,7 @@ bv
 bv
 bv
 bv
-GE
+bv
 bv
 bv
 bv
@@ -65700,7 +65736,7 @@ jI
 jI
 jI
 jI
-jI
+nS
 jI
 MY
 MY
@@ -66315,13 +66351,13 @@ jI
 jI
 jI
 jI
-cY
 jI
 jI
 jI
 jI
 jI
-cY
+jI
+jI
 jI
 jI
 jI
@@ -66734,7 +66770,7 @@ jI
 jI
 jI
 jI
-cY
+jI
 jI
 jI
 jI
@@ -71100,7 +71136,7 @@ Jx
 Jx
 Jx
 Jx
-Jx
+zk
 Jx
 Jx
 Jx
@@ -74609,7 +74645,7 @@ jI
 jI
 Jx
 Jx
-Jx
+zk
 Jx
 Jx
 Jx
@@ -78640,7 +78676,7 @@ MY
 MY
 MY
 MY
-MY
+Ip
 MY
 MY
 MY
@@ -79051,7 +79087,7 @@ MY
 MY
 MY
 MY
-PH
+MY
 MY
 MY
 MY
@@ -80412,7 +80448,7 @@ Jx
 Jx
 Jx
 Jx
-Jx
+zk
 Jx
 Jx
 VX
@@ -83667,7 +83703,7 @@ MY
 MY
 MY
 MY
-MY
+Ip
 MY
 MY
 MY
@@ -84732,7 +84768,7 @@ MY
 MY
 MY
 MY
-MY
+Ip
 MY
 MY
 MY
@@ -99653,7 +99689,7 @@ ii
 ii
 ii
 ii
-bv
+xX
 bv
 bv
 bv
@@ -104424,7 +104460,7 @@ Qk
 Qk
 jI
 jI
-Qk
+pc
 Qk
 Qk
 jI
@@ -105399,7 +105435,7 @@ jI
 jI
 jI
 Or
-Or
+EW
 Or
 Or
 Or
@@ -110755,7 +110791,7 @@ OR
 OR
 OR
 OR
-OR
+PA
 OR
 OR
 OR
@@ -112068,7 +112104,7 @@ Qk
 jI
 jI
 jI
-jI
+nS
 jI
 jI
 jI
@@ -117991,7 +118027,7 @@ de
 de
 de
 de
-de
+TH
 de
 de
 de
@@ -120921,7 +120957,7 @@ OR
 OR
 OR
 OR
-OR
+PA
 OR
 OR
 OR

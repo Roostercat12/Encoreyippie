@@ -29,6 +29,8 @@
 	recalculate_stats()
 	if(turf)
 		update_z(turf.z)
+	if(is_boss)
+		sync_boss_healthbar()
 
 /mob/living/Destroy()
 	update_z(null)
@@ -409,10 +411,16 @@
 /mob/living/carbon/proc/kick_attack_check(mob/living/L)
 	if(L == src)
 		return FALSE
+	if(ishuman(src) && ishuman(L))
+		var/mob/living/carbon/human/kicked = src
+		var/mob/living/carbon/human/kicker = L
+		if(((kicked.dna?.species.id in SPECIES_SHORTIES) || kicked.age == AGE_CHILD || HAS_TRAIT(kicked, TRAIT_TINY)) && !((kicker.dna?.species.id in SPECIES_SHORTIES) || kicker.age == AGE_CHILD || HAS_TRAIT(kicker, TRAIT_TINY)))
+			return TRUE
 	if(body_position == LYING_DOWN)
 		return TRUE
 	if(HAS_TRAIT(L, TRAIT_CLOSECOMBAT))
 		return TRUE
+
 	var/list/acceptable = list(BODY_ZONE_L_LEG, BODY_ZONE_R_LEG, BODY_ZONE_R_ARM, BODY_ZONE_CHEST, BODY_ZONE_L_ARM)
 	if( !(check_zone(L.zone_selected) in acceptable) )
 		to_chat(L, "<span class='warning'>I can't reach that.</span>")
@@ -422,20 +430,29 @@
 /mob/living/carbon/proc/lying_attack_check(mob/living/L, obj/item/I)
 	if(L == src)
 		return TRUE
+	var/short_attacker = FALSE
+	var/short_victim = FALSE
+	if(ishuman(src) && ishuman(L))
+		var/mob/living/carbon/human/attacked = src
+		var/mob/living/carbon/human/attacker = L
+		if((attacked.dna?.species.id in SPECIES_SHORTIES) || attacked.age == AGE_CHILD || HAS_TRAIT(attacked, TRAIT_TINY))
+			short_victim = TRUE
+		if((attacker.dna?.species.id in SPECIES_SHORTIES) || attacker.age == AGE_CHILD || HAS_TRAIT(attacker, TRAIT_TINY))
+			short_attacker = TRUE
 	var/CZ = FALSE
 	var/list/acceptable = list(BODY_ZONE_L_LEG, BODY_ZONE_R_LEG, BODY_ZONE_HEAD, BODY_ZONE_PRECISE_MOUTH, BODY_ZONE_R_ARM, BODY_ZONE_CHEST, BODY_ZONE_L_ARM)
 	if((L.body_position != LYING_DOWN) && (body_position != LYING_DOWN)) //we are both standing
 		if(I)
 			if(I.wlength > WLENGTH_NORMAL)
 				CZ = TRUE
-			else if(HAS_TRAIT(L, TRAIT_TINY) && !HAS_TRAIT(src, TRAIT_TINY)) //midget variant, allows neck no head
-				acceptable = list(BODY_ZONE_R_ARM,BODY_ZONE_L_ARM,BODY_ZONE_PRECISE_R_HAND,BODY_ZONE_PRECISE_L_HAND,BODY_ZONE_PRECISE_GROIN, BODY_ZONE_PRECISE_STOMACH, BODY_ZONE_CHEST, BODY_ZONE_PRECISE_NECK, BODY_ZONE_R_LEG, BODY_ZONE_L_LEG, BODY_ZONE_PRECISE_R_FOOT, BODY_ZONE_PRECISE_L_FOOT)
-			else if(!HAS_TRAIT(L, TRAIT_TINY)) //we have a short/medium weapon, so allow hitting legs
+			else if(short_attacker && !short_victim) //midget variant, no neck as you any misses will hit head either way
+				acceptable = list(BODY_ZONE_R_ARM,BODY_ZONE_L_ARM,BODY_ZONE_PRECISE_R_HAND,BODY_ZONE_PRECISE_L_HAND,BODY_ZONE_PRECISE_GROIN, BODY_ZONE_PRECISE_STOMACH, BODY_ZONE_CHEST, BODY_ZONE_R_LEG, BODY_ZONE_L_LEG, BODY_ZONE_PRECISE_R_FOOT, BODY_ZONE_PRECISE_L_FOOT)
+			else if(!short_attacker) //we have a short/medium weapon, so allow hitting legs
 				acceptable = list(BODY_ZONE_HEAD, BODY_ZONE_PRECISE_MOUTH, BODY_ZONE_R_ARM, BODY_ZONE_CHEST, BODY_ZONE_PRECISE_GROIN, BODY_ZONE_PRECISE_STOMACH, BODY_ZONE_PRECISE_R_HAND, BODY_ZONE_PRECISE_L_HAND, BODY_ZONE_L_ARM, BODY_ZONE_PRECISE_NECK, BODY_ZONE_PRECISE_R_EYE,BODY_ZONE_PRECISE_L_EYE, BODY_ZONE_PRECISE_EARS, BODY_ZONE_R_LEG, BODY_ZONE_L_LEG, BODY_ZONE_PRECISE_SKULL, BODY_ZONE_PRECISE_NOSE, BODY_ZONE_PRECISE_MOUTH)
 		else
-			if(HAS_TRAIT(L, TRAIT_TINY) && !HAS_TRAIT(src, TRAIT_TINY)  && (!CZ)) //tiny punches
+			if(short_attacker && !short_victim  && (!CZ)) //tiny punches
 				acceptable = list(BODY_ZONE_R_ARM,BODY_ZONE_L_ARM,BODY_ZONE_PRECISE_R_HAND,BODY_ZONE_PRECISE_L_HAND,BODY_ZONE_PRECISE_GROIN, BODY_ZONE_PRECISE_STOMACH, BODY_ZONE_CHEST, BODY_ZONE_R_LEG, BODY_ZONE_L_LEG, BODY_ZONE_PRECISE_R_FOOT, BODY_ZONE_PRECISE_L_FOOT)
-			else if(!HAS_TRAIT(L, TRAIT_TINY) && (!CZ)) //we are punching, no legs
+			else if(!(short_attacker) && (!CZ)) //we are punching, no legs
 				acceptable = list(BODY_ZONE_HEAD, BODY_ZONE_PRECISE_MOUTH, BODY_ZONE_R_ARM, BODY_ZONE_CHEST, BODY_ZONE_PRECISE_GROIN, BODY_ZONE_PRECISE_STOMACH, BODY_ZONE_PRECISE_R_HAND, BODY_ZONE_PRECISE_L_HAND, BODY_ZONE_L_ARM, BODY_ZONE_PRECISE_NECK, BODY_ZONE_PRECISE_R_EYE,BODY_ZONE_PRECISE_L_EYE, BODY_ZONE_PRECISE_EARS, BODY_ZONE_PRECISE_SKULL, BODY_ZONE_PRECISE_NOSE, BODY_ZONE_PRECISE_MOUTH)
 	else if(L.body_position == LYING_DOWN && (body_position != LYING_DOWN)) //we are prone, victim is standing
 		if(I)
@@ -450,11 +467,11 @@
 		CZ = TRUE
 	if(CZ)
 		if( !(check_zone(L.zone_selected) in acceptable) )
-			to_chat(L, "<span class='warning'>I can't reach that.</span>")
+			to_chat(L, span_danger("I can't reach that."))
 			return FALSE
 	else
 		if( !(L.zone_selected in acceptable) )
-			to_chat(L, "<span class='warning'>I can't reach that.</span>")
+			to_chat(L, span_danger("I can't reach that."))
 			return FALSE
 	return TRUE
 
@@ -3223,3 +3240,18 @@
 /// Check a mobs item slots for a type or types, returns the first item found that matches or null
 /mob/living/proc/check_slots_for_types(list/slots, list/types)
 	return
+
+/mob/living/proc/set_boss(new_value)
+	new_value = !!new_value
+	if(is_boss == new_value)
+		return
+	is_boss = new_value
+	sync_boss_healthbar()
+
+/mob/living/proc/sync_boss_healthbar()
+	var/datum/component/boss_healthbar/current = GetComponent(/datum/component/boss_healthbar)
+	if(is_boss)
+		if(!current && stat != DEAD)
+			AddComponent(/datum/component/boss_healthbar)
+	else if(current)
+		qdel(current)

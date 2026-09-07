@@ -23,6 +23,7 @@
 		TRAIT_DARKVISION,
 		TRAIT_LIMBATTACHMENT,
 		TRAIT_NOENERGY,
+		TRAIT_KNOW_THIEF_DOORS,
 	)
 
 /datum/clan/crimson_fang/get_blood_preference_string()

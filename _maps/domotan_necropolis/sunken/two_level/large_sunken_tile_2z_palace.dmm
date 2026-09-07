@@ -1,0 +1,2204 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ah" = (
+/obj/effect/spawner/map_spawner/necropolis/mob_spawner/deepones,
+/turf/open/floor/greenstone,
+/area/under/cavewet)
+"aj" = (
+/obj/structure/flora/grass/water/reeds,
+/turf/open/water/ocean/abyss/under,
+/area/under/cavewet)
+"av" = (
+/obj/structure/fluff/statue/crystal/frost,
+/turf/open/floor/hexstone,
+/area/under/cavewet)
+"aQ" = (
+/obj/item/fishingrod,
+/turf/open/floor/greenstone,
+/area/under/cavewet)
+"bD" = (
+/obj/structure/rousman_hole,
+/turf/open/floor/tile/diamond/blue,
+/area/under/cavewet)
+"bJ" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/light/fueled/wallfire/candle/blue,
+/turf/open/floor/tile/diamond,
+/area/under/cavewet)
+"bP" = (
+/obj/structure/fluff/walldeco/vinez/blue,
+/turf/open/floor/cobble/alt,
+/area/template_noop)
+"bS" = (
+/obj/structure/flora/grass/water/reeds,
+/turf/open/water/river/marsh/under{
+	dir = 1
+	},
+/area/under/cavewet)
+"bW" = (
+/obj/structure/chair/bench,
+/turf/open/floor/tile/masonic/moonbw,
+/area/under/cavewet)
+"bZ" = (
+/obj/structure/fluff/walldeco/vinez/blue,
+/turf/closed/wall/mineral/stonebrick,
+/area/under/cavewet)
+"ce" = (
+/obj/machinery/light/fueled/wallfire/candle/blue,
+/turf/open/floor/hexstone,
+/area/under/cavewet)
+"ch" = (
+/obj/structure/chair/wood/alt/chair3,
+/turf/open/floor/tile/diamond,
+/area/under/cavewet)
+"cz" = (
+/turf/closed/wall/mineral/stonebrick,
+/area/under/cavewet)
+"dc" = (
+/turf/open/floor/greenstone/glyph3,
+/area/under/cavewet)
+"dD" = (
+/obj/structure/bars/pipe,
+/obj/structure/bars/grille,
+/turf/open/floor/hexstone,
+/area/under/cavewet)
+"dG" = (
+/obj/structure/fluff/statue/crystal/frost,
+/turf/open/floor/tile/diamond,
+/area/under/cavewet)
+"dH" = (
+/obj/item/gem/coral,
+/turf/open/floor/greenstone/glyph1,
+/area/under/cavewet)
+"ei" = (
+/obj/effect/spawner/map_spawner/loot/coin/low,
+/turf/open/floor/hexstone,
+/area/under/cavewet)
+"eM" = (
+/obj/structure/flora/grass/water/reeds,
+/turf/open/water/ocean/abyss,
+/area/under/cavewet)
+"fD" = (
+/obj/structure/fluff/walldeco/vinez/blue,
+/turf/closed/wall/mineral/stone/moss/blue,
+/area/under/cavewet)
+"fH" = (
+/turf/open/floor/cobble/alt,
+/area/under/cavewet)
+"fV" = (
+/obj/structure/flora/grass/water/reeds,
+/turf/open/water/river/marsh/under{
+	dir = 4
+	},
+/area/under/cavewet)
+"gc" = (
+/turf/closed/wall/mineral/stone/moss/blue,
+/area/under/cavewet)
+"gh" = (
+/turf/open/water/river/marsh{
+	dir = 4
+	},
+/area/under/cavewet)
+"gs" = (
+/turf/template_noop,
+/area/template_noop)
+"gB" = (
+/turf/open/floor/twig,
+/area/template_noop)
+"gG" = (
+/turf/open/floor/greenstone/glyph4,
+/area/under/cavewet)
+"gM" = (
+/obj/structure/table/wood/large_new,
+/obj/effect/spawner/map_spawner/loot/common,
+/turf/open/floor/tile/diamond,
+/area/under/cavewet)
+"gT" = (
+/obj/structure/flora/grass/mushroom,
+/obj/structure/fluff/railing/border,
+/obj/machinery/light/fueled/wallfire/candle/blue/l,
+/turf/open/floor/greenstone,
+/area/under/cavewet)
+"hi" = (
+/obj/item/gem/blue,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/hexstone,
+/area/under/cavewet)
+"hw" = (
+/turf/open/floor/cobble/alt,
+/area/template_noop)
+"hA" = (
+/obj/structure/table/wood/large_new,
+/obj/item/reagent_containers/glass/cup/coral,
+/turf/open/floor/tile/diamond,
+/area/under/cavewet)
+"hC" = (
+/obj/structure/spider/stickyweb/solo,
+/turf/open/floor/tile/masonic/moonbw,
+/area/under/cavewet)
+"hE" = (
+/turf/open/floor/tile/masonic/moonbw,
+/area/under/cavewet)
+"hT" = (
+/turf/open/dungeon_trap,
+/area/under/cavewet)
+"id" = (
+/obj/structure/fluid_drain,
+/turf/open/floor/greenstone,
+/area/under/cavewet)
+"if" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/spider/stickyweb,
+/turf/open/floor/dirt,
+/area/under/cavewet)
+"iz" = (
+/obj/structure/flora/grass/water,
+/obj/effect/spawner/map_spawner/necropolis/water_clutter,
+/turf/open/water/ocean/abyss,
+/area/under/cavewet)
+"jT" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/tile/tilerg,
+/area/under/cavewet)
+"kb" = (
+/mob/living/simple_animal/hostile/deepone/wiz/boss,
+/turf/open/floor/greenstone,
+/area/under/cavewet)
+"kq" = (
+/obj/effect/spawner/map_spawner/loot/weapon,
+/obj/structure/fluff/railing/border{
+	dir = 5
+	},
+/turf/open/floor/greenstone,
+/area/under/cavewet)
+"kN" = (
+/obj/structure/trap/chill,
+/turf/open/floor/tile/diamond,
+/area/under/cavewet)
+"kS" = (
+/obj/structure/spider/stickyweb,
+/turf/open/floor/tile/tilerg,
+/area/under/cavewet)
+"kT" = (
+/obj/effect/spawner/map_spawner/necropolis/water_clutter,
+/turf/open/water/river/marsh,
+/area/under/cavewet)
+"kX" = (
+/obj/machinery/light/fueled/wallfire/candle/blue/r,
+/turf/open/floor/greenstone/runed,
+/area/under/cavewet)
+"ly" = (
+/obj/item/alch/waterdust,
+/obj/machinery/light/fueled/wallfire/candle/blue/l,
+/turf/open/floor/hexstone,
+/area/under/cavewet)
+"lz" = (
+/obj/effect/waterfall,
+/turf/open/water/ocean,
+/area/under/cavewet)
+"lF" = (
+/obj/item/bin/water/gross,
+/turf/open/floor/greenstone,
+/area/under/cavewet)
+"lQ" = (
+/turf/open/floor/hexstone,
+/area/under/cavewet)
+"mJ" = (
+/obj/effect/spawner/map_spawner/loot/potion_poisons,
+/turf/open/floor/greenstone,
+/area/under/cavewet)
+"mL" = (
+/obj/structure/fluff/walldeco/vinez/blue,
+/turf/closed/mineral/bedrock,
+/area/under/cavewet)
+"mZ" = (
+/obj/structure/fluff/statue/small,
+/obj/effect/decal/cleanable/dirt/cobweb/cobweb2,
+/turf/open/floor/tile/masonic/moonbw,
+/area/under/cavewet)
+"nk" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/rousman_hole,
+/turf/open/floor/tile/tilerg,
+/area/under/cavewet)
+"nq" = (
+/obj/item/carvedgem/opal/fish,
+/turf/open/floor/greenstone,
+/area/under/cavewet)
+"nr" = (
+/obj/effect/spawner/map_spawner/loot/common,
+/turf/open/floor/hexstone,
+/area/under/cavewet)
+"nw" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/tile/diamond,
+/area/under/cavewet)
+"oa" = (
+/obj/structure/wild_plant/nospread/mushroom/caveweep,
+/turf/closed/wall/mineral/stone/moss/blue,
+/area/under/cavewet)
+"oj" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/rousman_hole,
+/turf/open/floor/tile/diamond/blue,
+/area/under/cavewet)
+"oQ" = (
+/obj/structure/spider/stickyweb,
+/obj/machinery/light/fueled/wallfire/candle/blue/l,
+/turf/open/floor/tile/masonic/moonbw,
+/area/under/cavewet)
+"oZ" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/spawner/map_spawner/loot/coin/high,
+/turf/open/floor/hexstone,
+/area/under/cavewet)
+"pj" = (
+/obj/machinery/light/fueled/wallfire/candle/blue/r,
+/turf/open/floor/greenstone,
+/area/under/cavewet)
+"pN" = (
+/obj/effect/waterfall,
+/turf/open/water/ocean/abyss,
+/area/under/cavewet)
+"qb" = (
+/obj/structure/bars/pipe,
+/turf/template_noop,
+/area/template_noop)
+"qg" = (
+/obj/item/alch/waterdust,
+/turf/open/floor/hexstone,
+/area/under/cavewet)
+"qk" = (
+/obj/structure/fluff/walldeco/vinez/blue,
+/turf/closed/wall/mineral/pipe,
+/area/under/cavewet)
+"ql" = (
+/turf/open/water/ocean/abyss,
+/area/under/cavewet)
+"ri" = (
+/obj/structure/bars/grille,
+/obj/structure/fluff/walldeco/vinez/blue,
+/turf/open/floor/cobble/alt,
+/area/under/cavewet)
+"rm" = (
+/obj/structure/flora/grass/water,
+/turf/open/water/ocean,
+/area/under/cavewet)
+"ru" = (
+/obj/effect/spawner/map_spawner/loot/common,
+/turf/open/floor/greenstone,
+/area/under/cavewet)
+"rv" = (
+/obj/structure/window/stained/silver,
+/turf/open/floor/hexstone,
+/area/under/cavewet)
+"rZ" = (
+/obj/effect/spawner/map_spawner/loot/rare,
+/turf/open/floor/hexstone,
+/area/under/cavewet)
+"sF" = (
+/obj/machinery/light/fueled/wallfire/candle/blue/l,
+/turf/open/floor/greenstone,
+/area/under/cavewet)
+"sL" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/spawner/map_spawner/loot/medium,
+/turf/open/floor/hexstone,
+/area/under/cavewet)
+"sO" = (
+/obj/effect/decal/cleanable/dirt/cobweb,
+/obj/effect/spawner/map_spawner/loot/coin,
+/turf/open/floor/hexstone,
+/area/under/cavewet)
+"sW" = (
+/turf/closed/mineral/bedrock,
+/area/under/cavewet)
+"tb" = (
+/obj/structure/chair/bench/church/smallbench/stone,
+/turf/open/floor/tile/diamond,
+/area/under/cavewet)
+"tp" = (
+/obj/structure/spider/stickyweb,
+/obj/machinery/light/fueled/wallfire/candle/blue,
+/turf/open/floor/tile/masonic/moonbw,
+/area/under/cavewet)
+"tG" = (
+/obj/structure/fluff/statue/small,
+/obj/structure/spider/stickyweb/solo,
+/turf/open/floor/tile/masonic/moonbw,
+/area/under/cavewet)
+"tH" = (
+/obj/effect/spawner/map_spawner/necropolis/water_clutter,
+/obj/machinery/light/fueled/wallfire/candle/blue/l,
+/turf/open/water/ocean,
+/area/under/cavewet)
+"tS" = (
+/obj/item/alch/waterdust,
+/obj/machinery/light/fueled/wallfire/candle/blue,
+/turf/open/floor/hexstone,
+/area/under/cavewet)
+"ut" = (
+/obj/structure/flora/rock/water,
+/turf/open/water/ocean/abyss/under,
+/area/under/cavewet)
+"uX" = (
+/obj/effect/spawner/map_spawner/loot/coin/high,
+/obj/effect/spawner/map_spawner/loot/coin/high,
+/obj/effect/spawner/map_spawner/loot/coin/med,
+/obj/structure/fluff/railing/border{
+	dir = 1
+	},
+/turf/open/floor/greenstone,
+/area/under/cavewet)
+"vb" = (
+/obj/machinery/light/fueled/wallfire/candle/blue/l,
+/turf/open/water/river/marsh,
+/area/under/cavewet)
+"vo" = (
+/turf/open/water/ocean,
+/area/under/cavewet)
+"vP" = (
+/obj/structure/bars/grille,
+/turf/open/floor/cobble/alt,
+/area/under/cavewet)
+"wi" = (
+/obj/effect/decal/cleanable/dirt/cobweb,
+/turf/open/floor/hexstone,
+/area/under/cavewet)
+"wA" = (
+/obj/structure/fluff/statue/crystal/frost,
+/turf/open/floor/tile/tilerg,
+/area/under/cavewet)
+"wU" = (
+/turf/open/floor/tile/diamond/blue,
+/area/under/cavewet)
+"xk" = (
+/obj/structure/fluid_drain,
+/obj/structure/fluff/railing/border{
+	dir = 4
+	},
+/turf/open/floor/greenstone,
+/area/under/cavewet)
+"xt" = (
+/obj/machinery/light/fueled/wallfire/candle/blue,
+/turf/open/floor/tile/masonic/moonbw,
+/area/under/cavewet)
+"xw" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/dirt,
+/area/under/cavewet)
+"xD" = (
+/obj/structure/fluff/railing/border{
+	dir = 1
+	},
+/turf/open/floor/greenstone,
+/area/under/cavewet)
+"xH" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/spider/stickyweb/solo,
+/turf/open/floor/tile/tilerg,
+/area/under/cavewet)
+"xX" = (
+/obj/structure/flora/grass/water/reeds,
+/turf/open/water/ocean,
+/area/under/cavewet)
+"yp" = (
+/obj/structure/fluff/steamvent,
+/obj/effect/spawner/map_spawner/loot/magic,
+/turf/open/floor/greenstone,
+/area/under/cavewet)
+"yw" = (
+/obj/structure/table/wood/large/corner_new,
+/obj/effect/spawner/guaranteed_map_spawner/listed/cups,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/tile/diamond,
+/area/under/cavewet)
+"yB" = (
+/turf/open/water/river/marsh,
+/area/under/cavewet)
+"yN" = (
+/turf/open/floor/greenstone,
+/area/under/cavewet)
+"yS" = (
+/mob/living/simple_animal/hostile/retaliate/primordial/water,
+/turf/open/water/ocean,
+/area/under/cavewet)
+"zk" = (
+/turf/open/floor/tile/tilerg,
+/area/under/cavewet)
+"zo" = (
+/obj/item/gem/coral,
+/turf/open/water/ocean/abyss/under,
+/area/under/cavewet)
+"zp" = (
+/obj/structure/fluff/railing/border,
+/turf/open/floor/greenstone,
+/area/under/cavewet)
+"zV" = (
+/obj/structure/flora/rock/coral,
+/turf/open/water/ocean/abyss/under,
+/area/under/cavewet)
+"Ar" = (
+/obj/structure/trap/chill,
+/turf/open/floor/hexstone,
+/area/under/cavewet)
+"As" = (
+/obj/structure/rousman_hole,
+/turf/open/floor/tile/diamond,
+/area/under/cavewet)
+"AF" = (
+/obj/effect/decal/cleanable/dirt/cobweb,
+/obj/effect/landmark/chest_or_mimic,
+/turf/open/floor/dirt,
+/area/under/cavewet)
+"AL" = (
+/obj/structure/fluff/walldeco/vinez/blue,
+/turf/open/floor/cobble/alt,
+/area/under/cavewet)
+"AQ" = (
+/obj/effect/waterfall,
+/obj/effect/spawner/map_spawner/necropolis/water_clutter,
+/turf/open/water/river/marsh,
+/area/under/cavewet)
+"AY" = (
+/turf/open/floor/hexstone,
+/area/template_noop)
+"Be" = (
+/obj/structure/lootable_structure/fish_barrel,
+/turf/open/floor/greenstone,
+/area/under/cavewet)
+"Bt" = (
+/obj/structure/spider/stickyweb,
+/turf/open/floor/hexstone,
+/area/under/cavewet)
+"Bz" = (
+/obj/structure/flora/grass/mushroom,
+/obj/structure/fluff/railing/border{
+	dir = 4
+	},
+/turf/open/floor/greenstone,
+/area/under/cavewet)
+"BB" = (
+/mob/living/simple_animal/hostile/boss/fishboss,
+/turf/open/floor/greenstone,
+/area/under/cavewet)
+"BP" = (
+/obj/structure/spider/stickyweb,
+/turf/open/floor/tile/masonic/moonbw,
+/area/under/cavewet)
+"BS" = (
+/obj/effect/spawner/map_spawner/necropolis/shroom_clutter,
+/turf/open/floor/greenstone,
+/area/under/cavewet)
+"Cv" = (
+/obj/structure/table/wood/large_new,
+/turf/open/floor/tile/diamond,
+/area/under/cavewet)
+"Dq" = (
+/obj/structure/table/wood/large_new,
+/obj/structure/fluff/walldeco/vinez/blue,
+/turf/open/floor/tile/diamond,
+/area/under/cavewet)
+"DZ" = (
+/obj/machinery/light/fueled/wallfire/candle/blue,
+/turf/closed/wall/mineral/stone/moss/blue,
+/area/under/cavewet)
+"Ec" = (
+/obj/item/fishing/reel,
+/turf/open/floor/greenstone,
+/area/under/cavewet)
+"Et" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/spider/stickyweb,
+/turf/open/floor/hexstone,
+/area/under/cavewet)
+"EG" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/spider/stickyweb,
+/turf/open/floor/tile/tilerg,
+/area/under/cavewet)
+"Fn" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/restraints/legcuffs/beartrap/armed,
+/turf/open/floor/cobble/alt,
+/area/under/cavewet)
+"FN" = (
+/obj/effect/decal/cleanable/dirt/cobweb,
+/turf/open/floor/tile/diamond,
+/area/under/cavewet)
+"FY" = (
+/obj/structure/bars/pipe,
+/turf/open/floor/dirt,
+/area/under/cavewet)
+"Gb" = (
+/obj/structure/fluff/statue/knightalt,
+/turf/closed/wall/mineral/pipe,
+/area/under/cavewet)
+"Gh" = (
+/obj/structure/door/iron/bars,
+/obj/structure/fluff/walldeco/vinez/blue,
+/turf/open/floor/hexstone,
+/area/under/cavewet)
+"Gr" = (
+/obj/structure/fluff/steamvent,
+/turf/open/floor/greenstone,
+/area/under/cavewet)
+"Gu" = (
+/obj/machinery/light/fueled/wallfire/candle/blue,
+/turf/open/floor/hexstone,
+/area/template_noop)
+"Gy" = (
+/obj/effect/spawner/map_spawner/necropolis/mob_spawner/deepones/hard,
+/turf/open/floor/greenstone,
+/area/under/cavewet)
+"GL" = (
+/obj/effect/spawner/map_spawner/loot/rare,
+/turf/open/floor/greenstone,
+/area/under/cavewet)
+"GP" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/spawner/map_spawner/loot/coin/low,
+/turf/open/floor/dirt,
+/area/under/cavewet)
+"GX" = (
+/obj/effect/spawner/map_spawner/necropolis/shroom_clutter,
+/obj/structure/fluff/railing/border,
+/turf/open/floor/greenstone,
+/area/under/cavewet)
+"Hp" = (
+/obj/structure/flora/grass/water/reeds,
+/turf/open/water/river/marsh/under{
+	dir = 8
+	},
+/area/under/cavewet)
+"Hv" = (
+/obj/item/alch/waterdust,
+/obj/machinery/light/fueled/wallfire/candle/blue/r,
+/turf/open/floor/greenstone,
+/area/under/cavewet)
+"HD" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/hexstone,
+/area/under/cavewet)
+"HP" = (
+/turf/open/floor/dirt,
+/area/under/cavewet)
+"HT" = (
+/obj/structure/chair/bench/throne/stone,
+/turf/open/floor/greenstone,
+/area/under/cavewet)
+"IL" = (
+/obj/item/weapon/mace/goden/deepduke,
+/obj/machinery/light/fueled/wallfire/candle/blue/r,
+/turf/open/floor/greenstone,
+/area/under/cavewet)
+"IO" = (
+/obj/effect/waterfall,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/water/ocean,
+/area/under/cavewet)
+"Jc" = (
+/obj/structure/window/stained/silver,
+/turf/open/floor/cobble/alt,
+/area/under/cavewet)
+"Jl" = (
+/obj/effect/spawner/map_spawner/necropolis/water_clutter,
+/turf/open/water/ocean,
+/area/under/cavewet)
+"JA" = (
+/obj/effect/spawner/map_spawner/loot/coin/high,
+/obj/effect/spawner/map_spawner/loot/coin/high,
+/obj/effect/spawner/map_spawner/loot/coin/low,
+/obj/structure/fluff/railing/border{
+	dir = 1
+	},
+/turf/open/floor/greenstone,
+/area/under/cavewet)
+"JM" = (
+/obj/structure/bars/pipe/left,
+/turf/template_noop,
+/area/template_noop)
+"JO" = (
+/obj/structure/bars/pipe,
+/obj/effect/decal/cleanable/dirt/cobweb/cobweb2,
+/turf/open/floor/hexstone,
+/area/under/cavewet)
+"JX" = (
+/turf/open/lava/acid,
+/area/under/cavewet)
+"Kx" = (
+/turf/open/floor/greenstone/glyph5,
+/area/under/cavewet)
+"KO" = (
+/obj/machinery/light/fueled/wallfire/candle/blue/l,
+/turf/open/floor/tile/diamond/blue,
+/area/under/cavewet)
+"KT" = (
+/obj/structure/spider/stickyweb/solo,
+/turf/open/floor/tile/diamond/blue,
+/area/under/cavewet)
+"KW" = (
+/obj/effect/spawner/map_spawner/loot/magic,
+/turf/open/floor/greenstone,
+/area/under/cavewet)
+"LX" = (
+/obj/effect/spawner/map_spawner/necropolis/water_clutter,
+/turf/open/water/river/marsh{
+	dir = 4
+	},
+/area/under/cavewet)
+"Me" = (
+/obj/structure/fluff/statue/knightalt,
+/turf/closed/wall/mineral/stonebrick,
+/area/under/cavewet)
+"Mk" = (
+/obj/item/alch/waterdust,
+/turf/open/floor/greenstone,
+/area/under/cavewet)
+"MM" = (
+/obj/structure/spider/stickyweb,
+/turf/open/floor/dirt,
+/area/under/cavewet)
+"NE" = (
+/obj/structure/rousman_hole,
+/turf/open/floor/tile/masonic/moonbw,
+/area/under/cavewet)
+"NQ" = (
+/obj/structure/flora/grass/water/reeds,
+/turf/open/water/river/marsh/under,
+/area/under/cavewet)
+"Ov" = (
+/turf/open/water/ocean/abyss/under,
+/area/under/cavewet)
+"OP" = (
+/obj/structure/flora/grass/water/reeds,
+/obj/machinery/light/fueled/wallfire/candle/blue/r,
+/turf/open/water/river/marsh/under{
+	dir = 1
+	},
+/area/under/cavewet)
+"OZ" = (
+/obj/item/chair/fancy,
+/turf/open/floor/tile/diamond,
+/area/under/cavewet)
+"Pc" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/lootable_structure/stockpile/grain_barrel,
+/turf/open/floor/hexstone,
+/area/under/cavewet)
+"Pe" = (
+/obj/effect/spawner/map_spawner/loot/potion_skills,
+/obj/structure/fluff/railing/border{
+	dir = 4
+	},
+/turf/open/floor/greenstone,
+/area/under/cavewet)
+"Pk" = (
+/obj/structure/fluff/railing/border{
+	dir = 8
+	},
+/turf/open/floor/greenstone,
+/area/under/cavewet)
+"Pr" = (
+/turf/open/floor/greenstone/runed,
+/area/under/cavewet)
+"PJ" = (
+/obj/structure/fluff/railing/border{
+	dir = 5
+	},
+/turf/open/floor/greenstone,
+/area/under/cavewet)
+"PV" = (
+/obj/structure/fluff/railing/border{
+	dir = 4
+	},
+/turf/open/floor/greenstone,
+/area/under/cavewet)
+"PY" = (
+/obj/structure/spider/stickyweb/solo,
+/obj/machinery/light/fueled/wallfire/candle/blue/l,
+/turf/open/floor/tile/diamond/blue,
+/area/under/cavewet)
+"Qh" = (
+/obj/effect/decal/cleanable/dirt/cobweb/cobweb2,
+/turf/open/floor/tile/tilerg,
+/area/under/cavewet)
+"QG" = (
+/turf/open/floor/tile/diamond,
+/area/under/cavewet)
+"Ry" = (
+/mob/living/simple_animal/hostile/retaliate/primordial/water,
+/turf/open/water/ocean/abyss,
+/area/under/cavewet)
+"RA" = (
+/obj/structure/flora/kelp,
+/turf/open/water/ocean/abyss/under,
+/area/under/cavewet)
+"RO" = (
+/obj/effect/decal/cleanable/dirt/cobweb,
+/obj/effect/landmark/chest_or_mimic,
+/turf/open/floor/tile/tilerg,
+/area/under/cavewet)
+"RS" = (
+/obj/structure/table/wood/large/corner_new,
+/obj/structure/fluff/walldeco/vinez/blue,
+/turf/open/floor/tile/diamond,
+/area/under/cavewet)
+"Sp" = (
+/obj/structure/flora/grass/water,
+/turf/open/water/ocean/abyss,
+/area/under/cavewet)
+"SC" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/spider/stickyweb,
+/turf/open/floor/tile/diamond,
+/area/under/cavewet)
+"SD" = (
+/obj/effect/waterfall,
+/turf/open/water/river/marsh,
+/area/under/cavewet)
+"TH" = (
+/obj/structure/spider/stickyweb,
+/turf/open/floor/tile/diamond,
+/area/under/cavewet)
+"TP" = (
+/obj/effect/waterfall,
+/turf/open/floor/tile/masonic/moonbw,
+/area/under/cavewet)
+"Ub" = (
+/obj/structure/flora/pillar,
+/turf/open/floor/tile/diamond/blue,
+/area/under/cavewet)
+"UA" = (
+/obj/structure/wild_plant/nospread/mushroom/borowiki,
+/turf/open/floor/greenstone,
+/area/under/cavewet)
+"UD" = (
+/turf/open/floor/greenstone/glyph6,
+/area/under/cavewet)
+"VS" = (
+/obj/structure/chair/wood/alt/chair3{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/cobweb/cobweb2,
+/turf/open/floor/tile/diamond,
+/area/under/cavewet)
+"VU" = (
+/obj/structure/flora/grass/mushroom,
+/turf/open/floor/greenstone,
+/area/under/cavewet)
+"Wy" = (
+/turf/closed/wall/mineral/pipe,
+/area/under/cavewet)
+"Xo" = (
+/obj/effect/decal/cleanable/dirt/cobweb,
+/turf/closed/wall/mineral/stonebrick,
+/area/under/cavewet)
+"XB" = (
+/obj/item/gem/coral,
+/turf/open/floor/greenstone,
+/area/under/cavewet)
+"XM" = (
+/obj/structure/closet/crate/chest/wicker/random_mushroom,
+/turf/open/floor/greenstone,
+/area/under/cavewet)
+"Yc" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/spawner/map_spawner/loot/coin/med,
+/turf/open/floor/hexstone,
+/area/under/cavewet)
+"Yl" = (
+/obj/structure/spider/stickyweb,
+/turf/open/floor/tile/masonic/moondark,
+/area/under/cavewet)
+"YM" = (
+/obj/structure/bars/pipe,
+/obj/structure/fluff/statue/crystal/frost,
+/turf/open/floor/tile/diamond,
+/area/under/cavewet)
+"YS" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/tile/diamond/blue,
+/area/under/cavewet)
+"YU" = (
+/obj/item/alch/waterdust,
+/obj/structure/fluff/railing/border{
+	dir = 1
+	},
+/turf/open/floor/greenstone,
+/area/under/cavewet)
+"YW" = (
+/obj/structure/window/stained/silver,
+/turf/open/floor/herringbone,
+/area/under/cavewet)
+"YY" = (
+/obj/item/gem/coral,
+/turf/open/floor/greenstone/glyph5,
+/area/under/cavewet)
+"Zu" = (
+/obj/effect/spawner/map_spawner/necropolis/mob_spawner/deepones/hard,
+/obj/structure/fluff/railing/border{
+	dir = 4
+	},
+/turf/open/floor/greenstone,
+/area/under/cavewet)
+"ZM" = (
+/obj/structure/bars/pipe,
+/obj/machinery/light/fueled/wallfire/candle/blue,
+/turf/open/floor/hexstone,
+/area/under/cavewet)
+"ZX" = (
+/obj/effect/spawner/map_spawner/necropolis/water_clutter,
+/turf/open/water/ocean/abyss,
+/area/under/cavewet)
+
+(1,1,1) = {"
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+"}
+(2,1,1) = {"
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gB
+gB
+gs
+gB
+gs
+gB
+gB
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+"}
+(3,1,1) = {"
+gs
+gs
+gs
+gs
+gs
+gc
+gc
+gc
+gc
+sW
+Wy
+Wy
+Wy
+Wy
+sW
+gc
+gc
+gc
+gc
+gc
+gc
+gs
+gs
+gs
+gs
+"}
+(4,1,1) = {"
+gs
+gs
+gs
+gs
+gc
+sW
+sW
+sW
+gc
+sW
+gc
+hT
+hT
+gc
+sW
+gc
+gc
+RA
+Ov
+ut
+gc
+gc
+gs
+gs
+gs
+"}
+(5,1,1) = {"
+gs
+gs
+gs
+gc
+sW
+Ov
+RA
+NQ
+Pr
+tH
+yN
+Pk
+Pk
+UA
+gT
+JX
+gc
+zV
+ut
+Ov
+RA
+gc
+gc
+gs
+gs
+"}
+(6,1,1) = {"
+gs
+gs
+gc
+sW
+RA
+zo
+Ov
+NQ
+Pr
+yN
+Gr
+Gy
+Jl
+Gr
+zp
+JX
+gc
+Ov
+Ov
+Ov
+Ov
+gc
+gc
+gs
+gs
+"}
+(7,1,1) = {"
+gs
+gs
+gc
+sW
+ut
+Ov
+Ov
+NQ
+Pr
+yN
+yN
+yN
+yN
+id
+Mk
+Pk
+gc
+RA
+Ov
+Ov
+ut
+gc
+gc
+gs
+gs
+"}
+(8,1,1) = {"
+gs
+gB
+gc
+sW
+Ov
+RA
+ut
+Hp
+gc
+SD
+kT
+Gr
+ah
+yN
+yN
+yN
+gc
+gc
+aj
+Ov
+zo
+Ov
+gc
+gs
+gs
+"}
+(9,1,1) = {"
+gs
+gB
+gc
+sW
+sW
+Ov
+Ov
+sW
+oa
+XM
+yN
+aQ
+Mk
+Be
+gc
+SD
+yB
+gc
+gc
+fV
+fV
+bS
+gc
+gs
+gs
+"}
+(10,1,1) = {"
+gs
+gs
+sW
+sW
+gc
+sW
+sW
+gc
+lF
+Jl
+yN
+gG
+dH
+BS
+yN
+yN
+yN
+yN
+gc
+Pr
+Pr
+gc
+gc
+gs
+gs
+"}
+(11,1,1) = {"
+gs
+gs
+Wy
+hT
+gc
+Wy
+SD
+vb
+yp
+mJ
+Mk
+Kx
+yN
+yN
+Jl
+yN
+yN
+id
+sF
+yN
+GX
+hT
+gc
+gs
+gs
+"}
+(12,1,1) = {"
+gs
+gB
+Wy
+hT
+uX
+KW
+BB
+GL
+nq
+yN
+GL
+Kx
+yN
+Gr
+yN
+ah
+Gr
+yN
+Gy
+Gr
+zp
+hT
+Wy
+gs
+gs
+"}
+(13,1,1) = {"
+gs
+gB
+Wy
+hT
+JA
+HT
+yN
+id
+mJ
+Jl
+ah
+YY
+Mk
+yN
+yN
+yN
+Jl
+Hv
+Be
+yN
+zp
+hT
+Wy
+gs
+gs
+"}
+(14,1,1) = {"
+gs
+gs
+Wy
+hT
+oa
+IL
+KW
+Gy
+yN
+ru
+Ec
+UD
+dc
+id
+BS
+lF
+oa
+gc
+gc
+gc
+gc
+Wy
+Wy
+gs
+gs
+"}
+(15,1,1) = {"
+gs
+gB
+sW
+sW
+gc
+Wy
+VU
+Be
+Mk
+yN
+gc
+AQ
+yB
+Jl
+yN
+gc
+gc
+Ov
+zV
+RA
+gc
+gc
+gc
+gs
+gs
+"}
+(16,1,1) = {"
+gs
+gs
+gc
+gc
+gc
+Wy
+Wy
+Be
+Pe
+kq
+kb
+ah
+yB
+XB
+pj
+gc
+Ov
+RA
+Ov
+zV
+Ov
+gc
+gc
+gs
+gs
+"}
+(17,1,1) = {"
+gs
+gs
+gc
+gc
+gc
+gc
+gc
+gc
+JX
+YU
+PJ
+Gr
+LX
+yN
+gc
+gc
+zV
+zo
+Ov
+Ov
+ut
+gc
+gc
+gs
+gs
+"}
+(18,1,1) = {"
+gs
+gs
+gc
+gc
+gc
+Ov
+RA
+gc
+JX
+JX
+xD
+Gy
+gh
+yN
+gc
+fV
+Ov
+ut
+Ov
+zo
+Ov
+gc
+gc
+gs
+gs
+"}
+(19,1,1) = {"
+gs
+gs
+gc
+gc
+Wy
+ut
+Ov
+gc
+gc
+oa
+Jl
+yN
+gh
+Pr
+Pr
+bS
+Ov
+Ov
+Ov
+RA
+Ov
+gc
+gc
+gs
+gs
+"}
+(20,1,1) = {"
+gs
+gs
+gc
+gc
+Wy
+RA
+zo
+Ov
+NQ
+Pr
+yN
+Gr
+yB
+yB
+bS
+Ov
+Ov
+Ov
+ut
+Ov
+Ov
+gc
+gc
+gs
+gs
+"}
+(21,1,1) = {"
+gs
+gs
+gs
+gc
+gc
+Ov
+ut
+Ov
+NQ
+kX
+BS
+yN
+yN
+Pr
+OP
+Ov
+Ov
+RA
+Ov
+Ov
+Ov
+gc
+gc
+gs
+gs
+"}
+(22,1,1) = {"
+gs
+gs
+gs
+gs
+gc
+gc
+gc
+gc
+gc
+gc
+Zu
+xk
+PV
+Bz
+gc
+gc
+Ov
+Ov
+gc
+gc
+gc
+gc
+gs
+gs
+gs
+"}
+(23,1,1) = {"
+gs
+gs
+gs
+gs
+gs
+gc
+gc
+gc
+gc
+sW
+hT
+hT
+hT
+hT
+sW
+sW
+sW
+gc
+gc
+gc
+gc
+gs
+gs
+gs
+gs
+"}
+(24,1,1) = {"
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+sW
+gc
+Wy
+Wy
+gc
+sW
+gc
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+"}
+(25,1,1) = {"
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+"}
+
+(1,1,2) = {"
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+"}
+(2,1,2) = {"
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+qb
+JM
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+"}
+(3,1,2) = {"
+gs
+gs
+gs
+gs
+gs
+fH
+vP
+fH
+ri
+bP
+AY
+AY
+bZ
+bZ
+Gh
+dD
+cz
+cz
+cz
+cz
+cz
+gs
+gs
+gs
+gs
+"}
+(4,1,2) = {"
+gs
+gs
+gs
+gs
+sW
+sW
+sW
+sW
+cz
+Gu
+AY
+lQ
+lQ
+zk
+HP
+FY
+cz
+qg
+ql
+eM
+cz
+cz
+gs
+gs
+gs
+"}
+(5,1,2) = {"
+gs
+gs
+gs
+sW
+sW
+sO
+Bt
+sW
+av
+lQ
+HD
+jT
+jT
+jT
+HP
+gc
+gc
+Jl
+ql
+Ry
+ql
+cz
+cz
+gs
+gs
+"}
+(6,1,2) = {"
+gs
+gs
+sW
+sW
+vo
+nr
+Pc
+sW
+Xo
+cz
+Wy
+Wy
+Me
+nk
+zk
+gc
+ZM
+yS
+ql
+Sp
+ql
+eM
+cz
+gs
+gs
+"}
+(7,1,2) = {"
+gs
+gs
+sW
+lz
+vo
+rZ
+oZ
+sW
+AF
+zk
+zk
+jT
+xH
+jT
+zk
+gc
+JO
+vo
+vo
+vo
+Sp
+ql
+cz
+gs
+gs
+"}
+(8,1,2) = {"
+gs
+gs
+sW
+vo
+vo
+vo
+sL
+sW
+HP
+xH
+xw
+HP
+zk
+zk
+wA
+Wy
+gc
+gc
+lz
+Jl
+xX
+cz
+cz
+gs
+gs
+"}
+(9,1,2) = {"
+gs
+gs
+sW
+lz
+vo
+vo
+Yc
+sW
+zk
+Ar
+bZ
+fD
+fD
+gc
+Wy
+Wy
+hi
+Et
+lQ
+lQ
+qg
+cz
+gc
+gs
+gs
+"}
+(10,1,2) = {"
+gs
+gs
+sW
+vo
+ei
+sL
+if
+sW
+zk
+hE
+PY
+wU
+wU
+KO
+Yl
+Wy
+Wy
+gc
+gc
+gc
+ce
+cz
+cz
+gs
+gs
+"}
+(11,1,2) = {"
+gs
+gs
+mL
+mL
+Bt
+GP
+MM
+mL
+Qh
+hE
+wU
+wU
+wU
+YS
+BP
+cz
+lQ
+Bt
+HD
+lQ
+lQ
+fH
+Jc
+gs
+gs
+"}
+(12,1,2) = {"
+gs
+gs
+AL
+mL
+sW
+sW
+sW
+mL
+Gb
+bW
+wU
+wU
+YS
+wU
+hE
+gc
+Ar
+gc
+HD
+lQ
+fH
+Fn
+Jc
+gs
+gs
+"}
+(13,1,2) = {"
+gs
+gs
+hw
+fH
+kN
+QG
+TH
+TH
+gc
+hE
+Ub
+bD
+YS
+Ub
+hE
+oQ
+HP
+gc
+Et
+HD
+cz
+cz
+cz
+gs
+gs
+"}
+(14,1,2) = {"
+gs
+gs
+hw
+hw
+nw
+QG
+QG
+As
+Wy
+hE
+wU
+wU
+YS
+wU
+NE
+gc
+gc
+gc
+gc
+HD
+lQ
+cz
+gc
+gs
+gs
+"}
+(15,1,2) = {"
+gs
+gs
+fH
+gc
+gc
+bZ
+bJ
+nw
+Wy
+bW
+wU
+YS
+wU
+wU
+hE
+gc
+RO
+zk
+Ar
+HD
+lQ
+cz
+cz
+gs
+gs
+"}
+(16,1,2) = {"
+gs
+gs
+cz
+fD
+FN
+nw
+QG
+nw
+Wy
+tp
+Ub
+IO
+wU
+Ub
+hC
+fD
+zk
+EG
+jT
+HD
+lQ
+ly
+cz
+gs
+gs
+"}
+(17,1,2) = {"
+gs
+gs
+bZ
+dG
+ch
+nw
+QG
+nw
+cz
+BP
+wU
+YS
+wU
+wU
+hE
+qk
+zk
+gc
+gc
+tS
+vo
+xX
+cz
+gs
+gs
+"}
+(18,1,2) = {"
+gs
+gs
+cz
+Cv
+Dq
+yw
+QG
+SC
+cz
+TP
+wU
+wU
+oj
+wU
+hE
+qk
+HP
+fD
+wi
+vo
+iz
+vo
+cz
+gs
+gs
+"}
+(19,1,2) = {"
+gs
+gs
+fD
+gM
+hA
+RS
+QG
+TH
+cz
+hE
+Ub
+wU
+YS
+Ub
+lz
+qk
+HP
+fD
+eM
+ql
+ql
+yS
+cz
+gs
+gs
+"}
+(20,1,2) = {"
+gs
+gs
+fD
+VS
+QG
+OZ
+QG
+QG
+kN
+hE
+wU
+YS
+YS
+wU
+hE
+fD
+zk
+fD
+pN
+Ry
+ql
+rm
+cz
+gs
+gs
+"}
+(21,1,2) = {"
+gs
+gs
+fD
+gc
+gc
+TH
+tb
+Wy
+Gb
+NE
+KT
+wU
+wU
+wU
+hE
+gc
+zk
+gc
+xX
+rm
+ZX
+cz
+cz
+gs
+gs
+"}
+(22,1,2) = {"
+gs
+gs
+gs
+gs
+cz
+cz
+TH
+YM
+gc
+xt
+Ub
+bD
+wU
+Ub
+hE
+kS
+zk
+gc
+DZ
+lz
+cz
+cz
+gs
+gs
+gs
+"}
+(23,1,2) = {"
+gs
+gs
+gs
+gs
+gs
+cz
+gc
+dD
+cz
+mZ
+wU
+wU
+wU
+wU
+tG
+cz
+cz
+cz
+cz
+cz
+cz
+gs
+gs
+gs
+gs
+"}
+(24,1,2) = {"
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+qb
+gc
+rv
+gc
+YW
+YW
+gc
+Jc
+cz
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+"}
+(25,1,2) = {"
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+"}

@@ -138,6 +138,8 @@
 	..()
 	RegisterSignal(C, COMSIG_MOB_SAY, PROC_REF(handle_speech))
 	C.grant_language(/datum/language/common)
+	var/datum/action/cooldown/keen_nose_lupian/action = new(C)
+	action.Grant(C)
 
 /datum/species/lupian/check_roundstart_eligible()
 	return TRUE

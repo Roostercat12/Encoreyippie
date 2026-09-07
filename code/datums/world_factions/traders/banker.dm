@@ -14,6 +14,9 @@
 	cmode = FALSE
 	del_on_death = TRUE
 
+	response_help_continuous = "beckons"
+	response_help_simple = "beckon"
+
 	///Sound used when item sold/bought
 	var/sell_sound = 'sound/blank.ogg'
 	///The currency name

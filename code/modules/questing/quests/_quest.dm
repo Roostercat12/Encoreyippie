@@ -94,7 +94,17 @@
 	return ..()
 
 /datum/quest/proc/add_tracked_atom(atom/movable/to_track)
+	if(!to_track)
+		return
 	tracked_atoms += WEAKREF(to_track)
+
+/datum/quest/proc/remove_tracked_atom(atom/to_untrack)
+	if(!to_untrack)
+		return
+	for(var/datum/weakref/ref in tracked_atoms)
+		if(ref.resolve() == to_untrack)
+			tracked_atoms -= ref
+			return
 
 /// Generate quest content - override in subtypes
 /datum/quest/proc/generate(obj/effect/landmark/quest_spawner/landmark)
@@ -205,6 +215,10 @@
 		var/atom/A = ref.resolve()
 		if(!A || QDELETED(A))
 			continue
+		if(isliving(A))
+			var/mob/living/target = A
+			if(target.stat == DEAD)
+				continue
 
 		var/turf/A_turf = get_turf(A)
 		if(!A_turf)

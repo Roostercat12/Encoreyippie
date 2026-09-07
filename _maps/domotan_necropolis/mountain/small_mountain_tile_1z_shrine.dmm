@@ -1,0 +1,376 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/obj/structure/flora/ausbushes/grassybush,
+/turf/open/floor/grass/cold,
+/area/template_noop)
+"b" = (
+/turf/closed/mineral/bedrock/deep,
+/area/template_noop)
+"c" = (
+/obj/structure/fluff/psycross/visires,
+/turf/open/floor/cobble/alt,
+/area/template_noop)
+"d" = (
+/obj/item/ore/dust/tin,
+/turf/open/floor/grass/cold,
+/area/template_noop)
+"f" = (
+/obj/item/reagent_containers/food/snacks/produce/manabloom,
+/turf/open/floor/grass/cold,
+/area/template_noop)
+"h" = (
+/obj/structure/fluff/psycross/hugecrystal/unsafe,
+/turf/open/floor/metal,
+/area/template_noop)
+"j" = (
+/turf/open/floor/metal,
+/area/template_noop)
+"l" = (
+/obj/item/alch/airdust,
+/turf/open/floor/churchrough,
+/area/template_noop)
+"m" = (
+/obj/item/alch/golddust,
+/turf/open/floor/grass/cold,
+/area/template_noop)
+"n" = (
+/obj/item/alch/irondust,
+/turf/open/floor/cobble/alt,
+/area/template_noop)
+"p" = (
+/obj/structure/fluff/psycross/akan,
+/turf/open/floor/cobble/alt,
+/area/template_noop)
+"q" = (
+/obj/structure/fluff/psycross/mjallidhorn,
+/turf/open/floor/cobble/alt,
+/area/template_noop)
+"r" = (
+/obj/item/alch/seeddust,
+/turf/open/floor/cobble,
+/area/template_noop)
+"s" = (
+/obj/structure/fluff/psycross/erdl,
+/turf/open/floor/cobble/alt,
+/area/template_noop)
+"t" = (
+/obj/structure/chair/bench/church/smallbench/stone,
+/turf/open/floor/dirt,
+/area/template_noop)
+"u" = (
+/obj/structure/fluff/psycross/valdala,
+/turf/open/floor/cobble,
+/area/template_noop)
+"v" = (
+/obj/structure/fluff/psycross/mordsol,
+/turf/open/floor/cobble/alt,
+/area/template_noop)
+"x" = (
+/turf/open/floor/grass/cold,
+/area/template_noop)
+"z" = (
+/obj/item/ore/dust/silver,
+/turf/open/floor/grass/cold,
+/area/template_noop)
+"A" = (
+/obj/item/alch/thaumicdust,
+/turf/open/floor/cobble,
+/area/template_noop)
+"B" = (
+/obj/item/alch/earthdust,
+/turf/open/floor/churchrough,
+/area/template_noop)
+"D" = (
+/obj/item/alch/runedust,
+/turf/open/floor/cobble,
+/area/template_noop)
+"E" = (
+/obj/item/alch/coaldust,
+/turf/open/floor/cobble,
+/area/template_noop)
+"F" = (
+/obj/structure/fluff/statue/crystal/air,
+/turf/open/floor/dirt,
+/area/template_noop)
+"G" = (
+/turf/open/floor/churchrough,
+/area/template_noop)
+"J" = (
+/obj/item/ore/dust/copper,
+/turf/open/floor/cobble,
+/area/template_noop)
+"K" = (
+/obj/item/natural/fairydust,
+/turf/open/floor/dirt,
+/area/template_noop)
+"L" = (
+/obj/item/alch/firedust,
+/turf/open/floor/churchrough,
+/area/template_noop)
+"M" = (
+/obj/structure/fluff/psycross/pomette,
+/turf/open/floor/cobble,
+/area/template_noop)
+"N" = (
+/turf/template_noop,
+/area/template_noop)
+"O" = (
+/turf/open/floor/dirt,
+/area/template_noop)
+"P" = (
+/obj/item/alch/magicdust,
+/turf/open/floor/cobble,
+/area/template_noop)
+"Q" = (
+/obj/item/alch/silverdust,
+/turf/open/floor/cobble,
+/area/template_noop)
+"R" = (
+/obj/structure/fluff/psycross/gani,
+/turf/open/floor/cobble,
+/area/template_noop)
+"S" = (
+/obj/structure/fluff/statue/crystal/frost,
+/turf/open/floor/dirt,
+/area/template_noop)
+"U" = (
+/obj/item/alch/waterdust,
+/turf/open/floor/churchrough,
+/area/template_noop)
+"W" = (
+/obj/structure/fluff/statue/crystal,
+/turf/open/floor/dirt,
+/area/template_noop)
+"X" = (
+/obj/structure/fluff/statue/crystal/fire,
+/turf/open/floor/grass/cold,
+/area/template_noop)
+"Z" = (
+/obj/structure/flora/grass/herb/random,
+/turf/open/floor/grass/cold,
+/area/template_noop)
+
+(1,1,1) = {"
+N
+N
+N
+N
+N
+N
+N
+N
+N
+N
+N
+N
+N
+N
+"}
+(2,1,1) = {"
+N
+N
+N
+b
+b
+N
+W
+b
+b
+N
+b
+b
+N
+N
+"}
+(3,1,1) = {"
+N
+N
+b
+b
+N
+O
+K
+Z
+O
+N
+O
+b
+b
+N
+"}
+(4,1,1) = {"
+N
+b
+b
+O
+O
+r
+R
+n
+f
+Z
+N
+t
+b
+b
+"}
+(5,1,1) = {"
+N
+b
+N
+O
+u
+G
+B
+G
+M
+a
+x
+N
+N
+b
+"}
+(6,1,1) = {"
+N
+N
+f
+D
+G
+j
+j
+j
+G
+A
+x
+f
+N
+N
+"}
+(7,1,1) = {"
+N
+S
+d
+q
+U
+j
+h
+j
+L
+c
+m
+X
+b
+N
+"}
+(8,1,1) = {"
+N
+b
+a
+J
+G
+j
+j
+j
+G
+Q
+f
+x
+b
+N
+"}
+(9,1,1) = {"
+N
+b
+O
+Z
+v
+G
+l
+G
+s
+Z
+x
+N
+N
+N
+"}
+(10,1,1) = {"
+N
+N
+N
+x
+f
+E
+p
+P
+a
+f
+N
+N
+N
+N
+"}
+(11,1,1) = {"
+N
+b
+t
+N
+N
+Z
+z
+O
+O
+O
+O
+N
+N
+b
+"}
+(12,1,1) = {"
+N
+b
+b
+N
+N
+N
+F
+b
+O
+N
+N
+N
+b
+b
+"}
+(13,1,1) = {"
+N
+N
+b
+b
+N
+N
+N
+N
+N
+N
+N
+b
+b
+N
+"}
+(14,1,1) = {"
+N
+N
+N
+b
+b
+N
+N
+N
+N
+N
+b
+b
+N
+N
+"}

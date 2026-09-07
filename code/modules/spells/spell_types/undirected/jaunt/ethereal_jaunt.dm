@@ -1,6 +1,6 @@
 /datum/action/cooldown/spell/undirected/jaunt/ethereal_jaunt
 	name = "Ethereal Jaunt"
-	desc = "This spell turns your form ethereal, temporarily making you invisible and able to pass through walls."
+	desc = "This spell turns your form ethereal, temporarily making you invisible and able to pass through walls. Requires a spellbook to be cast, due to the complexity of the spell."
 	button_icon_state = "jaunt"
 	sound = 'sound/magic/ethereal_enter.ogg'
 
@@ -9,10 +9,6 @@
 	invocation = "VANISHIKA"
 	invocation_type = INVOCATION_SHOUT
 
-	required_form = FORM_ARCANE
-	required_technique = TECHNIQUE_ALTERATION
-	required_level = 12 //lol
-	initial_charges = 3
 
 	jaunt_type = /obj/effect/dummy/phased_mob/spell_jaunt
 
@@ -29,6 +25,15 @@
 	var/obj/effect/jaunt_out_type = /obj/effect/temp_visual/wizard/out
 	/// List of valid exit points
 	var/list/exit_point_list
+
+/datum/action/cooldown/spell/undirected/jaunt/ethereal_jaunt/lesser
+	name = "Lesser Ethereal Jaunt"
+	cooldown_time = 95 SECONDS
+	required_form = FORM_ARCANE
+	required_technique = TECHNIQUE_ALTERATION
+	required_items = list(/obj/item/spellbook)
+	required_level = 8 //lol
+	initial_charges = 3
 
 /datum/action/cooldown/spell/undirected/jaunt/ethereal_jaunt/enter_jaunt(mob/living/jaunter, turf/loc_override)
 	. = ..()
@@ -62,6 +67,8 @@
 
 	if(!holder)
 		CRASH("[type] attempted do_jaunt but failed to create a jaunt holder via enter_jaunt.")
+	holder.name = cast_on.name
+	SEND_SIGNAL(cast_on, COMSIG_FOV_HIDE)
 
 	if(jaunt_out_time > 0)
 		ADD_TRAIT(cast_on, TRAIT_IMMOBILIZED, REF(src))
@@ -180,6 +187,7 @@
 
 	REMOVE_TRAIT(cast_on, TRAIT_IMMOBILIZED, REF(src))
 
+	SEND_SIGNAL(cast_on, COMSIG_FOV_SHOW)
 	if(final_point.density)
 		var/list/aside_turfs = get_adjacent_open_turfs(final_point)
 		if(length(aside_turfs))
@@ -212,6 +220,7 @@
 /// The dummy that holds people jaunting. Maybe one day we can replace it.
 /obj/effect/dummy/phased_mob/spell_jaunt
 	movespeed = 2 //quite slow.
+	invisibility = INVISIBILITY_LEYLINES
 	/// Whether we're currently reappearing - we can't move if so
 	var/reappearing = FALSE
 

@@ -13,9 +13,16 @@
 	RegisterSignal(item, COMSIG_ITEM_HIT_RESPONSE, PROC_REF(on_hit_response))
 
 /datum/enchantment/phoenix_guard/proc/on_hit_response(obj/item/I, mob/living/carbon/human/owner, mob/living/carbon/human/attacker)
-	if(world.time < src.last_used + 100)
+	if(!istype(owner) || !istype(attacker))
 		return
+	if(attacker == owner)
+		return
+	if(attacker == I.loc)
+		return
+	if(world.time < last_used + 10 SECONDS)
+		return
+
 	attacker.adjust_fire_stacks(5)
 	attacker.IgniteMob()
 	attacker.visible_message(span_danger("[I] sets [attacker] on fire!"))
-	src.last_used = world.time
+	last_used = world.time

@@ -10,9 +10,6 @@
 	H.ooc_extra = value
 
 /datum/preference/text/ooc_extra/handle_link(datum/preferences/prefs, mob/user)
-	if(!prefs.donator)
-		to_chat(user, "This is a donator exclusive feature, your OOC Extra link will be applied but others will only be able to view it if you are a patreon supporter or Twitch Subscriber.")
-
 	to_chat(user, span_notice("Add a link from a suitable host (catbox, etc) to an mp3, mp4, or jpg / png file to have it embed at the bottom of your OOC notes."))
 	to_chat(user, span_notice("If the link doesn't show up properly in-game, ensure that it's a direct link that opens properly in a browser."))
 	to_chat(user, span_notice("Videos will be shrunk to a ~300x300 square. Keep this in mind."))

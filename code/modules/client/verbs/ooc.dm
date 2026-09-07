@@ -94,14 +94,14 @@ GLOBAL_LIST_INIT(oocpronouns_required, list(
 		var/pre_keyfield = C.holder ? "[keyname]([key])" : keyname
 		var/keyfield = conditional_tooltip_alt(pre_keyfield, prefs.read_preference(/datum/preference/text/oocpronouns), length(prefs.read_preference(/datum/preference/text/oocpronouns)) && !is_misc_banned(ckey, BAN_MISC_OOCPRONOUNS))
 		if(C.prefs.read_preference(/datum/preference/bitwise/chat_toggles) & CHAT_OOC)
-			msg_to_send = "<font color='[color2use]'><EM>[keyfield]:</EM></font> <span class='message linkify'>[msg]</span>"
+			msg_to_send = "<font color='[color2use]'><EM>OOC: [keyfield]:</EM></font> <span class='message linkify'>[msg]</span>"
 			if(holder)
-				msg_to_send = "<font color='[color2use]'><EM>[keyfield]:</EM></font> <font color='[admin_message_color ? admin_message_color : GLOB.OOC_COLOR]'><span class='message linkify'>[msg]</span></font>"
+				msg_to_send = "<font color='[color2use]'><EM>OOC: [keyfield]:</EM></font> <font color='[admin_message_color ? admin_message_color : GLOB.OOC_COLOR]'><span class='message linkify'>[msg]</span></font>"
 			to_chat(C, msg_to_send)
 
 /client/proc/lobbyooc(msg as text)
 	set category = "OOC"
-	set name = "OOC"
+	set name = "LOBBY-OOC"
 	set desc = "Talk with the other players."
 
 	if(GLOB.say_disabled)	//This is here to try to identify lag problems
@@ -171,9 +171,9 @@ GLOBAL_LIST_INIT(oocpronouns_required, list(
 				if(SSticker.current_state != GAME_STATE_FINISHED && !istype(C.mob, /mob/dead/new_player))
 					continue
 
-			msg_to_send = "<font color='[color2use]'><EM>[keyname][real_key]:</EM></font> <span class='message linkify'>[msg]</span>"
+			msg_to_send = "<font color='[color2use]'><EM>LOBBY: [keyname][real_key]:</EM></font> <span class='message linkify'>[msg]</span>"
 			if(holder)
-				msg_to_send = "<font color='[color2use]'><EM>[keyname][real_key]:</EM></font> <font color='[admin_message_color ? admin_message_color : GLOB.OOC_COLOR]'><span class='message linkify'>[msg]</span></font>"
+				msg_to_send = "<font color='[color2use]'><EM>LOBBY: [keyname][real_key]:</EM></font> <font color='[admin_message_color ? admin_message_color : GLOB.OOC_COLOR]'><span class='message linkify'>[msg]</span></font>"
 
 			to_chat(C, msg_to_send)
 
@@ -258,9 +258,22 @@ GLOBAL_LIST_INIT(oocpronouns_required, list(
 #endif
 
 /mob/dead/new_player/verb/togglobb()
-	set name = "SilenceLobbyMusic"
+	set name = "Toggle Lobby Music"
 	set category = "Preferences.Sound"
-	stop_sound_channel(CHANNEL_LOBBYMUSIC)
+	set desc = "Enable or disable lobby music. This is saved and persists between logins."
+
+	if(!client?.prefs)
+		return
+
+	client.prefs.preference_toggle_flag(/datum/preference/bitwise/toggles, SOUND_LOBBY)
+	client.prefs.save_preferences()
+
+	if(client.prefs.preference_has_flag(/datum/preference/bitwise/toggles, SOUND_LOBBY))
+		to_chat(src, span_notice("You will now hear music in the lobby."))
+		client.playtitlemusic()
+	else
+		to_chat(src, span_notice("You will no longer hear music in the lobby."))
+		stop_sound_channel(CHANNEL_LOBBYMUSIC)
 
 /proc/CheckJoinDate(ckey)
 	var/list/http = world.Export("http://byond.com/members/[ckey]?format=text")

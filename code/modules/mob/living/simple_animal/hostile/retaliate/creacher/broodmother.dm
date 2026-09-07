@@ -20,6 +20,7 @@
 	icon = 'icons/mob/creacher/trolls/broodmother.dmi'
 	icon_state = "broodmother"
 	gender = FEMALE
+	lighting_alpha = LIGHTING_PLANE_ALPHA_PERFECT_DARKVISION
 	SET_BASE_PIXEL(-38, -8)
 	hud_type = /datum/hud/broodmother
 	icon_dead = "broodmother_dead"
@@ -49,6 +50,7 @@
 
 	grant_language(/datum/language/common)
 	grant_language(/datum/language/orcish)
+	ADD_TRAIT(src, TRAIT_BLOODLOSS_IMMUNE, INNATE_TRAIT)
 
 /mob/living/simple_animal/hostile/retaliate/troll/broodmother/proc/help_blurb()
 	to_chat(

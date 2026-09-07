@@ -1,0 +1,820 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"az" = (
+/obj/structure/hotspring/border/seven,
+/obj/structure/flora/hotspring_rocks/small/four,
+/turf/open/floor/tile/bath,
+/area/template_noop)
+"aP" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/reagent_containers/food/snacks/crow,
+/turf/open/floor/blocks,
+/area/template_noop)
+"aX" = (
+/obj/structure/fluff/walldeco/bath/wallpipes/innie,
+/turf/closed/wall/mineral/decostone/moss/blue,
+/area/under/cavewet)
+"cg" = (
+/obj/structure/fluff/statue/gargoyle,
+/turf/closed/wall/mineral/stonebrick,
+/area/under/cavewet)
+"cB" = (
+/obj/structure/fluff/walldeco/vinez/blue,
+/turf/open/floor/tile/bath,
+/area/template_noop)
+"dt" = (
+/turf/closed/wall/mineral/decostone/moss/blue,
+/area/under/cavewet)
+"dE" = (
+/obj/item/reagent_containers/food/snacks/crow,
+/obj/structure/fluff/railing/tall/stone{
+	dir = 6
+	},
+/turf/open/floor/twig,
+/area/template_noop)
+"fr" = (
+/obj/structure/flora/grass/water,
+/turf/open/water/ocean,
+/area/template_noop)
+"gu" = (
+/obj/structure/fluff/walldeco/bath/three,
+/turf/open/water/ocean,
+/area/template_noop)
+"hG" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/fluff/nest,
+/obj/item/reagent_containers/food/snacks/crow,
+/obj/structure/fluff/railing/tall/stone{
+	dir = 1
+	},
+/turf/open/floor/blocks,
+/area/template_noop)
+"ih" = (
+/turf/open/water/hotspring,
+/area/template_noop)
+"iO" = (
+/obj/structure/flora/grass/water/reeds,
+/obj/effect/spawner/map_spawner/necropolis/shroom_clutter,
+/turf/open/water/ocean,
+/area/template_noop)
+"jg" = (
+/turf/open/water/ocean,
+/area/template_noop)
+"jB" = (
+/obj/structure/hotspring/border/five,
+/obj/structure/flora/hotspring_rocks/grassy,
+/turf/open/floor/tile/bath,
+/area/template_noop)
+"kh" = (
+/obj/structure/fluff/railing/tall/stone{
+	dir = 9
+	},
+/turf/open/floor/twig,
+/area/template_noop)
+"kI" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/fluff/railing/tall/stone{
+	dir = 6
+	},
+/turf/open/floor/blocks,
+/area/template_noop)
+"mR" = (
+/obj/structure/fluff/psycross/valdala,
+/turf/open/floor/blocks,
+/area/template_noop)
+"oJ" = (
+/obj/structure/bars/cemetery,
+/obj/structure/fluff/walldeco/vinez/blue,
+/turf/open/floor/tile/bath,
+/area/template_noop)
+"pg" = (
+/obj/item/natural/stone,
+/obj/structure/fluff/nest,
+/obj/structure/fluff/railing/tall/stone{
+	dir = 4
+	},
+/turf/open/floor/blocks,
+/area/template_noop)
+"qe" = (
+/obj/item/natural/stone,
+/turf/open/floor/blocks,
+/area/template_noop)
+"qm" = (
+/obj/structure/hotspring/border/eight,
+/obj/structure/flora/hotspring_rocks/grassy,
+/turf/open/floor/tile/bath,
+/area/template_noop)
+"rp" = (
+/obj/effect/spawner/map_spawner/necropolis/random_dirty,
+/obj/item/natural/stoneblock,
+/obj/item/natural/feather,
+/turf/open/floor/tile/bath,
+/area/template_noop)
+"ru" = (
+/obj/structure/stairs/stone,
+/turf/open/floor/tile/bath,
+/area/template_noop)
+"rJ" = (
+/obj/effect/spawner/map_spawner/necropolis/shroom_clutter,
+/turf/open/water/ocean,
+/area/template_noop)
+"sS" = (
+/obj/structure/hotspring/border/eight,
+/obj/structure/flora/hotspring_rocks/small/three,
+/turf/open/floor/tile/bath,
+/area/template_noop)
+"tu" = (
+/obj/structure/fluff/nest,
+/obj/item/reagent_containers/food/snacks/crow,
+/turf/open/floor/blocks,
+/area/template_noop)
+"uX" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/clothing/head/flowercrown/salvia,
+/turf/open/floor/blocks,
+/area/template_noop)
+"vv" = (
+/obj/effect/waterfall,
+/turf/open/water/ocean,
+/area/template_noop)
+"vK" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/fluff/railing/tall/stone{
+	dir = 9
+	},
+/turf/open/floor/blocks,
+/area/template_noop)
+"vX" = (
+/obj/structure/chair/hotspring_bench,
+/obj/item/clothing/neck/psycross/silver/divine/valdala,
+/turf/open/floor/tile/bath,
+/area/template_noop)
+"xa" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/fluff/railing/tall/stone{
+	dir = 10
+	},
+/turf/open/floor/blocks,
+/area/template_noop)
+"xJ" = (
+/turf/template_noop,
+/area/template_noop)
+"yh" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/twig,
+/area/template_noop)
+"yB" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/fluff/nest,
+/obj/item/reagent_containers/food/snacks/crow,
+/turf/open/floor/twig,
+/area/template_noop)
+"zs" = (
+/turf/open/floor/twig,
+/area/template_noop)
+"zt" = (
+/turf/closed/wall/mineral/stonebrick,
+/area/under/cavewet)
+"zN" = (
+/obj/structure/hotspring/border/two,
+/turf/open/floor/tile/bath,
+/area/template_noop)
+"Ak" = (
+/obj/structure/hotspring/border/two,
+/obj/item/natural/feather,
+/turf/open/floor/tile/bath,
+/area/template_noop)
+"Cd" = (
+/obj/structure/fluff/psycross/valdala,
+/turf/open/floor/twig,
+/area/template_noop)
+"Di" = (
+/obj/structure/hotspring/border/fourteen,
+/obj/machinery/light/fueled/torchholder/hotspring/standing,
+/turf/open/floor/tile/bath,
+/area/template_noop)
+"Ds" = (
+/obj/structure/fluff/walldeco/vinez/blue,
+/obj/structure/fluff/walldeco/bath/wallpipes/innie,
+/turf/closed/wall/mineral/decostone/moss/blue,
+/area/under/cavewet)
+"Ey" = (
+/obj/effect/spawner/map_spawner/necropolis/random_dirty,
+/obj/item/natural/stoneblock,
+/turf/open/floor/tile/bath,
+/area/template_noop)
+"Gj" = (
+/obj/item/clothing/face/cigarette/pipe,
+/turf/open/floor/tile/bath,
+/area/template_noop)
+"Gk" = (
+/turf/open/floor/blocks,
+/area/template_noop)
+"GM" = (
+/obj/structure/fluff/walldeco/bath/five,
+/turf/open/water/ocean,
+/area/template_noop)
+"GW" = (
+/obj/structure/bars/cemetery,
+/obj/structure/fluff/walldeco/vinez/blue,
+/turf/open/floor/tile/bath,
+/area/under/cavewet)
+"HU" = (
+/obj/structure/fluff/statue/gargoyle,
+/turf/closed/wall/mineral/decostone/moss/blue,
+/area/template_noop)
+"IF" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/natural/stone,
+/turf/open/floor/blocks,
+/area/template_noop)
+"Lj" = (
+/obj/structure/fluff/walldeco/bath/six,
+/turf/template_noop,
+/area/template_noop)
+"LG" = (
+/obj/structure/hotspring/border/seven,
+/turf/open/floor/tile/bath,
+/area/template_noop)
+"LU" = (
+/obj/structure/hotspring/border/three,
+/obj/structure/flora/hotspring_rocks/small/two,
+/obj/machinery/light/fueled/torchholder/hotspring/standing,
+/turf/open/floor/tile/bath,
+/area/template_noop)
+"MM" = (
+/turf/closed/wall/mineral/pipe,
+/area/under/cavewet)
+"MR" = (
+/obj/structure/hotspring/border/five,
+/turf/open/floor/tile/bath,
+/area/template_noop)
+"Nd" = (
+/obj/structure/flora/grass/swampweed,
+/turf/open/water/hotspring,
+/area/template_noop)
+"Oi" = (
+/obj/structure/chair/hotspring_bench/right,
+/turf/open/floor/tile/bath,
+/area/template_noop)
+"OS" = (
+/obj/structure/chair/hotspring_bench/left,
+/obj/item/natural/stoneblock,
+/obj/item/natural/feather,
+/turf/open/floor/tile/bath,
+/area/template_noop)
+"OX" = (
+/obj/structure/fluff/walldeco/bath/seven,
+/turf/template_noop,
+/area/template_noop)
+"OY" = (
+/obj/structure/hotspring/border,
+/obj/machinery/light/fueled/torchholder/hotspring/standing,
+/turf/open/floor/tile/bath,
+/area/template_noop)
+"PG" = (
+/obj/structure/fluff/railing/tall/stone{
+	dir = 6
+	},
+/turf/open/floor/blocks,
+/area/template_noop)
+"Qg" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/fluff/railing/tall/stone{
+	dir = 1
+	},
+/turf/open/floor/blocks,
+/area/template_noop)
+"Qk" = (
+/obj/structure/bars/cemetery,
+/turf/open/floor/tile/bath,
+/area/template_noop)
+"Qx" = (
+/obj/structure/fluff/walldeco/vinez/blue,
+/turf/closed/wall/mineral/decostone/moss/blue,
+/area/under/cavewet)
+"So" = (
+/obj/structure/flora/grass/water/reeds,
+/turf/open/water/ocean,
+/area/template_noop)
+"SM" = (
+/obj/structure/fluff/nest,
+/obj/item/reagent_containers/food/snacks/crow,
+/obj/structure/fluff/railing/tall/stone{
+	dir = 10
+	},
+/turf/open/floor/blocks,
+/area/template_noop)
+"Tx" = (
+/obj/structure/flora/grass/water,
+/obj/effect/spawner/map_spawner/necropolis/shroom_clutter,
+/turf/open/water/ocean,
+/area/template_noop)
+"TX" = (
+/obj/effect/spawner/map_spawner/necropolis/water_clutter,
+/turf/open/water/ocean,
+/area/template_noop)
+"Vh" = (
+/obj/structure/healing_spring,
+/turf/open/water/hotspring,
+/area/template_noop)
+"Vr" = (
+/turf/open/water/bath,
+/area/template_noop)
+"VS" = (
+/obj/item/gem/turq,
+/turf/open/floor/tile/bath,
+/area/template_noop)
+"VY" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/blocks,
+/area/template_noop)
+"Xu" = (
+/turf/open/floor/tile/bath,
+/area/template_noop)
+"XG" = (
+/obj/structure/hotspring/border/eight,
+/turf/open/floor/tile/bath,
+/area/template_noop)
+"XI" = (
+/obj/structure/fluff/walldeco/bath/two,
+/turf/template_noop,
+/area/template_noop)
+"XO" = (
+/obj/structure/fluff/statue/gargoyle,
+/turf/closed/wall/mineral/decostone/moss/blue,
+/area/under/cavewet)
+"XP" = (
+/obj/structure/fluff/walldeco/vinez/blue,
+/obj/structure/fluff/statue/gargoyle,
+/turf/closed/wall/mineral/decostone/moss/blue,
+/area/under/cavewet)
+"Ys" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/water/bath,
+/area/template_noop)
+"Yx" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/natural/stoneblock,
+/obj/structure/fluff/nest,
+/turf/open/floor/blocks,
+/area/template_noop)
+"YK" = (
+/obj/structure/hotspring/border/four,
+/obj/structure/flora/hotspring_rocks,
+/obj/machinery/light/fueled/torchholder/hotspring/standing,
+/turf/open/floor/tile/bath,
+/area/template_noop)
+"YU" = (
+/obj/structure/fluff/walldeco/bath/four,
+/turf/template_noop,
+/area/template_noop)
+
+(1,1,1) = {"
+xJ
+xJ
+xJ
+xJ
+xJ
+xJ
+xJ
+xJ
+xJ
+xJ
+xJ
+xJ
+xJ
+xJ
+"}
+(2,1,1) = {"
+xJ
+xJ
+xJ
+xJ
+xJ
+jg
+jg
+jg
+xJ
+XP
+dt
+YU
+xJ
+xJ
+"}
+(3,1,1) = {"
+xJ
+xJ
+xJ
+jg
+So
+TX
+jg
+Tx
+Ds
+dt
+dt
+dt
+XO
+xJ
+"}
+(4,1,1) = {"
+xJ
+HU
+jg
+rJ
+jg
+So
+So
+jg
+Ds
+dt
+dt
+dt
+GW
+xJ
+"}
+(5,1,1) = {"
+xJ
+OX
+jg
+So
+dt
+vv
+rp
+cB
+MM
+vv
+dt
+dt
+Qx
+xJ
+"}
+(6,1,1) = {"
+xJ
+dt
+jg
+So
+YK
+LG
+LG
+az
+OY
+ru
+dt
+Qx
+jg
+jg
+"}
+(7,1,1) = {"
+xJ
+Qk
+jg
+Oi
+MR
+Nd
+ih
+ih
+zN
+VS
+Qk
+GM
+jg
+jg
+"}
+(8,1,1) = {"
+xJ
+oJ
+jg
+vX
+MR
+ih
+Vh
+ih
+Ak
+Gj
+oJ
+jg
+TX
+jg
+"}
+(9,1,1) = {"
+xJ
+oJ
+jg
+OS
+jB
+ih
+ih
+Nd
+zN
+Ey
+oJ
+rJ
+jg
+jg
+"}
+(10,1,1) = {"
+xJ
+dt
+Qx
+So
+Di
+XG
+qm
+sS
+LU
+Xu
+dt
+So
+jg
+xJ
+"}
+(11,1,1) = {"
+cg
+zt
+dt
+iO
+MM
+vv
+jg
+cB
+Qx
+vv
+gu
+jg
+jg
+xJ
+"}
+(12,1,1) = {"
+GW
+zt
+dt
+dt
+aX
+jg
+jg
+Tx
+jg
+fr
+HU
+jg
+jg
+xJ
+"}
+(13,1,1) = {"
+zt
+zt
+dt
+dt
+Ds
+jg
+TX
+jg
+jg
+jg
+So
+jg
+xJ
+xJ
+"}
+(14,1,1) = {"
+XI
+xJ
+dt
+XO
+Lj
+jg
+jg
+jg
+xJ
+xJ
+xJ
+xJ
+xJ
+xJ
+"}
+
+(1,1,2) = {"
+xJ
+xJ
+xJ
+xJ
+xJ
+xJ
+xJ
+xJ
+xJ
+xJ
+xJ
+xJ
+xJ
+xJ
+"}
+(2,1,2) = {"
+xJ
+xJ
+xJ
+xJ
+xJ
+xJ
+xJ
+xJ
+xJ
+vK
+SM
+xJ
+xJ
+xJ
+"}
+(3,1,2) = {"
+xJ
+xJ
+xJ
+xJ
+xJ
+xJ
+xJ
+xJ
+kh
+yB
+IF
+mR
+xa
+xJ
+"}
+(4,1,2) = {"
+xJ
+Gk
+zs
+zs
+zs
+zs
+zs
+zs
+zs
+Ys
+uX
+yh
+aP
+xJ
+"}
+(5,1,2) = {"
+xJ
+zs
+xJ
+xJ
+xJ
+xJ
+xJ
+xJ
+Qg
+VY
+VY
+Yx
+PG
+xJ
+"}
+(6,1,2) = {"
+xJ
+zs
+xJ
+xJ
+xJ
+xJ
+xJ
+xJ
+xJ
+xJ
+Gk
+PG
+xJ
+xJ
+"}
+(7,1,2) = {"
+xJ
+zs
+xJ
+xJ
+xJ
+xJ
+xJ
+xJ
+xJ
+xJ
+zs
+xJ
+xJ
+xJ
+"}
+(8,1,2) = {"
+xJ
+zs
+xJ
+xJ
+xJ
+xJ
+xJ
+xJ
+xJ
+xJ
+zs
+xJ
+xJ
+xJ
+"}
+(9,1,2) = {"
+xJ
+zs
+xJ
+xJ
+xJ
+xJ
+xJ
+xJ
+xJ
+xJ
+zs
+xJ
+xJ
+xJ
+"}
+(10,1,2) = {"
+xJ
+tu
+Gk
+zs
+xJ
+xJ
+xJ
+xJ
+xJ
+xJ
+zs
+xJ
+xJ
+xJ
+"}
+(11,1,2) = {"
+vK
+qe
+Ys
+Vr
+Gk
+xJ
+xJ
+xJ
+xJ
+xJ
+zs
+xJ
+xJ
+xJ
+"}
+(12,1,2) = {"
+Qg
+Cd
+Ys
+VY
+VY
+zs
+zs
+zs
+zs
+zs
+Gk
+xJ
+xJ
+xJ
+"}
+(13,1,2) = {"
+hG
+Gk
+Gk
+VY
+kI
+xJ
+xJ
+xJ
+xJ
+xJ
+xJ
+xJ
+xJ
+xJ
+"}
+(14,1,2) = {"
+xJ
+xJ
+pg
+dE
+xJ
+xJ
+xJ
+xJ
+xJ
+xJ
+xJ
+xJ
+xJ
+xJ
+"}

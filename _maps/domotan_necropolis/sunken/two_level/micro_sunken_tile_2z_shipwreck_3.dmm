@@ -1,0 +1,260 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/template_noop,
+/area)
+"b" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/ruinedwood/turned,
+/area)
+"c" = (
+/obj/item/grown/log/tree,
+/turf/open/floor/ruinedwood/turned,
+/area/indoors/shelter)
+"d" = (
+/obj/structure/fluff/railing/wood,
+/turf/open/floor/ruinedwood,
+/area)
+"e" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/grown/log/tree,
+/turf/open/floor/ruinedwood,
+/area)
+"g" = (
+/obj/structure/fluff/railing/wood{
+	dir = 8
+	},
+/turf/template_noop,
+/area)
+"h" = (
+/turf/open/floor/ruinedwood/turned,
+/area)
+"i" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/generic,
+/turf/open/floor/ruinedwood,
+/area/indoors/shelter)
+"j" = (
+/obj/item/grown/log/tree/small,
+/turf/open/floor/ruinedwood,
+/area)
+"k" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/closet/crate/chest/shippingcrate,
+/obj/effect/spawner/map_spawner/loot/common,
+/turf/open/floor/ruinedwood/turned,
+/area/indoors/shelter)
+"n" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/closet/crate/chest/shippingcrate,
+/obj/effect/spawner/map_spawner/loot/coin/low,
+/turf/open/floor/ruinedwood/turned,
+/area/indoors/shelter)
+"q" = (
+/turf/open/floor/ruinedwood/turned,
+/area/indoors/shelter)
+"r" = (
+/obj/structure/fluff/railing/wood{
+	dir = 4
+	},
+/turf/template_noop,
+/area)
+"s" = (
+/obj/structure/lootable_structure/grain_barrel,
+/turf/open/floor/ruinedwood/turned,
+/area/indoors/shelter)
+"v" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/grown/log/tree/stick,
+/turf/open/floor/ruinedwood/turned,
+/area)
+"x" = (
+/obj/structure/barricade/wooden,
+/turf/open/floor/ruinedwood,
+/area/indoors/shelter)
+"y" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/spawner/map_spawner/necropolis/mob_spawner/deepones,
+/turf/open/floor/ruinedwood,
+/area/indoors/shelter)
+"D" = (
+/turf/closed/indestructible/wooddark/hull,
+/area/indoors/shelter)
+"H" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/grown/log/tree/stick,
+/obj/effect/decal/cleanable/generic,
+/turf/open/floor/ruinedwood,
+/area/indoors/shelter)
+"J" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/ruinedwood,
+/area)
+"K" = (
+/obj/structure/barricade/wooden,
+/turf/open/floor/ruinedwood/turned,
+/area/indoors/shelter)
+"L" = (
+/obj/item/grown/log/tree/stick,
+/turf/open/floor/ruinedwood/turned,
+/area)
+"M" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/ruinedwood/turned,
+/area/indoors/shelter)
+"O" = (
+/turf/open/floor/ruinedwood,
+/area/indoors/shelter)
+"P" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/landmark/chest_or_mimic,
+/turf/open/floor/ruinedwood,
+/area/indoors/shelter)
+"U" = (
+/obj/structure/fluff/railing/wood,
+/turf/open/floor/ruinedwood/turned,
+/area)
+"W" = (
+/obj/structure/fluff/railing/wood{
+	dir = 4
+	},
+/turf/open/floor/ruinedwood/turned,
+/area)
+"Y" = (
+/obj/structure/fluff/railing/wood{
+	dir = 8
+	},
+/obj/structure/fluff/railing/wood,
+/turf/template_noop,
+/area)
+"Z" = (
+/turf/open/floor/ruinedwood,
+/area)
+
+(1,1,1) = {"
+a
+a
+D
+D
+D
+a
+a
+"}
+(2,1,1) = {"
+a
+a
+x
+K
+D
+D
+a
+"}
+(3,1,1) = {"
+a
+a
+a
+H
+k
+D
+D
+"}
+(4,1,1) = {"
+a
+M
+c
+q
+y
+k
+D
+"}
+(5,1,1) = {"
+a
+a
+i
+O
+s
+D
+D
+"}
+(6,1,1) = {"
+a
+K
+n
+P
+D
+D
+a
+"}
+(7,1,1) = {"
+a
+a
+D
+D
+D
+a
+a
+"}
+
+(1,1,2) = {"
+a
+a
+Z
+h
+Z
+r
+a
+"}
+(2,1,2) = {"
+a
+a
+b
+e
+b
+Z
+a
+"}
+(3,1,2) = {"
+a
+a
+a
+Z
+b
+L
+d
+"}
+(4,1,2) = {"
+a
+Z
+h
+Z
+J
+J
+d
+"}
+(5,1,2) = {"
+a
+a
+h
+v
+Z
+j
+U
+"}
+(6,1,2) = {"
+a
+h
+Z
+J
+h
+h
+g
+"}
+(7,1,2) = {"
+a
+Y
+W
+h
+h
+g
+a
+"}

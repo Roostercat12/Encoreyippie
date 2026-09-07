@@ -39,6 +39,7 @@
 		/datum/job/templar,
 		/datum/job/bogwitch,
 		/datum/job/bog_apprentice,
+		/datum/job/admin,
 	)
 
 /datum/round_event_control/antagonist/solo/rebel/valid_for_map()

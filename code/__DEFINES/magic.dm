@@ -280,6 +280,8 @@ GLOBAL_LIST_INIT(all_forms, list(
 	FORM_WATER,
 ))
 
+GLOBAL_LIST_INIT(all_essences, subtypesof(/datum/thaumaturgical_essence))
+
 #define CHARGETIME_POKE 0.5 SECONDS // Staple poke spells
 #define CHARGETIME_MINOR 1 SECONDS // Minor utility / support spells
 #define CHARGETIME_MAJOR 1.5 SECONDS // Major projectiles

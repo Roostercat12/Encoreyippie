@@ -50,7 +50,7 @@
 	department_flag = SERFS
 	job_flags = (JOB_ANNOUNCE_ARRIVAL | JOB_SHOW_IN_CREDITS | JOB_EQUIP_RANK | JOB_NEW_PLAYER_JOINABLE)
 	display_order = JDO_MAGICIAN
-	factions = list(FACTION_TOWN)
+	factions = list(FACTION_TOWN, SUB_FACTION_KEEP)
 	total_positions = 2
 	spawn_positions = 2
 	bypass_lastclass = TRUE
@@ -70,12 +70,11 @@
 	book_type = /obj/item/recipe_book/arcyne
 
 	spells = list(
-		/datum/action/cooldown/spell/aoe/knock,
-		/datum/action/cooldown/spell/undirected/jaunt/ethereal_jaunt,
 		/datum/action/cooldown/spell/undirected/touch/prestidigitation,
 	)
 
-	form_points = 4
+	form_points = 14
+	technique_points = 12
 
 	exp_type = list(EXP_TYPE_ADVENTURER, EXP_TYPE_LIVING, EXP_TYPE_MAGICK)
 	exp_types_granted = list(EXP_TYPE_MAGICK, EXP_TYPE_ADVENTURER)
@@ -147,6 +146,7 @@
 	belt = /obj/item/storage/belt/leather
 	beltr = /obj/item/storage/magebag/apprentice
 	backl = /obj/item/weapon/polearm/woodstaff
+	pants = /obj/item/clothing/pants/tights/colored/random
 	shoes = /obj/item/clothing/shoes/shortboots
 	neck = /obj/item/clothing/neck/mana_star
 	backpack_contents = list(

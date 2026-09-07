@@ -43,6 +43,7 @@
 		/datum/job/tomb_warden,,
 		/datum/job/bogwitch,
 		/datum/job/bog_apprentice,
+		/datum/job/admin,
 	)
 
 /datum/round_event_control/antagonist/solo/vampires/valid_for_map()

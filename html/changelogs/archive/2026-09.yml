@@ -1,0 +1,457 @@
+2026-09-06:
+  Alexeivichi:
+  - rscadd: leather raincloak to cloaks loadout
+  - rscadd: weapons to held-item loadout
+  - rscadd: medium and light gambeson armors to loadout
+  - rscadd: more pants to pants loadout
+  - rscadd: "few boots to shoes loadout\n:cl:\n## Pre-Merge Checklist\n<!-- Don't\
+      \ bother filling these in while creating your Pull Request, just click the checkboxes\
+      \ after the Pull Request is opened and you are redirected to the page. -->\n\
+      - [ \u2713 ] You tested this on a local server.\n- [ \u2713 ] This code did\
+      \ not runtime during testing.\n- [ \u2713 ] You documented all of your changes.\n\
+      <!-- Neither the compiler nor workflow checks are perfect at detecting runtimes\
+      \ and errors. It is important to test your code/feature/fix locally. -->"
+  CheffieGithub:
+  - rscadd: You can now under/overload blackpowder guns. Underloading reduces power,
+      overloading increases it and damages the gun.
+  - rscadd: Inspecting a gun will now very safely look down the barrel and tell you
+      about the projectile, powder, hammer and wheel status.
+  - rscadd: Slightly changed puffer operation see PR for full details.
+  - bugfix: Fixed muskets and puffers having no sound for the striker.
+  - balance: Powder for the musket increased to 10 from 5.
+  - balance: Slurbow fits in bags 2x2.
+  Clem-The-Duck:
+  - bugfix: Gave Martyr common and lets them use their lesser healing miracle
+  - bugfix: fixed GM Templar not being able to hold their weapons
+  - qol: no more randomised stats
+  Draggeru:
+  - bugfix: finishes some Wintermare and Ossland Accent touch ups
+  - bugfix: fixes some of the longer swear replacements for the halfling accent
+  - bugfix: Fixes some jank with the grenzel accent
+  - rscadd: Replaces the old grenzel accent with a more conlang version.
+  - rscadd: Adds the grenzel accent to the dwarf accent selection pool
+  - rscadd: Adds Grenzel and Ossland accents to the humen accent pool
+  Minomato:
+  - rscadd: Rakshari now have a toggled Extend Claws power
+  - rscdel: obsolete keen_nose list entry on werewolf.dm
+  - rscdel: commented out cough cooldowns on Vultura and Knoblits for now, not respecting
+      sneak for some reason (meow/purr cooldown staying on Rakshari for now, it's
+      tremendously funny but I can definitely remove it for them if need be)
+  - qol: starting nutrition/hydration minimum values raised by 200 points each
+  - balance: Lupians now have Darkvision, Strong Bite, the Scent-Sense Ability, and
+      +1 skill tier to Butchering
+  - balance: Rakshari now have Darkvision and +1 skill tier to Sneaking
+  - bugfix: Lupians will now learn common properly on spawn
+  - bugfix: Hobknoblits are no longer limited to it/it pronouns
+  - bugfix: Vultura, Hobknoblit and Knoblit descriptions of their features and bonuses
+      are more complete
+  - image: added extended claw icon to fists_claws.dni
+  - bugfix: explorer vest should now have l_ and r_ sleeves
+  - bugfix: leather armor _f should now be positioned correctly on left and right
+      frames
+  - rscadd: Tieflings now have Darkvision & Heat Resistance traits.
+  - rscadd: Rakshari now have Minor Fall Damage Immunity trait.
+  - balance: Knoblits & Hobknoblits now gain 100 (up from 10) nutrition from eating
+      items associated with their special diet.
+  - balance: 'Knobit stats are now: +3 Fortune, +2 Speed, +1 Endurance; -2 Strength,
+      -2 Constitution (speed was always supposed to be +2 but description was wrong)'
+  - balance: 'Tiefling stats are now: +1 Perception, +1 Intelligence, +1 Speed; -2
+      Fortune'
+  - balance: 'Rakshari stats are now: +2 Perception, +2 Speed; -1 Strength, -1 Constitution,
+      -1 Endurance.'
+  - bugfix: Lupians no longer missing Scent-Sense ability.
+  - bugfix: Rakshari claws now do normal damage, reduced parry ability to normal,
+      no longer inflict self-damage with durability loss.
+  - bugfix: Tieflings missing their mundane ignition protection trait in description.
+  MisterLayne:
+  - rscadd: There is now a TGUI Checkboxes Input that takes multiple options and returns
+      a list of selected options
+  - rscadd: More alchemy dust in chests
+  - rscadd: Combat flasks for essence
+  - rscadd: Reagent vials for potions/tonics
+  - refactor: Essence Reservoirs can now filter any essence regardless of whether
+      it is present
+  - refactor: Cauldron only takes 1or 2x (based on auto repeat) the essence it needs
+      now instead of ALL the essence
+  - rscadd: Old customization options for otherkin
+  - bugfix: Otherkin horns not showing
+  - rscadd: Headshot can now be removed by entering blank text or hitting cancel
+  - rscadd: Ability to sew through clothing and armor!
+  - rscadd: Added observe button
+  - bugfix: Character creator is scaled properly!
+  - rscadd: Summoner's Pouch can now be quick emptied and also holds jacksberries
+      and stones.
+  - rscadd: Added Lupians
+  - rscadd: Added Drakians
+  - rscadd: Added Sisseans
+  - rscadd: Silverfaces!
+  - bugfix: Merchant panels are now alphabetized!
+  - bugfix: A comment above CUSCOLORS was changed, forgot to do that
+  - bugfix: Lupians have thier common back
+  - bugfix: Rakshari have their tails back
+  - bugfix: Demihumans have their.. everything back
+  - rscadd: Adds the ability to hitch handcarts to saigas!
+  - rscadd: Adds a verb to quickly spawn and inhabit a mob.
+  - rscadd: Added new verb for admins to roll dice
+  - rscadd: Custom colors for certain species
+  - rscadd: Underwater overlays
+  - bugfix: being unable to select "None" for loadouts
+  - bugfix: mercenaries not being enabled
+  - bugfix: folkhero not being enabled
+  PineappleMan929:
+  - rscadd: New Canes!
+  - image: Refurbished some old cane sprites.
+  - map: fixes vampire manor stuff.
+  - balance: lowered cooldown on vampire lord transformation spells, and gave said
+      spells to all vampire clans.
+  - map: Vampire lord lair expansion.
+  - bugfix: fixes random names by deleting names from the used name list when a mob
+      is destroyed.
+  - bugfix: Priest now gets the right amulet
+  - balance: nerfs dirt
+  - map: remaps the Vampire Lair (again)
+  Roostercat12:
+  - rscadd: 'Added the Huntsmaster hand subclass, basically ripped off of Vanderlin.
+
+      <!-- Both :cl:''s are required for the changelog to work! You can put your name
+      to the right of the first :cl: if you want to overwrite your GitHub username
+      as author ingame. -->
+
+      <!-- You can use multiple of the same prefix (they''re only used for the icon
+      ingame) and delete the unneeded ones. Despite some of the tags, changelogs should
+      generally represent how a player might be affected by the changes rather than
+      a summary of the PR''s contents. -->
+
+      ## Pre-Merge Checklist
+
+      <!-- Don''t bother filling these in while creating your Pull Request, just click
+      the checkboxes after the Pull Request is opened and you are redirected to the
+      page. -->
+
+      - [x ] You tested this on a local server.
+
+      - [x ] This code did not runtime during testing. (miraculously this time)
+
+      - [x ] You documented all of your changes.
+
+      <!-- Neither the compiler nor workflow checks are perfect at detecting runtimes
+      and errors. It is important to test your code/feature/fix locally. -->'
+  - rscadd: Added fuel and sacks to the servant quarters.
+  - refactor: The Wretch is now available from the same menu as all of the other roles.
+      It is still an antagonist.
+  - rscadd: Adds the Yeoman and reduces all of the slots for jobs related to the consolidation
+      to zero.
+  - rscadd: Added a few things to the vamp hideout.
+  - rscadd: Added a Vampire Lord hideout in the Weeping Wood. Also enabled them on
+      the main menu. EVIIIIL!
+  - bugfix: Fixes a ton of holdover stuff from Vanderlin and frees up a lot of merc
+      classes that were strangely strict on race allowance.
+  - bugfix: stairs work and humphrey is locked in his domicile
+  cinnilen:
+  - rscadd: Added a player observe button the main menu.
+  - rscadd: Adds a verb for admins to globally or locally roll dice in GameMaster
+      tab.
+  - rscadd: Added debug verb to spawn a mob and inhabit it quickly.
+  crimsonFig:
+  - qol: Removes bleed need for subscribing to a ritual circle
+  - qol: Deactivates ritual circles if activator moves too far away and there are
+      no mana pylons
+  - qol: Range check for buffs handle z level differences better
+  - bugfix: Fixes Flight Sigil,  flight buff is reliably applied now
+  - qol: Flight gives a short safety buff when it wears off so you dont become icarus'd
+  - refactor: Compacted the class of mana drain sigils
+  furrycactus:
+  - bugfix: People with the silverblessed trait can have magic used on them again.
+  - rscadd: Adds a new Hand subclass called the Magister. They're a mage.
+  - rscadd: Adds a new Yeoman job called the Tower Archmage, the head instructors
+      of the mage tower/university/thing.
+  - rscadd: Adds a new Yeoman job called the Tower Magician, a middlepoint between
+      the Archmage and the Magician Apprentice.
+  - rscadd: Adds the Gate key to the Mage and Mage Apprentice keyrings, so Tower roles
+      can still use the gate bypass and access the Mage Tower if someone's locked
+      the gate on them.
+  - rscdel: Removes the Court Magician role.
+  - rscdel: Removes the Manor key from the Mage and Mage Apprentice keyrings, so none
+      of the Tower roles can let themselves into the Shirleigh manor willy-nilly,
+      especially since they aren't nobility anymore.
+  - map: Adds a narrow bridge pathway along Etgard's outer walls so that people can
+      still visit the Mage Tower without having to go through Etgard Keep itself to
+      do so. (Similar to the Clinic's public entrance.)
+  - map: Adds some direction signs inside and outside Etgard Keep that point in the
+      directions of the Mage Tower and Clinic respectively.
+  - map: Adds some inactive leylines in North/South/East/West to encourage Mages to
+      head out of town for leyline shards.
+  - map: Turns two of Etgard's upstairs guest rooms into rooms for the Captain and
+      Hand.
+  - map: Turns the tiny 2x3 former-Captain's bedroom into the Dungeoneer's room.
+  - map: Turns the former Dungeoneer's room into the Watch Lieutenant's room.
+  - map: Turns the former Watch Lieutenant's room into the Knights' barracks.
+  - map: Maps in consistent lava tiles in revamped Visires and Goler Kanh shrines
+      in the South and North respectively, so mages can get obsidian.
+  - rscadd: Addes the Holy See Longsword, Spear, and Dagger.
+  - rscadd: Adds Frostcleaver, an Axe for Mjallidhorn Templars.
+  - balance: Made all of the Church weapons have the Silver trait.
+  - map: Re-maps Domotan South.
+  - rscadd: Makes Beespiders respond more positively to half-drow when taming.
+  - rscadd: Makes tent walls opaque instead of transparent.
+  - bugfix: Fixes Tower Magician spawning naked and with no spellbook.
+  - map: Moves some armour off the royal mannequins and onto racks and dressers.
+  - map: Moves around some of the kitchen goods into different racks and chests in
+      Etgard Keep.
+  - map: Adds a shisha pipe, smokables, and some spare smoking pipes to the Inn.
+  - map: Adds a greenhouse for the Clinic's laboratory as they had nowhere to grow
+      their herbs that didn't involve a lengthy walk.
+  - map: Adds some missing alchemy equipment to the Clinic's laboratory.
+  - map: Adds a dressing room to Etgard Keep's manor for the nobility to play dress-up
+      in.
+  - rscadd: Adds a Peculiarity called Native Language - you get ONE extra common language
+      for free based on the country your character comes from. You can't pick the
+      obscure ones like Old Unsundered tho.
+  - bugfix: Gives the Court Physician Keyring the Clinic, Apothecary, and Feldsher
+      keys.
+  - bugfix: Gives the Archivist the Mage Tower key so they can access the telescope.
+  - bugfix: Changes the access on the chest in the Mage Tower's alchemy room to Tower
+      access, not Apothecary.
+  - map: Puts the big telescope on the roof of the Mage Tower.
+  - map: Adds some Valdala effigies to the Crypt.
+  - map: Adds some gravemarker, headstone, and coffin sanctification supplies to the
+      Gravetender quarters.
+  - map: Adds some Gravetender Hats to their quarters.
+  - map: Adds an extra travel portal to and from town - one to the main gate and one
+      by the residential borough.
+  - map: Adds a little graveyard in the cave behind the Bog Witch hut with some T1-T2
+      Great Hunt blessed graves - dead witches, friends, apprentices - make it up
+      in your RP.
+  - map: Adds some T1-T3 Angrosian blessed graves to the upper part of Wey Whisperen,
+      hinting at why that one area has resisted the area's surrounding corruption
+      and undeath otherwise.
+  - map: Fixes the Inquisition enclave that had the blacksmith basement unceremoniously
+      dropped in the middle of it.
+  - map: Adds a small alchemy lab to the Church basement, since Erdl and Valdala acolytes
+      are also accomplished alchemists (but have no access to the Apothecarium at
+      the university and thus are effectively barred from the system).
+  - map: Adds a bag of shitty and worse surgical tools to the Church infirmary, so
+      Acolytes (particularly Erdites) can also chop people up.
+  - map: Adds an Erdl psycross to the Clinic.
+  - rscadd: Adds a new church sub-area called the Graveyard, and puts it all over
+      the graveyard.
+  - code_imp: Removes Valdala from the Acolyte patron list. Play Gravetender, because
+      they're literally the exact same thing in terms of skills, spells, and gear.
+      (They're better actually, this was how Vanderlin handled it).
+  - code_imp: Makes the Gravetender race restrictions match the Acolyte and Templar
+      race restrictions.
+  - bugfix: Fixes the missing satchel for Acolytes.
+  - rscadd: Adds the Magister's Key for total access throughout the university.
+  - bugfix: Restored the Cheele.
+  - map: Replaced the invisible zombie mobs with skeletons in Domotan South.
+  - map: Added missing alchemy equipment to the witch hut.
+  - balance: Dropped Royal Knight's Steel full-plate to Brigandine.
+  - balance: Dropped Royal Knight's plate vambraces to jackchain.
+  - balance: Dropped Royal Knight's plate gloves to chain gloves.
+  - balance: Dropped Royal Knight's plate leggings to chain chausses.
+  - balance: Dropped Royal Knight's plate boots to light plate boots.
+  - balance: Dropped Axeman Man-at-Arms' Brigandine to Light Brigandine.
+  - balance: Dropped Templar's Steel half-plate to Brigandine.
+  - balance: Dropped the Steel half-plate in the Heavy Templar Armour Spawner to Brigandine.
+  - balance: Dropped the Brigandine in the Templar Armour Spawner to Light Brigandine.
+  - balance: Swapped the t-shirt that the Captain spawns in with for a gambeson underneath
+      their Brigandine, bringing them more in-line with Royal Knight.
+  - bugfix: Fixed the bug granting Templars a whopping 80 skill level with swords
+      if they picked a deity that granted extra sword skill.
+  - rscadd: Adds weapon selection to every Templar patron.
+  - rscadd: Added skill variance for Clergy that varies based on their patron.
+  - rscadd: Adds multiple new spells to the divine patrons, and some new arcane toys
+      for Akan clergy specifically.
+  - bugfix: Fixes Knights and Templars not having medium armour training.
+  - map: Swaps the spawners for the royal armour with manually mapping the armour
+      pieces onto the mannequins.
+  - map: Adds sets of armour for the Regent and Consort in their room.
+  - map: Adds two sets of armour for royal Heirs to the vault.
+  - map: Adds various cultural swords to the vault for the royal family to use.
+  - map: Places the Divine Hoard behind a secret wall that only the royal family can
+      open.
+  - map: Removes the evil contract board from the town square and places a HAILER
+      machine there next to the HAILER BOARD.
+  - map: Places multiple HAILER BOARDS throughout town to make it easier for people
+      to request help and advertise services.
+  - map: Adds two of the Iliope gambling machines to the upstairs Inn.
+  - map: Puts the chest full of spare inn keys behind the locked staff door so people
+      can't just take them for free rooms.
+  - bugfix: Properly adds the Inn room keys to the PEDDLER upstairs so people can
+      rent the rooms.
+  - bugfix: Lowers the cost of the Inn room keys a little bit so they're a little
+      more affordable.
+  - bugfix: 'Fixes #108.'
+  kyres1:
+  - rscadd: Added minor blinking pixels to various machines to encourage readability.
+  - qol: Changed default rivals to zero so you don't have to fix this every time you
+      make a new character.
+  - sound: Changed SCOMM sound effects to be actual radio effects.
+  - rscadd: Added new stuff to the church and keep armory
+  - rscadd: Added prettification to Old Doma
+  - balance: Lowered the price of the jukebox to play music to one copper coin.
+  - rscadd: Pulled upstream Vanderlin changes.
+  - rscadd: Added lancers pipe organ
+  - rscadd: Added over twenty new randomly generated templates which populate the
+      north, south and western zones of the island.
+  - bugfix: Fixed missing alchemy stuff for the wizard on old doma
+  - bugfix: Fixed missing millstone in the wiz tower on old doma
+  - bugfix: Fixed missing farm equipment in wiz tower on old doma
+  - bugfix: Fixed bees being stuck in Old Doma farm
+  - bugfix: Fixes the big rune under the wiztower being non functional
+  - bugfix: Fixes an inconsistent railing mapping on Old Doma
+  - bugfix: Persistent shops are persistent again and don't cost money this time
+  - bugfix: House V's roof is returned
+  - bugfix: House key vendor is moved to be more accessible
+  - bugfix: Institute's door accesses are fixed
+  - bugfix: Added basic tools to the Yeoman subclass loadouts and the makers quarter
+  - bugfix: Fixed a bunch of redundant staircases
+  - bugfix: Fixed Hobknoblits being unable to spawn as Pilgrim
+  - bugfix: Fixes Mount Decapitation mentions in code
+  - rscdel: Removed stomach grumbling audio from dehydration and starvation
+  - qol: Quartered hunger depletion rate
+  - rscdel: Removed slur leaderboard and speciesm stats
+  - rscadd: Reorganized and fancified the lord, hand and heir's bedrooms.
+  - rscadd: Added twenty seven new randomly spawned templates.
+  - map: Condensed Old Doma even more.
+  - rscadd: Added new amulet sprites
+  - rscadd: Pulled some upstream content.
+  - rscadd: Added scrabblers.
+  - rscadd: Added the framework for the second level of the Necropolis.
+  - rscadd: Added a separate event map file which enables the Necropolis, and disabled
+      the Necropolis in normal gameplay.
+  - bugfix: ports some ui fixes from vanderlin, avoiding the missing edge
+  - bugfix: Fixed Etgard Keep not having the correct associated first time text.
+  - bugfix: Fixed broken bandit access in centcomm z and domotan south
+  - rscadd: Added the shirleighan reactor
+  - rscadd: Mapped in quest markers
+  - rscadd: Added doors to missing areas in the weeping wood
+  - rscadd: Added multiz water to Old Doma and more smuggler tunnel mapping
+  - bugfix: Fixed constant reminders of the sages upon latejoin
+  - rscadd: Added the Domotan theme as lobby music again
+  - bugfix: Fixed bugged bookcases in Etgard Keep and around Old Doma
+  - rscadd: Added sinks with running water to the keep on the lowpop map.
+  - rscadd: Moved the entire clinic to the keep on the lowpop map.
+  - rscadd: Moved the wizard tower to the keep on the lowpop map.
+  - rscadd: Moved the church where the clinic once was on the lowpop map.
+  - rscadd: Moved the soilsons to where the church once was on the lowpop map.
+  - rscdel: Deleted the druids den on the lowpop map.
+  - rscadd: Added new map spawners that will fill closets and crates with a lot of
+      generic outfits automagically.
+  - qol: Moved around and condensed Old Doma in a second, votable map specifically
+      for lowpop.
+  - rscdel: Removed unintended spawns for mantraps in wooded areas.
+  - code_imp: Disabled donator restrictions by making the donator status and every
+      max twitch and patreon rank the default for every player.
+  - rscdel: Removed bilgewater perfume from the random spawn list
+  - qol: Hunger is now 25% the rate it previously was,
+  - qol: Hygiene is now 10% the rate it previously was,
+  - qol: Bleeding is now 50% the rate it previously was.
+  - balance: Heavily increased the time required to turn into a zombie to around thirty
+      minutes. Bury your dead.
+  - rscadd: Added smuggler tunnels beneath Old Doma
+  - rscadd: Moved the arrivals ship further out
+  - rscadd: Added a lot of new loadout options
+  - bugfix: Significantly lowered the price of all loadout items
+  - bugfix: Fixed linebreaks being broken in flavortexts.
+  - bugfix: changes the name of the psy book to the motonium
+  - bugfix: corrects kelp alpha
+  - bugfix: fixes missing prismatic bridge audio
+  - bugfix: fixes missing generators in the domotan sewer area
+  - bugfix: Fixed the shops not spawning.
+  - rscadd: Added new templates that will spawn in the north and south
+  - rscadd: Added new effigy sprites
+  - map: Moved the lord spawn outside of the apartment so they can summon their key
+      roundstart still.
+  - qol: Added dye bins for extra character customization to the OOC room.
+  - bugfix: Fixed unintentional patting of the banker's head.
+  - bugfix: Fixed broken keys in the rockhomes in the County of Etgard.
+  - bugfix: Fixed OOC note formatting.
+  - balance: Increased devotion gain across the board.
+  - balance: Reduced meteor storm cast time significantly.
+  - bugfix: Reduced and removed fanning from some map generator entities.
+  - bugfix: Fixes unnoticed instances of the tavern assistant being named the innkeepers'
+      son.
+  - map: finishes mapping east domotan
+  - bugfix: fixed centcomm lighting
+  - rscdel: removed farting triumph
+  - rscdel: removed adoption triumph
+  - bugfix: Fixed stone pots crafting iron pots.
+  - rscadd: Changed the lore of the vampire covens to match what we have on the wiki
+  - rscadd: Added the night owl trait as a quirk selectable in character setup.
+  - rscadd: Added the deadened trait as a quirk selectable in character setup.
+  - rscadd: Added the flawed immortality trait as a quirk selectable in character
+      setup.
+  - bugfix: Fixed a broken label for luxwine after aging.
+  - rscadd: Added an inherent trait to players through job spawns that ensures they
+      are, in fact, scared of the sages' names.
+  - rscadd: Added new telegraph effects for some attacks and spells
+  - bugfix: fixes tgui again
+  - bugfix: Fixed a bunch of old references to the Ten, Zizo and Psydon.
+  - bugfix: Fixes missing template spawners in domotan south
+  - qol: Changed the foreigner examine stressor to be a neutral examine
+  - bugfix: Fixed incorrect portal destination in latejoin area
+  - rscadd: Added accurate seasons for Domotan Island, which are all very harsh in
+      their own respects.
+  - qol: Tripled and otherwise significantly extended rot durations to prevent every
+      piece of food from rotting so fast
+  - rscadd: Added the option to not have an accent for every race.
+  - bugfix: Fixes the slots being broken in character setup
+  - bugfix: Fixes the immersion shattering map title of the lowpop map
+  - server: Stopped the tomb of matthios subsystem from firing altogether to save
+      init resources
+  - bugfix: Fixed missing mapgen on domotan south
+  - rscadd: Alters southern Domotan to meet gameplay and visual quality standards
+  - rscadd: Re-added RP adverts from the first repo
+  - rscdel: Removed vomiting from smell mechanics.
+  - rscdel: Removed spontaneous uncontrollable screaming from most selectable phobias.
+  - bugfix: Fixed missing keys for the regent
+  - refactor: lux is now thauma
+  - qol: Adds a little alpha to the travel tiles to make it easier to drag yourself
+      onto them
+  - rscadd: Added new omen audio
+  - refactor: Lowers event pop requirements to spawn
+  - refactor: Fixes incorrect text attached to some events
+  - rscdel: Deleted the annoying hunger sound effects
+  - rscdel: Removed maluses from being sleepy
+  - bugfix: Fixed ore spawns not existing really anywhere in any consistent number.
+  - rscadd: Added concrete walls, new metal floors and rock ledges for mappers.
+  - bugfix: Fixed broken CI test regarding structure breakers
+  - bugfix: Fixed some mentions of vanderlin still existing
+  - rscadd: Pulled upstream from Vanderlin up to August 15
+  - admin: Hushed the constant event message spam for admin logs.
+  - bugfix: Fixed improper honorifics being given to the regent
+  - map: Touched up County of Etgard mapping
+  - balance: Towners now receive three triumphs every time they dream.
+  - balance: Everyone now receives two triumphs when they dream.
+  - rscadd: Pulled more stuff from upstream.
+  - rscadd: Added eight ruin templates to spawn in domotan north
+  - refactor: Removed slot caps from most jobs.
+  - rscadd: Added twenty one new map templates to the County of Etgard
+  - rscadd: Re-added steppe music from the first repo.
+  - bugfix: Fixed kybraxor's sprite reverting back to the goofy grimdark thwomp.
+  - rscadd: Added new default spawns for armor and weapons to the keep garrison and
+      church templar quarter.
+  - bugfix: Fixes cyclops vision being on the wrong eyes
+  - bugfix: Tried desperately to fix workplace saving.
+  - rscadd: adds fluff road signsa
+2026-09-07:
+  MisterLayne:
+  - bugfix: Cauldrons no longer incorrectly take from essence reservoirs.
+  - bugfix: Regents now know vault code on late-join.
+  - bugfix: Kill scrolls only lead to alive targets now.
+  - bugfix: Oven cooks better overall.
+  - bugfix: Phantom ear now works better.
+  - bugfix: Repel spell now can be used to throw items at a stronger force.
+  - bugfix: Flint no longer sparks at everything.
+  - bugfix: Phoenix Guard ignores rock-eating individuals.
+  - bugfix: OOC Extra is fixed.
+  - bugfix: Empty headshot links are back.
+  furrycactus:
+  - map: Various fixes to Old Doma.
+  - bugfix: Hand no longer spawns with their caneblade in hand, but it's safely in
+      their room in Etgard.
+  - rscadd: Hoods can now be worn on the Neck and Mask slot.
+  - rscadd: Robes can now be worn on the Cloak slot.
+  kyres1:
+  - bugfix: Tries fixing the satanic template again.

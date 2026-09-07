@@ -375,10 +375,16 @@
 	lockids = list(ACCESS_LIBRARY)
 
 /obj/item/key/mage
-	name = "magicians's key"
-	desc = "This is the Court Magician's key. It watches you..."
+	name = "archmage's key"
+	desc = "This is the Tower Archmage's key. It watches you..."
 	icon_state = "eyekey"
 	lockids = list(ACCESS_MAGE)
+
+/obj/item/key/magister
+	name = "magister's key"
+	desc = "This is the Magister's key. It watches you..."
+	icon_state = "eyekey"
+	lockids = list(ACCESS_MAGE, ACCESS_TOWER)
 
 /obj/item/key/atarms
 	name = "keep garrison key"

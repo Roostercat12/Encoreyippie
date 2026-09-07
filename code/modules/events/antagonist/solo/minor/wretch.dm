@@ -27,6 +27,7 @@
 		/datum/job/royalknight,
 		/datum/job/gmtemplar,
 		/datum/job/templar,
+		/datum/job/admin,
 	)
 
 	base_antags = 1

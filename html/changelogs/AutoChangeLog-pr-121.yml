@@ -1,4 +1,0 @@
-author: "PineappleMan929"
-delete-after: True
-changes:
-  - bugfix: "fixes random names by deleting names from the used name list when a mob is destroyed."

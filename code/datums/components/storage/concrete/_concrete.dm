@@ -194,6 +194,7 @@
 			parent.add_fingerprint(M)
 			if(!prevent_warning)
 				mob_item_insertion_feedback(usr, M, I)
+	SEND_SIGNAL(parent, COMSIG_STORAGE_ADDED, I)
 	update_icon()
 	return TRUE
 

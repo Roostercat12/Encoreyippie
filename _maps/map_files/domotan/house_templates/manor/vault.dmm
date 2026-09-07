@@ -15,7 +15,10 @@
 	name = "decorated katana";
 	desc = "A foreign sword, blade honed to a razor's edge. This one is decorated with a golden hilt, befitting nobility."
 	},
-/turf/open/floor/tile/bath,
+/turf/open/floor/tile/masonic/moonbw,
+/area/indoors/town/keep)
+"b" = (
+/turf/closed/wall/mineral/pipe,
 /area/indoors/town/keep)
 "c" = (
 /obj/effect/mapping_helpers/access/locker,
@@ -25,6 +28,10 @@
 	name = "Materials Vault"
 	},
 /turf/open/floor/tile/checkeralt,
+/area/indoors/town/keep)
+"d" = (
+/obj/effect/decal/cleanable/sigil/SE,
+/turf/open/floor/tile/masonic/moonbw,
 /area/indoors/town/keep)
 "e" = (
 /obj/structure/rack,
@@ -37,46 +44,73 @@
 	pixel_x = 10;
 	pixel_y = -2
 	},
-/turf/open/floor/tile/bath,
+/turf/open/floor/tile/masonic/moonbw,
+/area/indoors/town/keep)
+"g" = (
+/obj/effect/decal/cleanable/sigil/NW,
+/turf/open/floor/tile/masonic/moonbw,
+/area/indoors/town/keep)
+"h" = (
+/obj/structure/fluff/walldeco/churchbanner/jealousgod,
+/turf/closed/wall/mineral/stonebrick,
 /area/indoors/town/keep)
 "i" = (
 /turf/closed/wall/mineral/stonebrick,
 /area/indoors/town/keep)
+"l" = (
+/obj/effect/decal/cleanable/sigil/N,
+/turf/open/floor/tile/masonic/moonbw,
+/area/indoors/town/keep)
+"m" = (
+/obj/effect/decal/cleanable/sigil/S,
+/turf/open/floor/tile/masonic/moonbw,
+/area/indoors/town/keep)
+"r" = (
+/obj/effect/decal/cleanable/sigil/NE,
+/turf/open/floor/tile/masonic/moonbw,
+/area/indoors/town/keep)
 "t" = (
-/turf/open/floor/tile/bath,
+/obj/effect/decal/cleanable/sigil/SW,
+/turf/open/floor/tile/masonic/moonbw,
 /area/indoors/town/keep)
 "u" = (
-/obj/structure/table/wood{
-	icon_state = "longtable_mid";
-	dir = 1
-	},
 /obj/item/weapon/sword/long/exe/cloth{
 	pixel_x = -21;
 	pixel_y = -11;
 	desc = "An heirloom of the Shirleighs, this hefty executioner's blade was said to have belonged to King Malryck in a time long since passed. Now though, it oft lays forgotten in the royal vault."
 	},
-/turf/open/floor/tile/bath,
+/obj/structure/table/stone_small,
+/turf/open/floor/tile/masonic/moonbw,
+/area/indoors/town/keep)
+"v" = (
+/obj/effect/decal/cleanable/sigil/W,
+/turf/open/floor/tile/masonic/moonbw,
+/area/indoors/town/keep)
+"x" = (
+/turf/closed/wall/mineral/stone/moss/red,
 /area/indoors/town/keep)
 "y" = (
-/obj/structure/table/wood{
-	icon_state = "longtable_mid";
-	dir = 1
-	},
 /obj/item/weapon/sword/silver{
 	pixel_y = 4;
 	name = "Miserthorn";
 	desc = "An heirloom of the Shirleighs, this silver blade is renowned for often being seen at the side of Queen Alyssandrine in years since past."
 	},
-/turf/open/floor/tile/bath,
+/obj/structure/table/stone_small,
+/turf/open/floor/tile/masonic/moonbw,
+/area/indoors/town/keep)
+"A" = (
+/turf/open/floor/tile/masonic/moonbw,
 /area/indoors/town/keep)
 "B" = (
 /obj/structure/mannequin/male,
-/obj/item/clothing/shoes/boots/leather/advanced,
-/obj/item/clothing/pants/trou/leather/advanced,
-/obj/item/clothing/gloves/leather/advanced,
-/obj/item/clothing/armor/cuirass,
-/obj/item/clothing/head/helmet/visored/sallet,
-/turf/open/floor/tile/bath,
+/obj/item/clothing/shoes/boots/armor/envy,
+/obj/item/clothing/pants/platelegs/envy,
+/obj/item/clothing/gloves/plate/envy,
+/obj/item/clothing/armor/plate/full/envy,
+/obj/item/clothing/head/helmet/visored/envy,
+/obj/item/weapon/sword/long/greatsword/envy,
+/obj/structure/curtain/redcurtain,
+/turf/open/floor/tile/masonic/moonbw,
 /area/indoors/town/keep)
 "F" = (
 /obj/structure/rack,
@@ -87,7 +121,7 @@
 /obj/item/reagent_containers/glass/bottle/healthpot,
 /obj/item/reagent_containers/glass/bottle/healthpot,
 /obj/item/reagent_containers/glass/bottle/healthpot,
-/turf/open/floor/tile/bath,
+/turf/open/floor/tile/masonic/moonbw,
 /area/indoors/town/keep)
 "G" = (
 /obj/structure/rack,
@@ -105,129 +139,133 @@
 /obj/item/clothing/armor/gambeson/hunts,
 /obj/item/storage/belt/leather/plaquesilver,
 /obj/item/storage/belt/leather/plaquesilver,
-/turf/open/floor/tile/bath,
+/obj/structure/curtain/redcurtain,
+/obj/item/storage/belt/leather/plaquegold,
+/obj/item/storage/belt/leather/plaquegold,
+/turf/open/floor/tile/masonic/moonbw,
 /area/indoors/town/keep)
 "J" = (
-/obj/structure/fluff/walldeco/mona,
 /obj/structure/mannequin/male,
-/obj/item/clothing/shoes/boots/leather/advanced,
-/obj/item/clothing/pants/trou/leather/advanced,
-/obj/item/clothing/gloves/leather/advanced,
-/obj/item/clothing/armor/cuirass,
-/obj/item/clothing/head/helmet/visored/sallet,
-/turf/open/floor/tile/bath,
+/obj/item/clothing/shoes/boots/armor/envy,
+/obj/item/clothing/pants/platelegs/envy,
+/obj/item/clothing/head/helmet/heavy/envy,
+/obj/item/clothing/gloves/plate/envy,
+/obj/item/clothing/armor/plate/full/envy,
+/obj/item/weapon/sword/long/greatsword/envy,
+/obj/structure/curtain/redcurtain,
+/obj/structure/fluff/walldeco/mona,
+/turf/open/floor/tile/masonic/moonbw,
 /area/indoors/town/keep)
 "M" = (
-/obj/structure/table/wood{
-	icon_state = "longtable_mid";
-	dir = 1
-	},
 /obj/item/weapon/sword/rapier/dec/lord{
 	desc = "A royal heirloom of the Shirleighs, forged long ago and of a foreign steel far beyond the Goblet and its lands. Inscribed writing in Old Kui tells that it once belonged to someone named Rash Dequero, and that its implacable edge was driven through the Father of Sin. It gleams with a ferocious intent.";
 	name = "Sin Eater";
 	pixel_x = -5;
 	pixel_y = -7
 	},
-/turf/open/floor/tile/bath,
+/obj/structure/table/stone_small,
+/turf/open/floor/tile/masonic/moonbw,
 /area/indoors/town/keep)
 "O" = (
 /obj/structure/rack,
 /obj/item/weapon/sword/rapier/dec{
 	pixel_x = -24
 	},
-/obj/item/weapon/sword/long/decorated{
-	pixel_x = -4
-	},
 /obj/item/weapon/sword/long/rider/steppe{
 	pixel_x = -20;
 	name = "decorated steppe sabre";
 	desc = "A curved blade of nomadic origin, it is used by cavalrymen all across the far steppes. This one is decorated with gold, befitting nobility."
 	},
-/turf/open/floor/tile/bath,
+/turf/open/floor/tile/masonic/moonbw,
 /area/indoors/town/keep)
 "Q" = (
 /obj/structure/sign/property_sign/claim,
-/turf/closed/wall/mineral/stonebrick,
+/turf/closed/wall/mineral/stone/moss/red,
 /area/indoors/town/keep)
 "R" = (
 /obj/machinery/light/fueledstreet/blue/wall{
 	dir = 4
 	},
-/turf/open/floor/tile/bath,
+/turf/open/floor/tile/masonic/moonbw,
+/area/indoors/town/keep)
+"S" = (
+/obj/effect/decal/cleanable/sigil,
+/turf/open/floor/tile/masonic/moonbw,
 /area/indoors/town/keep)
 "V" = (
-/obj/structure/table/wood{
-	icon_state = "longtable_mid";
-	dir = 1
-	},
 /obj/machinery/light/fueledstreet/orange/wall{
 	dir = 8
 	},
 /obj/item/flashlight/flare/torch/metal,
 /obj/item/flashlight/flare/torch/metal,
-/turf/open/floor/tile/bath,
+/obj/structure/table/stone_small,
+/turf/open/floor/tile/masonic/moonbw,
+/area/indoors/town/keep)
+"Y" = (
+/obj/effect/decal/cleanable/sigil/E,
+/turf/open/floor/tile/masonic/moonbw,
 /area/indoors/town/keep)
 
 (1,1,1) = {"
-i
-i
+x
+x
 Q
 c
 i
-i
-i
+b
+b
 "}
 (2,1,1) = {"
-i
+b
 M
 R
-t
+A
 R
 e
-i
+b
 "}
 (3,1,1) = {"
-i
+b
 y
-t
-t
+g
+v
 t
 O
-i
+x
 "}
 (4,1,1) = {"
-i
+b
 u
-t
-t
-t
+l
+S
+m
 a
-i
+x
 "}
 (5,1,1) = {"
-i
+x
 V
-t
-t
-t
+r
+Y
+d
 F
-i
+x
 "}
 (6,1,1) = {"
-i
-i
+x
+A
 J
 G
 B
-i
-i
+h
+x
 "}
 (7,1,1) = {"
+x
+x
+x
 i
 i
 i
-i
-i
-i
-i
+x
 "}

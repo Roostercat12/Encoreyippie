@@ -1,4 +1,0 @@
-author: "furrycactus"
-delete-after: True
-changes:
-  - bugfix: "Fixes Tower Magician spawning naked and with no spellbook."

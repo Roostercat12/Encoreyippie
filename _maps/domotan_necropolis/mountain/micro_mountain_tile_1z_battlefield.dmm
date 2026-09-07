@@ -1,0 +1,95 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/template_noop,
+/area/template_noop)
+"e" = (
+/obj/effect/spawner/map_spawner/loot/weapon,
+/turf/open/floor/dirt,
+/area/template_noop)
+"l" = (
+/obj/effect/spawner/map_spawner/loot/common,
+/turf/open/floor/dirt,
+/area/template_noop)
+"t" = (
+/obj/effect/spawner/trap,
+/turf/template_noop,
+/area/template_noop)
+"v" = (
+/obj/effect/decal/remains/human,
+/turf/open/floor/dirt,
+/area/template_noop)
+"O" = (
+/obj/effect/spawner/trap,
+/turf/open/floor/dirt,
+/area/template_noop)
+"P" = (
+/obj/effect/mob_spawn/corpse/human/random/damaged,
+/turf/open/floor/dirt,
+/area/template_noop)
+"Q" = (
+/turf/open/floor/dirt,
+/area/template_noop)
+
+(1,1,1) = {"
+a
+a
+a
+O
+a
+P
+a
+"}
+(2,1,1) = {"
+a
+O
+P
+a
+v
+l
+a
+"}
+(3,1,1) = {"
+a
+v
+e
+a
+a
+Q
+a
+"}
+(4,1,1) = {"
+a
+a
+a
+Q
+a
+a
+a
+"}
+(5,1,1) = {"
+a
+Q
+a
+P
+a
+v
+a
+"}
+(6,1,1) = {"
+a
+a
+l
+O
+Q
+a
+a
+"}
+(7,1,1) = {"
+O
+a
+v
+a
+a
+t
+a
+"}

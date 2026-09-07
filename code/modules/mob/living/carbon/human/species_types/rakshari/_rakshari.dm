@@ -4,9 +4,10 @@
 /datum/attribute_holder/sheet/job/species/rakshari
 	raw_attribute_list = list(
 		/datum/attribute/skill/misc/sneaking = 10,
-		STAT_STRENGTH = -2,
+		STAT_STRENGTH = -1,
 		STAT_PERCEPTION = 2,
-		STAT_CONSTITUTION = -2,
+		STAT_CONSTITUTION = -1,
+		STAT_ENDURANCE = -1,
 		STAT_SPEED = 2,
 	)
 
@@ -20,7 +21,7 @@
 	Rakshari are a humanoid race of felines, known for their sneaky nature and shrewd business sense. \
 	They are quite similar to Lupians having formed a kinship with Humanity and can be found in many \
 	Human settlements, however they are far more prone to independence and a nomadic lifestyle.<br>\
-	+2 Perception, +2 Speed, -2 Strength, -2 Constitution, Darkvision, Scent-Sense, Extendable Claws, +1 skill tier Sneaking."
+	+2 Perception, +2 Speed, -1 Strength, -1 Constitution, -1 Endurance, Darkvision, Reduced Fall Damage, Scent-Sense, Extendable Claws, +1 skill tier Sneaking."
 
 	use_skintones = TRUE
 	default_color = "FFFFFF"
@@ -28,7 +29,7 @@
 	possible_ages = NORMAL_AGES_LIST
 
 	species_traits = list(EYECOLOR, HAIR, FACEHAIR, OLDGREY, CUSCOLORS)
-	inherent_traits = list(TRAIT_NOMOBSWAP, TRAIT_KITTEN_MOM, TRAIT_DARKVISION)
+	inherent_traits = list(TRAIT_NOMOBSWAP, TRAIT_KITTEN_MOM, TRAIT_DARKVISION, TRAIT_NOFALLDAMAGE1)
 
 	statsheet_male = /datum/attribute_holder/sheet/job/species/rakshari
 

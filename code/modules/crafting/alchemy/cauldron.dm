@@ -31,8 +31,9 @@
 	if(!recipe)
 		return list() // No recipe, accept nothing from the network
 
-	// Work out the cap per essence type based on what's already in
-	// essence_contents plus what's in our own storage (in-transit).
+	if(owner.brewing > 0 && !owner.auto_repeat)
+		return list()
+
 	var/list/allowed = list()
 	var/max_batches = owner.calculate_max_possible_batches(recipe)
 
@@ -242,43 +243,50 @@
 	brewing = 0
 	return ..()
 
+/obj/machinery/light/fueled/cauldron/proc/desired_batch_count()
+	if(!selected_recipe)
+		return 0
+	return auto_repeat ? 2 : 1
+
 // Drain from node into essence_contents, but never exceed the cap
 // for the current recipe.
 /obj/machinery/light/fueled/cauldron/proc/drain_from_node()
 	if(!essence_node || QDELETED(essence_node))
 		return
+	if(!selected_recipe)
+		return
+	if(brewing > 0 && !auto_repeat)
+		return
+
 	var/datum/essence_storage/node_storage = essence_node.storage
 	if(!node_storage || !node_storage.contents.len)
 		return
 
-	var/datum/alch_cauldron_recipe/recipe = selected_recipe
-	var/max_batches = recipe ? calculate_max_possible_batches(recipe) : 0
+	var/max_batches = calculate_max_possible_batches(selected_recipe)
 
 	for(var/essence_type in node_storage.contents.Copy())
+		if(!(essence_type in selected_recipe.required_essences))
+			continue
 		var/available = node_storage.get(essence_type)
 		if(!available)
 			continue
 		if(essence_contents.len >= max_essence_types && !essence_contents[essence_type])
 			continue
 
-		var/to_drain = available
-		// Cap to recipe needs if we have a recipe and this type is in it
-		if(recipe && max_batches > 0 && (essence_type in recipe.required_essences))
-			var/needed_total = recipe.required_essences[essence_type] * max_batches
-			var/already_have = essence_contents[essence_type] || 0
-			to_drain = min(available, max(0, needed_total - already_have))
-
+		var/needed_total = selected_recipe.required_essences[essence_type] * max_batches
+		var/already_have = essence_contents[essence_type] || 0
+		var/to_drain = min(available, max(0, needed_total - already_have))
 		if(to_drain <= 0)
 			continue
 
 		var/drained = node_storage.remove(essence_type, to_drain)
-		essence_contents[essence_type] = (essence_contents[essence_type] || 0) + drained
+		essence_contents[essence_type] = already_have + drained
 
-	// Push anything left in the node that we don't need back out
-	// (the network will route it elsewhere via push_to_linked)
 	if(node_storage.contents.len)
-		essence_node.push_to_linked(node_storage)
+		essence_node.push_surplus_to_linked(node_storage)
 
+	if(essence_node.network)
+		essence_node.network.invalidate_cache()
 	update_appearance(UPDATE_OVERLAYS)
 
 // How many batches could we theoretically make if we had infinite
@@ -286,19 +294,7 @@
 /obj/machinery/light/fueled/cauldron/proc/calculate_max_possible_batches(datum/alch_cauldron_recipe/recipe)
 	if(!recipe || !recipe.required_essences.len)
 		return 0
-
-	// Each essence slot in essence_contents can hold at most its share
-	// of the total cauldron capacity. Find the limiting type.
-	var/min_batches = INFINITY
-	for(var/essence_type in recipe.required_essences)
-		var/required_per_batch = recipe.required_essences[essence_type]
-		if(!required_per_batch)
-			continue
-		// How many of this type can the cauldron physically hold?
-		var/type_cap = essence_node.storage.max_total / recipe.required_essences.len
-		min_batches = min(min_batches, FLOOR(type_cap / required_per_batch, 1))
-
-	return (min_batches == INFINITY) ? 0 : max(min_batches, 1)
+	return desired_batch_count()
 
 /obj/machinery/light/fueled/cauldron/proc/has_required_essences()
 	if(!selected_recipe)
@@ -310,74 +306,88 @@
 			return FALSE
 	return TRUE
 
-/obj/machinery/light/fueled/cauldron/process()
-	..()
+/obj/machinery/light/fueled/cauldron/process(delta_time)
+	. = ..()
+
+	if(essence_node && !QDELETED(essence_node))
+		essence_node.pull_from_linked(essence_node.storage)
+		drain_from_node()
 
 	if(!on)
 		return
 
-	drain_from_node()
+	if(!length(essence_contents))
+		return
 
-	if(auto_repeat && selected_recipe && brewing == 0)
-		if(!has_required_essences())
-			return // Waiting for essences to arrive via network
+	if(brewing < 20)
+		if(!reagents.has_reagent(/datum/reagent/water, 50))
+			return
+		if(selected_recipe && !has_required_essences())
+			return
+		var/was_idle = (brewing == 0)
+		brewing += max(1, delta_time)
+		if(brewing > 20)
+			brewing = 20
+		if(was_idle && essence_node?.network)
+			essence_node.network.invalidate_cache()
+		update_appearance(UPDATE_OVERLAYS)
+		if(prob(10))
+			playsound(src, "bubbles", 100, FALSE)
+		return
 
-	if(length(essence_contents))
-		if(brewing < 20)
-			if(src.reagents.has_reagent(/datum/reagent/water, 50))
-				brewing++
-				update_appearance(UPDATE_OVERLAYS)
-				if(prob(10))
-					playsound(src, "bubbles", 100, FALSE)
-		else if(brewing == 20)
-			var/list/recipe_result = find_matching_recipe_with_batches()
-			if(recipe_result)
-				var/datum/alch_cauldron_recipe/found_recipe = recipe_result["recipe"]
-				var/batch_count = recipe_result["batches"]
+	if(brewing != 20)
+		return
 
-				essence_contents = list()
+	var/list/recipe_result = find_matching_recipe_with_batches()
+	if(recipe_result)
+		var/datum/alch_cauldron_recipe/found_recipe = recipe_result["recipe"]
+		var/batch_count = recipe_result["batches"]
 
-				if(reagents)
-					var/in_cauldron = src.reagents.get_reagent_amount(/datum/reagent/water)
-					src.reagents.remove_reagent(/datum/reagent/water, in_cauldron)
+		essence_contents = list()
 
-				if(found_recipe.output_reagents.len)
-					var/list/scaled_reagents = list()
-					for(var/reagent in found_recipe.output_reagents)
-						scaled_reagents[reagent] = found_recipe.output_reagents[reagent] * batch_count
-					src.reagents.add_reagent_list(scaled_reagents)
+		if(reagents)
+			var/in_cauldron = reagents.get_reagent_amount(/datum/reagent/water)
+			reagents.remove_reagent(/datum/reagent/water, in_cauldron)
 
-				if(length(found_recipe.output_items))
-					for(var/itempath in found_recipe.output_items)
-						for(var/i = 1 to batch_count)
-							new itempath(get_turf(src))
+		if(found_recipe.output_reagents.len)
+			var/list/scaled_reagents = list()
+			for(var/reagent in found_recipe.output_reagents)
+				scaled_reagents[reagent] = found_recipe.output_reagents[reagent] * batch_count
+			reagents.add_reagent_list(scaled_reagents)
 
-				if(batch_count > 1)
-					src.visible_message(span_info("The cauldron finishes boiling [batch_count] batches with a strong [found_recipe.smells_like] smell."))
-				else
-					src.visible_message(span_info("The cauldron finishes boiling with a faint [found_recipe.smells_like] smell."))
+		if(length(found_recipe.output_items))
+			for(var/itempath in found_recipe.output_items)
+				for(var/i = 1 to batch_count)
+					new itempath(get_turf(src))
 
-				if(lastuser)
-					var/mob/living/L = lastuser.resolve()
-					record_featured_stat(FEATURED_STATS_ALCHEMISTS, L)
-					record_round_statistic(STATS_POTIONS_BREWED, batch_count)
-					var/boon = L.get_learning_boon(/datum/attribute/skill/craft/alchemy)
-					var/amt2raise = GET_MOB_ATTRIBUTE_VALUE(L, STAT_INTELLIGENCE) * 2 * batch_count
-					L.adjust_experience(/datum/attribute/skill/craft/alchemy, amt2raise * boon, FALSE)
+		if(batch_count > 1)
+			visible_message(span_info("The cauldron finishes boiling [batch_count] batches with a strong [found_recipe.smells_like] smell."))
+		else
+			visible_message(span_info("The cauldron finishes boiling with a faint [found_recipe.smells_like] smell."))
 
-				playsound(src, "bubbles", 100, TRUE)
-				playsound(src, 'sound/misc/smelter_fin.ogg', 30, FALSE)
-				brewing = 21
-				update_appearance(UPDATE_OVERLAYS)
+		if(lastuser)
+			var/mob/living/L = lastuser.resolve()
+			if(L)
+				record_featured_stat(FEATURED_STATS_ALCHEMISTS, L)
+				record_round_statistic(STATS_POTIONS_BREWED, batch_count)
+				var/boon = L.get_learning_boon(/datum/attribute/skill/craft/alchemy)
+				var/amt2raise = GET_MOB_ATTRIBUTE_VALUE(L, STAT_INTELLIGENCE) * 2 * batch_count
+				L.adjust_experience(/datum/attribute/skill/craft/alchemy, amt2raise * boon, FALSE)
 
-				if(auto_repeat && selected_recipe)
-					brewing = 0 // Reset immediately for next batch
-			else
-				brewing = 0
-				essence_contents = list()
-				src.visible_message(span_info("The essences in the [src] fail to combine properly..."))
-				playsound(src, 'sound/misc/smelter_fin.ogg', 30, FALSE)
-				update_appearance(UPDATE_OVERLAYS)
+		playsound(src, "bubbles", 100, TRUE)
+		playsound(src, 'sound/misc/smelter_fin.ogg', 30, FALSE)
+		brewing = 21
+		update_appearance(UPDATE_OVERLAYS)
+
+		if(auto_repeat && selected_recipe)
+			brewing = 0
+
+		essence_node?.network?.invalidate_cache()
+	else
+		brewing = 0
+		if(essence_node?.network)
+			essence_node.network.invalidate_cache()
+		update_appearance(UPDATE_OVERLAYS)
 
 /obj/machinery/light/fueled/cauldron/proc/calculate_mixture_color()
 	if(essence_contents.len == 0)

@@ -4,25 +4,34 @@
 	icon = 'icons/roguetown/weapons/32/fists_claws.dmi'
 	icon_state = "extendedclaw"
 	item_flags = ABSTRACT | DROPDEL
-	force = DAMAGE_KNIFE
-	minstr = 1
+	force = 10
 	item_weight = 0 GRAMS
 	wbalance = HARD_TO_DODGE
-	wdefense = GOOD_PARRY
-	max_integrity = INTEGRITY_STANDARD
+	wdefense = AVERAGE_PARRY
+	wlength = WLENGTH_SHORT
+	max_blade_int = 100
+	max_integrity = INTEGRITY_POOR
+	sharpness = IS_SHARP
 	experimental_inhand = FALSE
+	tool_behaviour = TOOL_KNIFE
+	associated_skill = /datum/attribute/skill/combat/unarmed
 	possible_item_intents = list(/datum/intent/claw/cut, /datum/intent/claw/lunge, /datum/intent/claw/rend, /datum/intent/snip)
 
 /obj/item/weapon/extended_claw/Initialize()
 	. = ..()
 	ADD_TRAIT(src, TRAIT_NODROP, INNATE_TRAIT)
 	ADD_TRAIT(src, TRAIT_NOEMBED, INNATE_TRAIT)
+	/*
 	RegisterSignal(src, COMSIG_ATOM_INTEGRITY_CHANGED, PROC_REF(on_integrity_changed))
-
+	*/
+/*
 /obj/item/weapon/extended_claw/Destroy()
 	UnregisterSignal(src, COMSIG_ATOM_INTEGRITY_CHANGED)
 	return ..()
+*/
 
+// removed self-damage when hitting targets
+/*
 /obj/item/weapon/extended_claw/proc/on_integrity_changed(datum/source, old_value, new_value)
 	if(new_value >= old_value || !ismob(loc))
 		return
@@ -41,6 +50,7 @@
 			target_zone = BODY_ZONE_R_ARM
 		user.apply_damage(40, BRUTE, target_zone, damage_type = BCLASS_CUT, can_crit = TRUE)
 	. = ..()
+*/
 
 
 /datum/intent/claw/lunge
@@ -50,9 +60,12 @@
 	animname = "stab"
 	blade_class = BCLASS_STAB
 	hitsound = list('sound/combat/hits/bladed/genstab (1).ogg', 'sound/combat/hits/bladed/genstab (2).ogg', 'sound/combat/hits/bladed/genstab (3).ogg')
-	swingdelay = 3
+	item_damage_type = "stab"
+	damfactor = 1.2
+	swingdelay = 6
+	clickcd = 16
 	penfactor = 20
-	misscost = 4
+	misscost = 10
 
 /datum/intent/claw/cut
 	name = "cut"
@@ -62,7 +75,7 @@
 	blade_class = BCLASS_CUT
 	hitsound = list('sound/combat/hits/bladed/smallslash (1).ogg', 'sound/combat/hits/bladed/smallslash (2).ogg', 'sound/combat/hits/bladed/smallslash (3).ogg')
 	item_damage_type = "slash"
-	misscost = 4
+	misscost = 3
 	penfactor = AP_AXE_CHOP
 	swingdelay = 3
 
@@ -74,9 +87,9 @@
 	blade_class = BCLASS_CHOP
 	reach = 1
 	penfactor = AP_AXE_CHOP
-	swingdelay = 5
+	swingdelay = 4
 	clickcd = 16
-	damfactor = 1.1
+	damfactor = 1.5
 	no_early_release = TRUE
 	hitsound = list('sound/combat/hits/bladed/genslash (1).ogg', 'sound/combat/hits/bladed/genslash (2).ogg', 'sound/combat/hits/bladed/genslash (3).ogg')
 	item_damage_type = "slash"

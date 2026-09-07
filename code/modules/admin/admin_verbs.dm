@@ -130,6 +130,7 @@ GLOBAL_PROTECT(admin_verbs_admin)
 	/client/proc/resetasaycolor,
 	/client/proc/set_personal_admin_ooc_color,
 	/client/proc/reset_personal_admin_ooc_color,
+	/client/proc/lobbyooc,
 	/client/proc/set_ghost_sprite,
 	/client/proc/set_ui_theme,
 	/client/proc/toggleadminhelpsound,
@@ -160,6 +161,7 @@ GLOBAL_LIST_INIT(admin_verbs_fun, list(
 	/client/proc/smite,
 	/client/proc/heart_attack,
 	/client/proc/roll_admin_dice,
+	/client/proc/toggle_mob_boss,
 	))
 GLOBAL_PROTECT(admin_verbs_fun)
 GLOBAL_LIST_INIT(admin_verbs_spawn, list(/datum/admins/proc/spawn_atom, /datum/admins/proc/podspawn_atom, /client/proc/respawn_character, /datum/admins/proc/beaker_panel))

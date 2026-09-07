@@ -123,5 +123,5 @@
 	backl = /obj/item/weapon/polearm/woodstaff/quarterstaff/iron
 	backpack_contents = list(
 		/obj/item/chalk = 1,
-		/obj/item/reagent_containers/glass/bottle/manapot = 1
+		/obj/item/reagent_containers/glass/bottle/manapot/labelled = 1
 	)

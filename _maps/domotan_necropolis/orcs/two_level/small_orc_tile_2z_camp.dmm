@@ -1,0 +1,976 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aj" = (
+/obj/machinery/light/fueled/campfire/longlived,
+/turf/open/floor/dirt,
+/area/under/cavewet)
+"aH" = (
+/obj/effect/spawner/map_spawner/necropolis,
+/obj/structure/flora/grass/pyroclasticflowers,
+/turf/open/floor/dirt,
+/area/under/cavewet)
+"aN" = (
+/obj/effect/decal/cleanable/dirt/cobweb,
+/turf/open/floor/dirt,
+/area/template_noop)
+"bi" = (
+/obj/item/grown/log/tree,
+/obj/item/weapon/mace/spiked,
+/turf/open/floor/dirt,
+/area/under/cavewet)
+"bp" = (
+/obj/structure/fluff/railing/tall/palisade,
+/obj/structure/fluff/railing/tall/palisade{
+	dir = 4
+	},
+/turf/open/floor/dirt,
+/area/template_noop)
+"bD" = (
+/obj/effect/decal/remains/human,
+/turf/open/floor/twig,
+/area/indoors/shelter)
+"bJ" = (
+/obj/effect/decal/cleanable/dirt/cobweb/cobweb2,
+/turf/open/openspace,
+/area/indoors/shelter)
+"bL" = (
+/obj/effect/spawner/map_spawner/necropolis,
+/mob/living/carbon/human/species/orc/npc/footsoldier,
+/turf/open/floor/dirt,
+/area/under/cavewet)
+"dE" = (
+/obj/structure/fluff/railing/tall/palisade,
+/turf/open/floor/dirt,
+/area/template_noop)
+"dS" = (
+/obj/effect/spawner/map_spawner/necropolis/random_dirty,
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/dirt,
+/area/under/cavewet)
+"eK" = (
+/obj/machinery/light/fueled/torchholder/r,
+/turf/open/floor/twig,
+/area/indoors/shelter)
+"gj" = (
+/obj/machinery/light/fueled/firebowl/stump,
+/turf/template_noop,
+/area/template_noop)
+"gI" = (
+/obj/structure/fluff/walldeco/skullspike,
+/obj/effect/decal/remains/human,
+/turf/open/floor/dirt,
+/area/template_noop)
+"hn" = (
+/mob/living/carbon/human/species/orc/npc/warlord,
+/turf/open/floor/twig,
+/area/indoors/shelter)
+"hY" = (
+/mob/living/carbon/human/species/orc/npc/footsoldier,
+/turf/open/floor/dirt,
+/area/under/cavewet)
+"it" = (
+/obj/structure/tent_wall,
+/turf/open/floor/dirt,
+/area/template_noop)
+"iA" = (
+/obj/effect/decal/remains/human,
+/turf/open/floor/dirt,
+/area/template_noop)
+"ke" = (
+/obj/structure/fluff/railing/tall/palisade{
+	dir = 8
+	},
+/obj/machinery/light/fueled/firebowl/stump,
+/turf/open/floor/dirt,
+/area/template_noop)
+"kH" = (
+/obj/effect/spawner/map_spawner/necropolis/random_dirty,
+/obj/item/grown/log/tree/stick,
+/turf/open/floor/dirt,
+/area/under/cavewet)
+"lq" = (
+/obj/structure/stairs,
+/turf/open/floor/twig,
+/area/indoors/shelter)
+"lz" = (
+/obj/structure/fluff/railing/tall/palisade{
+	dir = 1
+	},
+/turf/template_noop,
+/area/template_noop)
+"mb" = (
+/obj/machinery/light/fueled/firebowl/stump,
+/turf/open/floor/dirt,
+/area/template_noop)
+"oy" = (
+/obj/structure/fluff/railing/tall/palisade{
+	dir = 4
+	},
+/turf/template_noop,
+/area/template_noop)
+"oB" = (
+/obj/structure/tent_wall,
+/turf/open/floor/twig,
+/area/template_noop)
+"pz" = (
+/obj/effect/decal/remains/wolf,
+/turf/open/floor/dirt,
+/area/template_noop)
+"pQ" = (
+/turf/open/floor/dirt,
+/area/template_noop)
+"qH" = (
+/obj/structure/roguetent/preopen,
+/turf/open/floor/dirt,
+/area/indoors/shelter)
+"sU" = (
+/obj/effect/decal/remains/human,
+/turf/open/floor/dirt,
+/area/under/cavewet)
+"sW" = (
+/obj/structure/closet/crate/chest/crate,
+/obj/effect/spawner/map_spawner/loot/coin/med,
+/obj/effect/spawner/map_spawner/loot/armor,
+/turf/open/floor/twig,
+/area/indoors/shelter)
+"uc" = (
+/obj/item/grown/log/tree,
+/turf/open/floor/dirt,
+/area/under/cavewet)
+"ur" = (
+/obj/structure/fluff/railing/tall/palisade{
+	dir = 4
+	},
+/obj/structure/fluff/railing/tall/palisade{
+	dir = 1
+	},
+/turf/open/floor/dirt,
+/area/template_noop)
+"vW" = (
+/obj/structure/rack,
+/obj/item/reagent_containers/glass/cup/skull,
+/turf/open/floor/twig,
+/area/indoors/shelter)
+"wb" = (
+/obj/effect/spawner/map_spawner/necropolis,
+/turf/open/floor/dirt,
+/area/template_noop)
+"wF" = (
+/obj/structure/statue/bone/rib,
+/turf/open/floor/dirt,
+/area/template_noop)
+"xx" = (
+/mob/living/carbon/human/species/orc/npc/footsoldier,
+/obj/machinery/light/fueled/torchholder/r,
+/turf/open/floor/dirt,
+/area/under/cavewet)
+"yx" = (
+/obj/structure/fluff/railing/tall/palisade,
+/obj/structure/fluff/railing/tall/palisade{
+	dir = 8
+	},
+/turf/open/floor/dirt,
+/area/template_noop)
+"yB" = (
+/obj/machinery/light/fueled/hearth,
+/obj/structure/fluff/railing/border{
+	dir = 1
+	},
+/turf/open/floor/twig,
+/area/indoors/shelter)
+"yE" = (
+/obj/structure/rack,
+/obj/effect/spawner/map_spawner/loot,
+/obj/effect/spawner/map_spawner/loot/potion_skills,
+/turf/open/floor/dirt,
+/area/under/cavewet)
+"Ak" = (
+/obj/structure/fluff/railing/tall/palisade{
+	dir = 4
+	},
+/obj/structure/flora/tree/burnt,
+/turf/open/floor/dirt,
+/area/template_noop)
+"An" = (
+/obj/effect/spawner/map_spawner/necropolis/random_rock_wall,
+/turf/open/floor/dirt,
+/area/under/cavewet)
+"Br" = (
+/obj/structure/chair/bench/ancientlog,
+/turf/open/floor/dirt,
+/area/under/cavewet)
+"Bv" = (
+/obj/machinery/light/fueled/torchholder/l,
+/obj/machinery/light/fueled/hearth,
+/obj/structure/fluff/railing/border,
+/turf/open/floor/twig,
+/area/indoors/shelter)
+"Ca" = (
+/obj/structure/fluff/walldeco/skullspike,
+/turf/template_noop,
+/area/template_noop)
+"Ck" = (
+/turf/open/floor/twig,
+/area/indoors/shelter)
+"CP" = (
+/obj/structure/closet/crate/chest/wickertrunk,
+/obj/effect/spawner/map_spawner/loot/potion_poisons,
+/turf/open/floor/twig,
+/area/indoors/shelter)
+"Et" = (
+/obj/structure/rack,
+/obj/item/clothing/face/skullmask,
+/obj/item/clothing/face/skullmask,
+/obj/effect/decal/cleanable/dirt/cobweb/cobweb2,
+/turf/open/floor/twig,
+/area/indoors/shelter)
+"EQ" = (
+/obj/structure/table/wood/treestump/burnt,
+/turf/open/floor/dirt,
+/area/template_noop)
+"Fa" = (
+/obj/structure/fluff/railing/tall/palisade{
+	dir = 1
+	},
+/turf/open/floor/dirt,
+/area/template_noop)
+"Fb" = (
+/obj/item/grown/log/tree/small,
+/turf/open/floor/dirt,
+/area/under/cavewet)
+"FC" = (
+/obj/structure/stairs,
+/turf/open/floor/dirt,
+/area/under/cavewet)
+"FI" = (
+/obj/structure/fluff/walldeco/skullspike,
+/obj/structure/lootable_structure/grain_barrel,
+/turf/open/floor/dirt,
+/area/under/cavewet)
+"Hs" = (
+/obj/structure/lootable_structure/powder_sack,
+/obj/machinery/light/fueled/torchholder/l,
+/turf/open/floor/dirt,
+/area/under/cavewet)
+"HA" = (
+/obj/structure/closet/crate/chest/wickertrunk,
+/obj/effect/spawner/map_spawner/loot/potion_vitals,
+/obj/effect/decal/cleanable/dirt/cobweb,
+/turf/open/floor/twig,
+/area/indoors/shelter)
+"HS" = (
+/obj/structure/rack,
+/obj/effect/spawner/map_spawner/loot/potion_poisons,
+/turf/open/floor/dirt,
+/area/under/cavewet)
+"Ib" = (
+/obj/structure/fluff/walldeco/skullspike,
+/obj/machinery/light/fueled/firebowl/stump,
+/turf/open/floor/dirt,
+/area/under/cavewet)
+"IV" = (
+/obj/structure/fluff/railing/tall/palisade{
+	dir = 8
+	},
+/turf/open/floor/dirt,
+/area/template_noop)
+"Ji" = (
+/obj/structure/lootable_structure/mining_cache,
+/turf/open/floor/dirt,
+/area/under/cavewet)
+"Jp" = (
+/obj/machinery/light/fueled/firebowl/stump,
+/turf/open/floor/dirt,
+/area/under/cavewet)
+"Jx" = (
+/turf/template_noop,
+/area/template_noop)
+"JA" = (
+/obj/effect/spawner/map_spawner/loot/medium,
+/turf/open/floor/twig,
+/area/indoors/shelter)
+"JC" = (
+/obj/structure/well,
+/turf/open/floor/dirt,
+/area/under/cavewet)
+"JI" = (
+/obj/item/weapon/mace/spiked,
+/turf/open/floor/dirt,
+/area/under/cavewet)
+"Kh" = (
+/obj/structure/table/wood/treestump/burnt,
+/obj/structure/fluff/walldeco/skullspike,
+/turf/open/floor/dirt,
+/area/template_noop)
+"Kq" = (
+/turf/open/floor/dirt,
+/area/under/cavewet)
+"Kr" = (
+/obj/structure/fluff/railing/tall/palisade{
+	dir = 8
+	},
+/obj/structure/fluff/railing/tall/palisade{
+	dir = 1
+	},
+/turf/open/floor/dirt,
+/area/template_noop)
+"Kz" = (
+/turf/closed/wall/mineral/stonebrick,
+/area/indoors/shelter)
+"KL" = (
+/obj/effect/spawner/map_spawner/necropolis,
+/turf/open/floor/dirt,
+/area/under/cavewet)
+"Le" = (
+/obj/structure/fluff/railing/tall/palisade{
+	dir = 1
+	},
+/turf/template_noop,
+/area/under/cavewet)
+"Lx" = (
+/obj/structure/fluff/railing/tall/palisade{
+	dir = 4
+	},
+/obj/structure/fluff/railing/tall/palisade{
+	dir = 1
+	},
+/obj/machinery/light/fueled/firebowl/stump,
+/turf/open/floor/dirt,
+/area/template_noop)
+"LE" = (
+/turf/closed/mineral,
+/area/under/cavewet)
+"LX" = (
+/obj/effect/spawner/map_spawner/necropolis/random_dirty,
+/turf/open/floor/twig,
+/area/indoors/shelter)
+"Mm" = (
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/dirt,
+/area/under/cavewet)
+"MG" = (
+/mob/living/carbon/human/species/orc/npc/marauder,
+/turf/open/floor/dirt,
+/area/under/cavewet)
+"Nv" = (
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/twig,
+/area/indoors/shelter)
+"Nx" = (
+/obj/structure/rack,
+/obj/effect/spawner/map_spawner/loot/medium,
+/turf/open/floor/dirt,
+/area/under/cavewet)
+"NX" = (
+/obj/structure/fluff/railing/tall/palisade{
+	dir = 4
+	},
+/obj/structure/table/wood/treestump/burnt,
+/turf/open/floor/dirt,
+/area/template_noop)
+"Op" = (
+/obj/structure/fluff/railing/tall/palisade{
+	dir = 8
+	},
+/turf/template_noop,
+/area/template_noop)
+"OB" = (
+/obj/structure/tent_wall,
+/turf/open/floor/twig,
+/area/indoors/shelter)
+"OX" = (
+/obj/effect/spawner/map_spawner/necropolis/random_dirty,
+/mob/living/carbon/human/species/orc/npc/footsoldier,
+/turf/open/floor/dirt,
+/area/under/cavewet)
+"Pe" = (
+/obj/structure/roguetent,
+/turf/open/floor/dirt,
+/area/indoors/shelter)
+"QU" = (
+/obj/structure/fluff/railing/border{
+	dir = 8
+	},
+/turf/open/openspace,
+/area/indoors/shelter)
+"QW" = (
+/obj/structure/flora/tree/burnt,
+/turf/open/floor/dirt,
+/area/template_noop)
+"Ss" = (
+/obj/structure/fluff/railing/tall/palisade{
+	dir = 4
+	},
+/turf/open/floor/dirt,
+/area/template_noop)
+"SF" = (
+/obj/structure/ladder,
+/turf/open/floor/dirt,
+/area/under/cavewet)
+"SY" = (
+/obj/structure/fluff/walldeco/skullspike,
+/turf/open/floor/dirt,
+/area/template_noop)
+"TY" = (
+/obj/structure/fluff/railing/tall/palisade{
+	dir = 4
+	},
+/obj/structure/fluff/railing/tall/palisade,
+/turf/open/floor/dirt,
+/area/template_noop)
+"Uh" = (
+/obj/structure/tent_wall,
+/turf/open/floor/dirt,
+/area/indoors/shelter)
+"UR" = (
+/obj/effect/spawner/map_spawner/loot/coin/low,
+/turf/open/floor/dirt,
+/area/under/cavewet)
+"UW" = (
+/obj/machinery/light/fueled/torchholder/r,
+/obj/structure/closet/crate/chest/wickertrunk,
+/obj/effect/spawner/map_spawner/loot/food,
+/obj/effect/spawner/map_spawner/loot/food,
+/obj/effect/decal/cleanable/dirt/cobweb,
+/turf/open/floor/twig,
+/area/indoors/shelter)
+"UX" = (
+/obj/effect/spawner/map_spawner/necropolis,
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/dirt,
+/area/under/cavewet)
+"Vb" = (
+/obj/effect/spawner/map_spawner/necropolis/shroom_clutter,
+/obj/effect/spawner/map_spawner/necropolis/random_dirty,
+/turf/open/floor/dirt,
+/area/under/cavewet)
+"WL" = (
+/obj/structure/flora/grass/swampweed,
+/turf/open/floor/dirt,
+/area/under/cavewet)
+"WO" = (
+/obj/effect/spawner/map_spawner/necropolis/shroom_clutter,
+/turf/open/floor/dirt,
+/area/under/cavewet)
+"XL" = (
+/obj/structure/fluff/railing/tall/palisade{
+	dir = 8
+	},
+/obj/structure/table/wood/treestump/burnt,
+/turf/open/floor/dirt,
+/area/template_noop)
+"XP" = (
+/obj/structure/ladder,
+/turf/open/floor/twig,
+/area/indoors/shelter)
+"Yl" = (
+/mob/living/carbon/human/species/orc/npc/footsoldier,
+/turf/open/floor/twig,
+/area/indoors/shelter)
+"Yr" = (
+/obj/structure/fluff/railing/tall/palisade{
+	dir = 1
+	},
+/obj/machinery/light/fueled/firebowl/stump,
+/turf/open/floor/dirt,
+/area/template_noop)
+"Yv" = (
+/obj/effect/spawner/map_spawner/necropolis,
+/turf/open/floor/twig,
+/area/indoors/shelter)
+"Yy" = (
+/obj/effect/spawner/map_spawner/necropolis/random_dirty,
+/turf/open/water/blood,
+/area/indoors/shelter)
+"YG" = (
+/obj/structure/fluff/railing/tall/palisade{
+	dir = 4
+	},
+/obj/machinery/light/fueled/firebowl/stump,
+/turf/open/floor/dirt,
+/area/template_noop)
+"YN" = (
+/obj/structure/fluff/railing/tall/palisade,
+/turf/template_noop,
+/area/template_noop)
+"YV" = (
+/obj/structure/flora/grass/pyroclasticflowers,
+/turf/open/floor/dirt,
+/area/under/cavewet)
+"Zb" = (
+/obj/structure/closet/crate/chest/wickertrunk,
+/obj/machinery/light/fueled/torchholder/l,
+/obj/effect/spawner/map_spawner/loot/rare,
+/turf/open/floor/twig,
+/area/indoors/shelter)
+"Zv" = (
+/obj/machinery/light/fueled/torchholder/l,
+/turf/open/floor/dirt,
+/area/under/cavewet)
+"ZC" = (
+/obj/structure/fluff/railing/tall/palisade{
+	dir = 8
+	},
+/obj/structure/fluff/railing/tall/palisade,
+/turf/open/floor/dirt,
+/area/template_noop)
+"ZE" = (
+/mob/living/carbon/human/species/orc/npc/berserker,
+/turf/open/floor/twig,
+/area/indoors/shelter)
+"ZI" = (
+/turf/closed/wall/mineral/tent,
+/area/under/cavewet)
+"ZK" = (
+/obj/structure/statue/bone/skull,
+/turf/open/floor/dirt,
+/area/template_noop)
+
+(1,1,1) = {"
+LE
+LE
+Jx
+Jx
+Jx
+Op
+Op
+Jx
+Jx
+Jx
+Jx
+Jx
+LE
+LE
+"}
+(2,1,1) = {"
+LE
+LE
+Jx
+LE
+Jx
+Jx
+Jx
+An
+Kq
+Le
+Jx
+Jx
+Jx
+LE
+"}
+(3,1,1) = {"
+LE
+gj
+wb
+LE
+LE
+Jx
+LE
+LE
+LE
+LE
+LE
+ZI
+Jx
+Jx
+"}
+(4,1,1) = {"
+Ca
+Jx
+Kq
+Kq
+LE
+LE
+LE
+LE
+LE
+LE
+Ib
+Kq
+Jx
+Jx
+"}
+(5,1,1) = {"
+LE
+LE
+LE
+YV
+LE
+ZI
+ZI
+LE
+aj
+LE
+Kq
+Kq
+YN
+Jx
+"}
+(6,1,1) = {"
+LE
+WL
+Mm
+sU
+Zv
+MG
+bi
+OX
+Ji
+LE
+KL
+aH
+LE
+Jx
+"}
+(7,1,1) = {"
+LE
+An
+Kq
+FC
+LE
+Vb
+Mm
+UR
+Fb
+LE
+Kq
+Kq
+LE
+LE
+"}
+(8,1,1) = {"
+LE
+LE
+Kq
+FC
+LE
+JC
+HS
+uc
+dS
+Zv
+Kq
+Kq
+Hs
+LE
+"}
+(9,1,1) = {"
+Jx
+LE
+LE
+LE
+LE
+hY
+kH
+UX
+SF
+Kq
+Kq
+ZI
+ZI
+LE
+"}
+(10,1,1) = {"
+Jx
+Jx
+LE
+LE
+LE
+Br
+UR
+WO
+LE
+YV
+sU
+Kq
+yE
+LE
+"}
+(11,1,1) = {"
+lz
+Jx
+LE
+LE
+LE
+WO
+xx
+JI
+LE
+Kq
+Mm
+bL
+Nx
+LE
+"}
+(12,1,1) = {"
+LE
+Jx
+Jx
+LE
+ZI
+aj
+LE
+LE
+LE
+An
+Kq
+LE
+LE
+LE
+"}
+(13,1,1) = {"
+LE
+LE
+Jx
+LE
+ZI
+ZI
+LE
+LE
+LE
+FI
+Kq
+Kq
+LE
+LE
+"}
+(14,1,1) = {"
+oy
+oy
+Jx
+Jx
+LE
+LE
+LE
+LE
+LE
+LE
+Jp
+Kq
+YN
+Jx
+"}
+
+(1,1,2) = {"
+QW
+pQ
+Jx
+Jx
+Jx
+Jx
+Jx
+Jx
+Jx
+Jx
+Jx
+Jx
+EQ
+mb
+"}
+(2,1,2) = {"
+mb
+EQ
+YN
+ZC
+Ca
+Jx
+YN
+XL
+ke
+ZC
+Jx
+Jx
+Jx
+QW
+"}
+(3,1,2) = {"
+EQ
+Jx
+YN
+mb
+ZC
+Jx
+Uh
+Uh
+Uh
+Uh
+Uh
+Uh
+Jx
+Jx
+"}
+(4,1,2) = {"
+Jx
+YN
+IV
+pQ
+iA
+IV
+Uh
+HA
+yB
+Bv
+Zb
+Uh
+Jx
+Jx
+"}
+(5,1,2) = {"
+Kr
+IV
+Uh
+Pe
+Pe
+Kz
+Kz
+CP
+bD
+Nv
+hn
+Uh
+Jx
+Jx
+"}
+(6,1,2) = {"
+Fa
+pQ
+OB
+UW
+ZE
+Ck
+Yv
+Ck
+Ck
+LX
+vW
+Uh
+ZC
+Jx
+"}
+(7,1,2) = {"
+Uh
+Pe
+OB
+QU
+lq
+Nv
+LX
+Yl
+Yv
+JA
+sW
+Kz
+pQ
+yx
+"}
+(8,1,2) = {"
+Lx
+SY
+oB
+bJ
+lq
+bD
+eK
+Ck
+Ck
+Ck
+Kz
+Kz
+gI
+dE
+"}
+(9,1,2) = {"
+Jx
+ur
+it
+Uh
+qH
+qH
+Uh
+Nv
+XP
+Yl
+Pe
+aN
+pQ
+dE
+"}
+(10,1,2) = {"
+Jx
+Jx
+Fa
+pQ
+pQ
+pQ
+Pe
+Ck
+Yv
+Ck
+Pe
+pz
+pQ
+dE
+"}
+(11,1,2) = {"
+Jx
+Jx
+ur
+QW
+pQ
+iA
+Kz
+Et
+Yy
+eK
+Uh
+pQ
+mb
+dE
+"}
+(12,1,2) = {"
+mb
+Jx
+Jx
+Yr
+pQ
+ZK
+Kz
+Kz
+Uh
+Uh
+Uh
+pQ
+QW
+dE
+"}
+(13,1,2) = {"
+EQ
+QW
+Jx
+ur
+Kh
+pQ
+pQ
+wF
+pQ
+wF
+pQ
+pQ
+NX
+bp
+"}
+(14,1,2) = {"
+Jx
+Jx
+Jx
+Jx
+ur
+Ss
+Ak
+Ss
+YG
+Ss
+Ss
+TY
+Jx
+Jx
+"}

@@ -31,7 +31,7 @@
 		return FALSE
 
 	var/eatverb = pick("bite","chew","nibble","gnaw","gobble","chomp")
-	M.nutrition += 10
+	M.nutrition += 100
 
 	switch(M.nutrition)
 		if(NUTRITION_LEVEL_FAT to INFINITY)

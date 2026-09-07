@@ -49,9 +49,7 @@
 	background_track = 'sound/music/area/Fulminate.ogg'
 
 /area/indoors/town/tavern/saiga
-	first_time_text = "Maribelle's Whinny"
-	background_track = 'sound/music/area/Folia1490.ogg'
-	background_track_night = 'sound/music/area/LeTourdion.ogg'
+	first_time_text = "Wynceslar's Pride"
 	converted_type = /area/outdoors/exposed/tavern/saiga
 
 /area/outdoors/exposed/tavern/saiga
@@ -123,9 +121,14 @@
 	first_time_text = "CHURCH OF THE ELEMENTS"
 
 /area/indoors/town/church/crypt
-	name = "royal crypt"
+	name = "crypt"
 	icon_state = "crypt"
-	first_time_text = "THE ROYAL CRYPT"
+	first_time_text = "THE CRYPT OF OLD DOMA"
+
+/area/indoors/town/church/graveyard
+	name = "graveyard"
+	icon_state = "crypt"
+	first_time_text = "THE GRAVEYARD OF OLD DOMA"
 
 /area/indoors/town/church/inquisition
 	name = "inquisition"

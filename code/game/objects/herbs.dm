@@ -186,7 +186,7 @@
 	herbtype = /obj/item/alch/herb/euphorbia
 
 /obj/structure/flora/grass/herb/necralily
-	name = "necran lily"
+	name = "valdalan lily"
 	icon_state = "necralily2"
 	can_replenish = FALSE
 

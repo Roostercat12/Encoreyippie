@@ -151,9 +151,8 @@
 		to_chat(user, span_warning("Already in filter list."))
 		return FALSE
 	allowed_essence_types += essence_type
-	var/datum/thaumaturgical_essence/essence = new essence_type
-	to_chat(user, span_info("[essence.name] added to filter."))
-	qdel(essence)
+	var/datum/thaumaturgical_essence/essence = essence_type
+	to_chat(user, span_info("[initial(essence.name)] added to filter."))
 	if(network)
 		network.invalidate_cache()
 	return TRUE
@@ -163,9 +162,8 @@
 		to_chat(user, span_warning("Not in filter list."))
 		return FALSE
 	allowed_essence_types -= essence_type
-	var/datum/thaumaturgical_essence/essence = new essence_type
-	to_chat(user, span_info("[essence.name] removed from filter."))
-	qdel(essence)
+	var/datum/thaumaturgical_essence/essence = essence_type
+	to_chat(user, span_info("[initial(essence.name)] removed from filter."))
 	if(network)
 		network.invalidate_cache()
 	return TRUE
@@ -186,7 +184,7 @@
 	options["View Current Filters"] = "view"
 	options["Cancel"] = "cancel"
 
-	var/choice = input(user, "Essence Filter Configuration", "Filter Menu") in options
+	var/choice = tgui_input_list(user, "Essence Filter Configuration", "Filter Menu", options)
 	if(!choice || choice == "cancel" || !Adjacent(user))
 		return
 
@@ -198,37 +196,40 @@
 		if("adjust_void")
 			adjust_void_rate(user)
 		if("add")
-			var/list/candidates = list()
-			// Offer currently stored types plus a hardcoded common set
-			for(var/essence_type in storage.contents)
-				var/datum/thaumaturgical_essence/e = new essence_type
-				candidates[e.name] = essence_type
-				qdel(e)
-			for(var/essence_type in list(
-				/datum/thaumaturgical_essence/fire,
-				/datum/thaumaturgical_essence/water,
-				/datum/thaumaturgical_essence/earth,
-				/datum/thaumaturgical_essence/air,
-				/datum/thaumaturgical_essence/life))
-				var/datum/thaumaturgical_essence/e = new essence_type
-				if(!(e.name in candidates))
-					candidates[e.name] = essence_type
-				qdel(e)
-			if(!length(candidates))
-				to_chat(user, span_warning("No essence types available to add."))
+			var/list/filter_options = list()
+			for(var/essence_path in GLOB.all_essences)
+				if(essence_path in allowed_essence_types)
+					continue
+				var/datum/thaumaturgical_essence/essence = essence_path
+				filter_options[initial(essence.name)] = essence_path
+
+			var/max_picks = 5 - length(allowed_essence_types)
+			if(max_picks < 1)
+				to_chat(user, span_warning("There are already too many essences in the filter!"))
 				return
-			var/selected = input(user, "Select essence type to add:", "Add Filter") in candidates
-			if(selected && Adjacent(user))
-				add_essence_filter(candidates[selected], user)
+
+			var/list/selected = tgui_input_checkboxes(user, "Choose Essences to Add", "Filter", filter_options, 1, max_picks)
+			if(!selected || !Adjacent(user))
+				return
+
+			for(var/ess in selected)
+				add_essence_filter(ess, user)
 		if("remove")
+			if(!length(allowed_essence_types))
+				to_chat(user, span_warning("There are no filters to remove!"))
+				return
+
 			var/list/filter_options = list()
 			for(var/essence_type in allowed_essence_types)
-				var/datum/thaumaturgical_essence/e = new essence_type
-				filter_options[e.name] = essence_type
-				qdel(e)
-			var/selected = input(user, "Select essence type to remove:", "Remove Filter") in filter_options
-			if(selected && Adjacent(user))
-				remove_essence_filter(filter_options[selected], user)
+				var/datum/thaumaturgical_essence/e = essence_type
+				filter_options[initial(e.name)] = essence_type
+
+			var/list/selected = tgui_input_checkboxes(user, "Choose Essences to Remove", "Remove Filter", filter_options)
+			if(!selected || !Adjacent(user))
+				return
+
+			for(var/essence_type in selected)
+				remove_essence_filter(essence_type, user)
 		if("clear")
 			allowed_essence_types.Cut()
 			to_chat(user, span_info("All essence filters cleared."))
@@ -240,9 +241,8 @@
 			else
 				to_chat(user, span_info("Allowed essence types:"))
 				for(var/essence_type in allowed_essence_types)
-					var/datum/thaumaturgical_essence/e = new essence_type
-					to_chat(user, span_info("  - [e.name]"))
-					qdel(e)
+					var/datum/thaumaturgical_essence/essence = essence_type
+					to_chat(user, span_info("  - [initial(essence.name)]"))
 
 /obj/machinery/essence/reservoir/filled
 	var/list/essence_list = list()

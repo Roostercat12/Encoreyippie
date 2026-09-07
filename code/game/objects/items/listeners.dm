@@ -48,7 +48,7 @@
 	if(tcolor)
 		voicecolor_override = tcolor
 	if(speaking && message)
-		playsound(loc, 'sound/vo/mobs/rat/rat_life.ogg', 20, TRUE, -1)
+		playsound(loc, 'sound/misc/scom.ogg', 20, TRUE, -1)
 		say(message, language = message_language)
 	voicecolor_override = null
 

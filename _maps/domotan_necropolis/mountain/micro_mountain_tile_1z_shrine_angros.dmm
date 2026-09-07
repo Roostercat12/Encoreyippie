@@ -1,0 +1,134 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/template_noop,
+/area/template_noop)
+"k" = (
+/obj/structure/fluff/psycross/angros/abandoned,
+/obj/item/natural/cloth{
+	color = "#DC143C"
+	},
+/turf/open/floor/naturalstone,
+/area/template_noop)
+"s" = (
+/obj/structure/bars/cemetery,
+/turf/open/floor/dirt,
+/area/template_noop)
+"t" = (
+/obj/structure/flora/grass/thorn_bush,
+/turf/open/floor/dirt,
+/area/template_noop)
+"v" = (
+/turf/open/floor/naturalstone,
+/area/template_noop)
+"x" = (
+/obj/structure/flora/tree/burnt,
+/turf/open/floor/dirt,
+/area/template_noop)
+"y" = (
+/obj/item/natural/clod/dirt,
+/turf/open/floor/dirt,
+/area/template_noop)
+"F" = (
+/obj/structure/fluff/psycross/mordsol,
+/turf/open/floor/naturalstone,
+/area/template_noop)
+"H" = (
+/obj/effect/spawner/map_spawner/necropolis,
+/obj/structure/flora/grass/thorn_bush,
+/turf/open/floor/dirt,
+/area/template_noop)
+"I" = (
+/obj/structure/bars/cemetery,
+/turf/open/floor/naturalstone,
+/area/template_noop)
+"J" = (
+/obj/structure/bars,
+/turf/open/floor/naturalstone,
+/area/template_noop)
+"L" = (
+/obj/item/natural/clod/dirt,
+/obj/structure/fluff/statue/crystal/fire,
+/turf/open/floor/dirt,
+/area/template_noop)
+"O" = (
+/obj/item/natural/cloth{
+	color = "#DC143C"
+	},
+/turf/open/floor/naturalstone,
+/area/template_noop)
+"Q" = (
+/obj/effect/spawner/map_spawner/necropolis,
+/turf/open/floor/naturalstone,
+/area/template_noop)
+"S" = (
+/obj/machinery/light/fueled/firebowl,
+/turf/open/floor/dirt,
+/area/template_noop)
+"X" = (
+/obj/structure/table/wood/treestump/burnt,
+/turf/open/floor/dirt,
+/area/template_noop)
+
+(1,1,1) = {"
+a
+x
+a
+J
+J
+a
+a
+"}
+(2,1,1) = {"
+J
+a
+y
+H
+a
+t
+a
+"}
+(3,1,1) = {"
+I
+S
+Q
+F
+X
+J
+a
+"}
+(4,1,1) = {"
+s
+a
+v
+O
+Q
+I
+a
+"}
+(5,1,1) = {"
+J
+a
+k
+v
+a
+s
+a
+"}
+(6,1,1) = {"
+t
+a
+a
+a
+L
+J
+a
+"}
+(7,1,1) = {"
+J
+J
+J
+a
+a
+x
+t
+"}

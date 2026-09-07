@@ -519,7 +519,7 @@ GLOBAL_LIST_INIT(natural_precursor_registry, list())
 	)
 
 /datum/natural_precursor/necralily
-	name = "necran lily"
+	name = "valdalan lily"
 	essence_yields = list(
 		/datum/thaumaturgical_essence/death = 50,
 		/datum/thaumaturgical_essence/chaos = 35,

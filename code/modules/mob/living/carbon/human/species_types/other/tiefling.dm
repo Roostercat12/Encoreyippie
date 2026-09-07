@@ -9,11 +9,10 @@
 
 /datum/attribute_holder/sheet/job/species/tieberian
 	raw_attribute_list = list(
-		STAT_PERCEPTION = 2,
+		STAT_PERCEPTION = 1,
 		STAT_INTELLIGENCE = 1,
-		STAT_CONSTITUTION = -1,
 		STAT_SPEED = 1,
-		STAT_FORTUNE = -1
+		STAT_FORTUNE = -2
 	)
 
 /datum/species/tieberian
@@ -26,15 +25,15 @@
 	It is assumed that, prior to the Big Burn, such things were biologically impossible. \
 	However, after Angros' betrayal, Tieflings began to appear in the world; different from demons in that they possess Thauma, \
 	but carrying the burden of the monstrous features endemic to Hell's minions. \
-	Expect to be treated very poorly in-character and shunned from the majority of Holy circles by selecting this species.<br>\
-	+2 Perception, +1 Intelligence, +1 Speed, -1 Constitution, -1 Fortune"
+	Expect to be treated with suspicion and shunned from the majority of Holy circles by selecting this species.<br>\
+	+1 Perception, +1 Intelligence, +1 Speed, -2 Fortune, Darkvision, Heat Resistant, Cannot be ignited by mundane fire."
 
 	skin_tone_wording = "Progenitor"
 
 	exotic_bloodtype = /datum/blood_type/human/tiefling
 
 	species_traits = list(EYECOLOR, HAIR, FACEHAIR, LIPS, STUBBLE, OLDGREY)
-	inherent_traits = list(TRAIT_NOMOBSWAP, TRAIT_NOFIRE)
+	inherent_traits = list(TRAIT_NOMOBSWAP, TRAIT_NOFIRE, TRAIT_RESISTHEAT, TRAIT_DARKVISION)
 	use_skintones = TRUE
 
 	possible_ages = NORMAL_AGES_LIST
@@ -133,7 +132,9 @@
 	RegisterSignal(C, COMSIG_MOB_SAY, PROC_REF(handle_speech))
 	C.grant_language(/datum/language/common)
 	C.grant_language(/datum/language/hellspeak)
+	/*
 	C.AddComponent(/datum/component/malaguero, 2, 1, 30 SECONDS)
+	*/
 
 /datum/species/tieberian/after_creation(mob/living/carbon/C)
 	. = ..()
@@ -143,8 +144,9 @@
 	. = ..()
 	UnregisterSignal(C, COMSIG_MOB_SAY)
 	C.remove_language(/datum/language/hellspeak)
+	/*
 	qdel(C.GetComponent(/datum/component/malaguero))
-
+	*/
 /datum/species/tieberian/qualifies_for_rank(rank, list/features)
 	return TRUE
 

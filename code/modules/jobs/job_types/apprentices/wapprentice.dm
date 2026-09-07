@@ -31,7 +31,7 @@
 	As long as you can keep your grades up, that is..."
 	department_flag = APPRENTICES
 	job_flags = (JOB_ANNOUNCE_ARRIVAL | JOB_SHOW_IN_CREDITS | JOB_EQUIP_RANK | JOB_NEW_PLAYER_JOINABLE)
-	factions = list(FACTION_TOWN)
+	factions = list(FACTION_TOWN, SUB_FACTION_KEEP)
 	total_positions = 99
 	spawn_positions = 99
 
@@ -69,10 +69,8 @@
 	skill_multipliers = list(/datum/attribute/skill/magic/arcane = 1.25)
 	book_type = /obj/item/recipe_book/arcyne
 
-/datum/job/mageapprentice/after_spawn(mob/living/carbon/human/spawned, client/player_client)
-	. = ..()
-	if(spawned.age == AGE_ADULT)
-		spawned.adjust_form_mastery_points(3)
+	form_points = 4
+	technique_points = 4
 
 /datum/job/mageapprentice/on_roundstart(mob/living/spawned, client/player_client)
 	. = ..()

@@ -19,8 +19,12 @@
 	summon_radius = 0
 
 	var/datum/weakref/current_ear
+	var/listening_for_commands = FALSE
 
 /datum/action/cooldown/spell/conjure/phantom_ear/Destroy(force)
+	if(owner && listening_for_commands)
+		UnregisterSignal(owner, COMSIG_MOB_SAY)
+		listening_for_commands = FALSE
 	QDEL_NULL(current_ear)
 	return ..()
 
@@ -33,3 +37,21 @@
 		to_chat(owner, span_notice("You've conjured a phantom ear. You can hear through it as if you were there. Speak \"deafen\" to close this ear to the world, and \"listen\" to re-open it."))
 	current_ear = WEAKREF(summoned_object)
 	summoned_object.setup(owner)
+	if(!listening_for_commands && owner)
+		RegisterSignal(owner, COMSIG_MOB_SAY, PROC_REF(on_owner_say))
+		listening_for_commands = TRUE
+
+/datum/action/cooldown/spell/conjure/phantom_ear/proc/on_owner_say(mob/living/speaker, list/speech_args)
+	SIGNAL_HANDLER
+	var/obj/item/phantom_ear/ear = current_ear?.resolve()
+	if(!ear)
+		return
+	var/raw_message = speech_args[SPEECH_MESSAGE]
+	if(!raw_message)
+		return
+	if(findtext(raw_message, "deafen") && !ear.muted)
+		to_chat(speaker, span_notice("You will no longer hear the voices."))
+		ear.muted = TRUE
+	else if(findtext(raw_message, "listen") && ear.muted)
+		to_chat(speaker, span_notice("You will now hear the voices."))
+		ear.muted = FALSE

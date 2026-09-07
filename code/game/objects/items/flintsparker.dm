@@ -16,6 +16,16 @@
 	COOLDOWN_DECLARE(flintcd)
 
 	item_weight = 50 GRAMS
+	var/static/list/flint_spark_types
+
+/obj/item/flint/Initialize(mapload)
+	. = ..()
+	if(!flint_spark_types)
+		flint_spark_types = typecacheof(list(
+			/obj/item/flashlight/flare,
+			/obj/item/smokebomb,
+			/obj/machinery/light/fueled,
+		))
 
 /obj/item/flint/attack_self(mob/living/user, list/modifiers)
 	if(!COOLDOWN_FINISHED(src, flintcd))
@@ -29,11 +39,19 @@
 	if(prob(80))
 		user.flash_fullscreen("whiteflash")
 		var/datum/effect_system/spark_spread/S = new()
-		var/turf/front = get_step(user,user.dir)
+		var/turf/front = get_step(user, user.dir)
 		S.set_up(1, 1, front)
 		S.start()
 
+/obj/item/flint/proc/is_flint_target(atom/target)
+	if(istype(target, /obj/item/storage))
+		return FALSE
+	return is_type_in_typecache(target, flint_spark_types)
+
 /obj/item/flint/interact_with_atom(atom/interacting_with, mob/living/user, list/modifiers)
+	if(!is_flint_target(interacting_with))
+		return NONE
+
 	if(!COOLDOWN_FINISHED(src, flintcd))
 		return NONE
 

@@ -36,10 +36,11 @@
 		TRAIT_NOAMBUSH,
 		TRAIT_DARKVISION,
 		TRAIT_LIMBATTACHMENT,
+		TRAIT_KNOW_THIEF_DOORS,
 	)
 
 	clan_covens = list(
-		/datum/coven/auspex,
+		/datum/coven/obfuscate,
 		/datum/coven/presence,
 		/datum/coven/bloodheal,
 		/datum/coven/pomette

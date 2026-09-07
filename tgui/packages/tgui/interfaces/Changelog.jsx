@@ -184,21 +184,21 @@ export class Changelog extends Component {
 
     const header = (
       <Section>
-        <h1>Vanderlin</h1>
+        <h1>ENCORE</h1>
         <p>
           <b>Thanks to: </b>
-          Baystation 12, /vg/station, NTstation, CDK Station devs,
+          Monkestation/Vanderlin, Baystation 12, /vg/station, NTstation, CDK Station devs,
           FacepunchStation, GoonStation devs, the original Space Station 13
           developers, Invisty for the title image and the countless others who
           have contributed to the game, issue tracker or wiki over the years.
         </p>
         <p>
           {'The codebase can be found '}
-          <a href="https://github.com/monkestation/vanderlin">here</a>.
+          <a href="https://github.com/Encore-Server/Encore-Vanderlin/">here</a>.
         </p>
         <p>
           {'You can also join our discord '}
-          <a href="https://discord.gg/monkestation">here</a>.
+          <a href="https://discord.gg/PMkvqAkyrX">here</a>.
         </p>
         {dateDropdown}
       </Section>

@@ -92,6 +92,7 @@
 		return
 
 	dead_mob.remove_filter("quest_item_outline")
+	Q.remove_tracked_atom(dead_mob)
 
 	// Notify quest of progress
 	Q.progress_current++

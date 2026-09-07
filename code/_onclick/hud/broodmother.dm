@@ -20,7 +20,7 @@
 /atom/movable/screen/broodmother/proc/info_blurb(mob/living/simple_animal/hostile/retaliate/troll/broodmother/broodmother)
 
 /atom/movable/screen/broodmother/cover
-	icon = 'icons/mob/broodmother_hud/cover.dmi'
+//	icon = 'icons/mob/broodmother_hud/cover.dmi'
 	icon_state = "cover"
 	screen_loc = "WEST:-86,TOP:-2"
 	plane = HUD_PLANE
@@ -30,7 +30,7 @@
 	icon_state = "mask"
 
 /atom/movable/screen/broodmother/bar
-	icon = 'icons/mob/broodmother_hud/4x128.dmi'
+//	icon = 'icons/mob/broodmother_hud/4x128.dmi'
 	var/current_alpha_mask_filter_offset = 0
 	var/tier
 
@@ -38,9 +38,9 @@
 	to_chat(broodmother, span_info("Current biomass amount - [broodmother.vars["tier_[tier]_biomass_amount"]]"))
 	to_chat(broodmother, span_info("Amount needed for laying egg - [broodmother.vars["tier_[tier]_biomass_cost"]]"))
 
-/atom/movable/screen/broodmother/bar/Initialize(mapload, datum/hud/hud_owner)
-	. = ..()
-	add_filter("alpha_mask_filter", 10, alpha_mask_filter(icon = icon('icons/mob/broodmother_hud/4x128.dmi', icon_state = "mask"), y = current_alpha_mask_filter_offset, flags = MASK_INVERSE))
+// /atom/movable/screen/broodmother/bar/Initialize(mapload, datum/hud/hud_owner)
+// 	. = ..()
+// 	add_filter("alpha_mask_filter", 10, alpha_mask_filter(icon = icon('icons/mob/broodmother_hud/4x128.dmi', icon_state = "mask"), y = current_alpha_mask_filter_offset, flags = MASK_INVERSE))
 
 /atom/movable/screen/broodmother/bar/proc/on_biomass_change(datum/source, current_biomass, _tier)
 	SIGNAL_HANDLER
@@ -75,7 +75,7 @@
 	UnregisterSignal(hud.mymob, COMSIG_BROODMOTHER_BIOMASS_CHANGE)
 
 /atom/movable/screen/broodmother/button
-	icon = 'icons/mob/broodmother_hud/8x8.dmi'
+//	icon = 'icons/mob/broodmother_hud/8x8.dmi'
 	var/tier
 
 /atom/movable/screen/broodmother/button/Click(location, control, params)

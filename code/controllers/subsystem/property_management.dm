@@ -110,10 +110,10 @@ SUBSYSTEM_DEF(housing)
 	for(var/turf/T as anything in turfs)
 		for(var/obj/structure/sign/property_sign/sign in T.contents)
 			sign.setup_property_link(property)
-			if(claim)
+			if(claim && !istype(get_area(T), /area/indoors/vampire_manor))
 				var/obj/item/key/new_key = new /obj/item/key(get_turf(sign))
 				new_key.lockids = lock_list
-		if(claim)
+		if(claim && !istype(get_area(T), /area/indoors/vampire_manor))
 			for(var/obj/structure/door/door in T.contents)
 				if(door.lock)
 					QDEL_NULL(door.lock)
@@ -135,12 +135,14 @@ SUBSYSTEM_DEF(housing)
 			for(var/turf/T as anything in turfs)
 				for(var/obj/structure/sign/property_sign/sign in T.contents)
 					sign.setup_property_link(property)
-					var/obj/item/key/new_key = new /obj/item/key(get_turf(sign))
-					new_key.lockids = lock_list
-				for(var/obj/structure/door/door in T.contents)
-					if(door.lock)
-						QDEL_NULL(door.lock)
-					door.lock = new /datum/lock/key(door, lock_list)
+					if(!istype(get_area(T), /area/indoors/vampire_manor))
+						var/obj/item/key/new_key = new /obj/item/key(get_turf(sign))
+						new_key.lockids = lock_list
+				if(!istype(get_area(T), /area/indoors/vampire_manor))
+					for(var/obj/structure/door/door in T.contents)
+						if(door.lock)
+							QDEL_NULL(door.lock)
+						door.lock = new /datum/lock/key(door, lock_list)
 
 			return TRUE
 	return load_default_template(property, TRUE)
@@ -472,7 +474,7 @@ SUBSYSTEM_DEF(housing)
 		return
 
 	// If already claimed by this user, allow saving
-	if(linked_property?.owner_ckey == user.ckey)
+	if(linked_property.owner_ckey == user.ckey)
 		save_property_design(user)
 		return
 
@@ -526,7 +528,7 @@ SUBSYSTEM_DEF(housing)
 		claimed = TRUE
 		name = "Claimed Property (Slot [selected_slot])"
 		desc = "Click to save your current design to slot [selected_slot]."
-		to_chat(user, span_notice("Property claimed with design slot [selected_slot]! Click again to save changes."))
+		to_chat(user, span_notice("Property claimed with design slot [selected_slot]! Click again to save changes. Items which are inside of containers will not be saved!"))
 	else
 		to_chat(user, span_warning("Failed to claim property!"))
 

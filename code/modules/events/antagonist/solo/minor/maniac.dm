@@ -32,6 +32,7 @@
 		/datum/job/tomb_warden,
 		/datum/job/bogwitch,
 		/datum/job/bog_apprentice,
+		/datum/job/admin,
 	)
 
 

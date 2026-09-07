@@ -111,7 +111,7 @@
 				organs.applyOrganDamage(-organs.medium_threshold)
 
 	patient.grab_ghost(force = TRUE, grab_spirit = TRUE) // even suicides
-	patient.visible_message(span_notice("[patient] is dragged back from Necra's hold!"), span_green("I awake from the void."))
+	patient.visible_message(span_notice("[patient] is dragged back from Valdala's hold!"), span_green("I awake from the void."))
 
 	patient.remove_status_effect(/datum/status_effect/debuff/lux_drained)
 	patient.remove_status_effect(/datum/status_effect/debuff/flaw_lux_taken)

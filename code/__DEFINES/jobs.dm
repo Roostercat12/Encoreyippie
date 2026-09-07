@@ -50,6 +50,7 @@
 #define FACTION_NEUTRAL		"Neutral"
 #define FACTION_HOSTILE		"Hostile"
 #define FACTION_TOWN		"Town"
+#define SUB_FACTION_KEEP 	"Keep"
 #define FACTION_FOREIGNERS  "Foreigners"
 #define FACTION_MIGRANTS  	"Migrants"
 #define FACTION_UNDEAD		"Undead"
@@ -75,6 +76,7 @@
 #define INQUISITION 	(1<<9)
 
 #define UNDEAD			(1<<10)
+#define ADMIN_SPECIAL	(1<<11)
 
 
 #define JCOLOR_NOBLE "#9c40bf"
@@ -294,3 +296,8 @@
 #define JOB_BUTCHER "Butcher"
 
 #define ALT_TITLE_FLAG_PATREON_LOCKED (1<<0)
+
+#define JOB_ADMIN_ORACLE "Lunar Oracle"
+#define JOB_ADMIN_LUNAR_SENTINEL "Lunar Order Sentinel"
+#define JOB_ADMIN_LUNAR_CHAMPION "Lunar Order Champion"
+#define JOB_ADMIN_DARKSPAWN "Darkspawn"

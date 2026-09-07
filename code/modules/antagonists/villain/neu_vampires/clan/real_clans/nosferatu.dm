@@ -48,6 +48,7 @@
 		TRAIT_LIMBATTACHMENT,
 		TRAIT_NASTY_EATER,
 		TRAIT_POISON_RESILIENCE,
+		TRAIT_KNOW_THIEF_DOORS,
 	)
 
 /datum/clan/nosferatu/get_downside_string()
