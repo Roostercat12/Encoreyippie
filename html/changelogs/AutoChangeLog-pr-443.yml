@@ -1,8 +1,0 @@
-author: "MisterLayne"
-delete-after: True
-changes:
-  - bugfix: "Regents now know vault code on late-join."
-  - bugfix: "Kill scrolls only lead to alive targets now."
-  - bugfix: "Oven cooks better overall."
-  - bugfix: "Phantom ear now works better."
-  - bugfix: "Repel spell now can be used to throw items at a stronger force."
