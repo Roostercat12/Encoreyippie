@@ -119,6 +119,10 @@
 			form_points = 5
 			technique_points = 5
 
+			spells = list(
+			/datum/action/cooldown/spell/undirected/touch/prestidigitation,
+			)
+
 /datum/outfit/priest
 	name = "Priest"
 	head = /obj/item/clothing/head/priestmask
