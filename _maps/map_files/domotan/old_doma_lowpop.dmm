@@ -14671,7 +14671,7 @@
 /turf/open/openspace,
 /area/indoors/town/tavern/saiga)
 "kcW" = (
-/obj/structure/lever/hidden/thieves_guild{
+/obj/structure/lever/hidden/keep{
 	redstone_id = "divine_gourd"
 	},
 /turf/closed/wall/mineral/stonebrick/reddish,
@@ -32504,7 +32504,7 @@
 /turf/open/floor/ruinedwood/turned,
 /area/indoors/town/garrison)
 "wtF" = (
-/obj/structure/lever/hidden/thieves_guild{
+/obj/structure/lever/hidden/keep{
 	redstone_id = "divine_gourd"
 	},
 /turf/closed/wall/mineral/pipe,
