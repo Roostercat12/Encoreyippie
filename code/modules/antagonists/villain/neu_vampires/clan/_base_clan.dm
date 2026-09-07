@@ -40,6 +40,7 @@ And it also helps for the character set panel
 		TRAIT_NOAMBUSH,
 		TRAIT_DARKVISION,
 		TRAIT_LIMBATTACHMENT,
+		TRAIT_KNOW_THIEF_DOORS
 	)
 	var/silent_join = FALSE
 

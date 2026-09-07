@@ -1,5 +1,6 @@
 /obj/item/clothing/head/padded	// slightly armored subtype for convenience
 	armor_type = /datum/armor/minimal
+	slot_flags = ITEM_SLOT_HEAD|ITEM_SLOT_MASK|ITEM_SLOT_NECK
 	prevent_crits = MINOR_CRITICALS
 	abstract_type = /obj/item/clothing/head/padded
 
@@ -444,7 +445,7 @@
 
 /obj/item/clothing/head/leather/inqhat/gravehat
 	name = "gravetender's hat"
-	desc = "A fine leather slouch fitted with a hidden steel skull cap. It serves as a reminder that Necra's grasp is never too far."
+	desc = "A fine leather slouch fitted with a hidden steel skull cap. It serves as a reminder that Valdala's grasp is never too far."
 	icon_state = "gravehat"
 	item_state = "gravehat"
 

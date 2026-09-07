@@ -1,10 +1,10 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "bD" = (
+/obj/effect/mapping_helpers/access/locker,
 /obj/structure/door{
-	lockid = "dorfhouse1";
+	lockid = "dorfhouse2";
 	name = "Rockhome II"
 	},
-/obj/effect/mapping_helpers/access/locker,
 /turf/open/floor/twig,
 /area/under/town/basement)
 "cB" = (
@@ -68,14 +68,6 @@
 "iP" = (
 /obj/structure/closet/crate/drawer,
 /turf/open/floor/ruinedwood/turned,
-/area/under/town/basement)
-"kB" = (
-/obj/effect/mapping_helpers/access/locker,
-/obj/structure/door{
-	lockid = "dorfhouse1";
-	name = "Rockhome II"
-	},
-/turf/open/floor/twig,
 /area/under/town/basement)
 "kQ" = (
 /obj/structure/door/weak/bolt,
@@ -330,7 +322,7 @@ UN
 YP
 cB
 UN
-kB
+bD
 nm
 "}
 (5,1,1) = {"

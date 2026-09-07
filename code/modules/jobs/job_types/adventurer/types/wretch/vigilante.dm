@@ -99,5 +99,5 @@
 		/obj/item/storage/belt/pouch/coins/poor = 1,
 		/obj/item/storage/fancy/cigarettes/zig = 1,
 		/obj/item/flint = 1,
-		/obj/item/reagent_containers/glass/bottle/stronghealthpot = 1,
+		/obj/item/reagent_containers/glass/bottle/stronghealthpot/labelled = 1,
 	)

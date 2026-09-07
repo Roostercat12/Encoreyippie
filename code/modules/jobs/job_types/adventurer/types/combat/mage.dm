@@ -93,7 +93,7 @@
 	belt = /obj/item/storage/belt/leather/rope
 	backr = /obj/item/storage/backpack/satchel
 	beltr = /obj/item/storage/magebag/poor
-	beltl = /obj/item/reagent_containers/glass/bottle/manapot
+	beltl = /obj/item/reagent_containers/glass/bottle/manapot/labelled
 	r_hand = /obj/item/weapon/polearm/woodstaff
 
 

@@ -57,6 +57,7 @@
 	sharpness = IS_BLUNT
 	sellprice = 5
 	item_weight = 1 KILOGRAMS
+	weapon_special = /datum/special_intent/quarterstaff_sweep
 
 /obj/item/weapon/polearm/woodstaff/getonmobprop(tag)
 	. = ..()
@@ -152,6 +153,7 @@
 	thrown_bclass = BCLASS_STAB
 	sellprice = 22
 	item_weight = 2.5 KILOGRAMS
+	weapon_special = /datum/special_intent/polearm_backstep
 
 /obj/item/weapon/polearm/spear/getonmobprop(tag)
 	. = ..()
@@ -509,7 +511,7 @@
 	melting_material = /datum/material/steel
 	melt_amount = 150
 	sellprice = 90
-	item_weight = 3.5 KILOGRAMS
+	item_weight = 2.3 KILOGRAMS
 
 /obj/item/weapon/polearm/halberd/silver
 	name = "silver halberd"

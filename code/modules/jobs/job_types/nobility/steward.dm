@@ -21,9 +21,9 @@
 	department_flag = NOBLEMEN
 	job_flags = (JOB_ANNOUNCE_ARRIVAL | JOB_SHOW_IN_CREDITS | JOB_EQUIP_RANK | JOB_NEW_PLAYER_JOINABLE)
 	display_order = JDO_STEWARD
-	factions = list(FACTION_TOWN)
-	total_positions = 2
-	spawn_positions = 2
+	factions = list(FACTION_TOWN, SUB_FACTION_KEEP)
+	total_positions = 0
+	spawn_positions = 0
 	bypass_lastclass = TRUE
 	is_quest_giver = TRUE
 	allowed_races = RACES_PLAYER_NONDISCRIMINATED

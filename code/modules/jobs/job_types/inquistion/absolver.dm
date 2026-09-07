@@ -126,7 +126,7 @@
 	ring = /obj/item/clothing/ring/signet/psy
 	backpack_contents = list(
 		/obj/item/natural/bundle/cloth = 2,
-		/obj/item/reagent_containers/glass/bottle/healthpot = 2,
+		/obj/item/reagent_containers/glass/bottle/healthpot/labelled = 2,
 		/obj/item/paper/inqslip/arrival/abso = 1,
 		/obj/item/needle = 1,
 		/obj/item/storage/belt/pouch/coins/rich = 1,

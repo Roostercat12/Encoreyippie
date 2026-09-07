@@ -1,0 +1,262 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/open/floor/naturalstone,
+/area/template_noop)
+"j" = (
+/obj/structure/flora/grass/thorn_bush,
+/turf/open/floor/naturalstone,
+/area/template_noop)
+"m" = (
+/obj/structure/flora/grass/bush_meagre/tundra,
+/turf/open/floor/naturalstone,
+/area/template_noop)
+"t" = (
+/obj/effect/spawner/map_spawner/necropolis,
+/turf/open/floor/dirt,
+/area/template_noop)
+"C" = (
+/turf/template_noop,
+/area/template_noop)
+"E" = (
+/obj/structure/bars,
+/turf/open/floor/naturalstone,
+/area/template_noop)
+"M" = (
+/obj/effect/spawner/map_spawner/necropolis,
+/turf/open/floor/naturalstone,
+/area/template_noop)
+"O" = (
+/obj/effect/decal/cleanable/ritual_rune/arcyne/mana_siphon/teleport,
+/turf/open/floor/cobble/alt,
+/area/template_noop)
+"U" = (
+/turf/open/floor/dirt,
+/area/template_noop)
+"X" = (
+/turf/open/floor/cobble/alt,
+/area/template_noop)
+
+(1,1,1) = {"
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+"}
+(2,1,1) = {"
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+"}
+(3,1,1) = {"
+C
+C
+C
+C
+U
+E
+E
+E
+m
+C
+C
+C
+C
+C
+"}
+(4,1,1) = {"
+C
+C
+m
+m
+a
+a
+E
+a
+a
+a
+U
+C
+C
+C
+"}
+(5,1,1) = {"
+C
+C
+m
+a
+a
+a
+j
+a
+U
+t
+U
+E
+E
+C
+"}
+(6,1,1) = {"
+C
+C
+m
+a
+a
+a
+X
+X
+X
+a
+a
+U
+E
+C
+"}
+(7,1,1) = {"
+C
+C
+U
+M
+a
+X
+X
+X
+X
+X
+M
+U
+C
+C
+"}
+(8,1,1) = {"
+C
+C
+U
+a
+a
+X
+X
+O
+X
+X
+a
+U
+C
+C
+"}
+(9,1,1) = {"
+C
+C
+C
+U
+a
+X
+X
+X
+X
+X
+a
+U
+C
+C
+"}
+(10,1,1) = {"
+C
+C
+C
+E
+M
+a
+X
+X
+X
+a
+a
+U
+C
+C
+"}
+(11,1,1) = {"
+C
+C
+C
+E
+U
+a
+a
+a
+m
+a
+m
+C
+C
+C
+"}
+(12,1,1) = {"
+C
+C
+C
+E
+E
+C
+C
+C
+C
+m
+C
+C
+C
+C
+"}
+(13,1,1) = {"
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+"}
+(14,1,1) = {"
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+"}

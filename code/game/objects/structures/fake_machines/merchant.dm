@@ -302,6 +302,7 @@
 /obj/structure/fake_machine/merchantvend/public
 	name = "SILVERFACE"
 	desc = "A public version of the GOLDFACE."
+	budget = 0
 	lock = null
 
 /obj/structure/fake_machine/merchantvend/public/artificer

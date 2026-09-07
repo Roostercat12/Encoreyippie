@@ -198,6 +198,12 @@
 	icon_state = "brownkey"
 	lockids = list(ACCESS_MINER)
 
+/obj/item/key/yeoman
+	name = "yeoman's key"
+	desc = "This bronze key should open the places of the yeomanry."
+	icon_state = "brownkey"
+	lockids = list(ACCESS_YEOMAN)
+
 // Residents
 
 /obj/item/key/matron
@@ -369,10 +375,16 @@
 	lockids = list(ACCESS_LIBRARY)
 
 /obj/item/key/mage
-	name = "magicians's key"
-	desc = "This is the Court Magician's key. It watches you..."
+	name = "archmage's key"
+	desc = "This is the Tower Archmage's key. It watches you..."
 	icon_state = "eyekey"
 	lockids = list(ACCESS_MAGE)
+
+/obj/item/key/magister
+	name = "magister's key"
+	desc = "This is the Magister's key. It watches you..."
+	icon_state = "eyekey"
+	lockids = list(ACCESS_MAGE, ACCESS_TOWER)
 
 /obj/item/key/atarms
 	name = "keep garrison key"
@@ -684,6 +696,14 @@
 /obj/item/key/shops/shop9
 	name = "shop IX key"
 	lockids = list("shop9")
+
+/obj/item/key/houses/workplace1
+	name = "workplace I key"
+	lockids = list("workplace1")
+
+/obj/item/key/houses/workplace2
+	name = "workplace II key"
+	lockids = list("workplace2")
 
 // INN ROOMS
 

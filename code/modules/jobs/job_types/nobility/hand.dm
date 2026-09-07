@@ -9,7 +9,7 @@
 	department_flag = NOBLEMEN
 	display_order = JDO_HAND
 	job_flags = (JOB_ANNOUNCE_ARRIVAL | JOB_SHOW_IN_CREDITS | JOB_EQUIP_RANK | JOB_NEW_PLAYER_JOINABLE)
-	factions = list(FACTION_TOWN)
+	factions = list(FACTION_TOWN, SUB_FACTION_KEEP)
 	total_positions = 2
 	spawn_positions = 2
 	spells = list(/datum/action/cooldown/spell/undirected/list_target/grant_title)
@@ -77,7 +77,7 @@
 
 /datum/job/advclass/hand
 	exp_types_granted = list(EXP_TYPE_NOBLE, EXP_TYPE_LEADERSHIP)
-	factions = list(FACTION_TOWN)
+	factions = list(FACTION_TOWN, SUB_FACTION_KEEP)
 
 /datum/attribute_holder/sheet/job/hand
 	raw_attribute_list = list(
@@ -252,13 +252,11 @@
 	armor = /obj/item/clothing/armor/gambeson/hand
 	pants = /obj/item/clothing/pants/tights/colored/black
 	shoes = /obj/item/clothing/shoes/boots/darkboots
-	beltl = /obj/item/weapon/sword/rapier/caneblade/hand
 	backpack_contents = list(
 		/obj/item/weapon/knife/dagger/steel/special = 1,
 		/obj/item/reagent_containers/glass/bottle/poison = 1,
 		/obj/item/frumentarii = 1
 	)
-	scabbards = list(/obj/item/weapon/scabbard/cane/hand)
 
 /datum/attribute_holder/sheet/job/huntsmaster
 	attribute_variance = list(
@@ -456,6 +454,9 @@
 	honorary = "Magister"
 	honorary_f = "Magistrix"
 
+	form_points = 6
+	technique_points = 8
+
 	traits = list(
 		TRAIT_NOBLE_BLOOD,
 		TRAIT_NOBLE_POWER,
@@ -499,15 +500,13 @@
 	backpack_contents = list(
 		/obj/item/scrying = 1,
 		/obj/item/chalk = 1,
-		/obj/item/frumentarii = 1
+		/obj/item/frumentarii = 1,
 	)
 	armor = /obj/item/clothing/armor/gambeson/hand
 	cloak = /obj/item/clothing/cloak/half
 	pants = /obj/item/clothing/pants/tights/colored/black
 	shoes = /obj/item/clothing/shoes/boots
 	beltl = /obj/item/storage/magebag/apprentice
-	beltr = /obj/item/weapon/sword/rapier/caneblade/hand
-	scabbards = list(/obj/item/weapon/scabbard/cane/hand)
 
 /datum/outfit/hand/magister/male //Sol
 	name = "Male Magister (Hand)"

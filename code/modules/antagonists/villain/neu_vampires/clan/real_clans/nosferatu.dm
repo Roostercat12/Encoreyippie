@@ -9,6 +9,8 @@
 		/datum/action/cooldown/spell/enslave_mortal,
 		/datum/action/cooldown/spell/undirected/mansion_portal,
 		/datum/action/cooldown/spell/undirected/shapeshift/rat_vampire,
+		/datum/action/cooldown/spell/undirected/shapeshift/bat,
+		/datum/action/cooldown/spell/undirected/shapeshift/mist,
 		/datum/action/cooldown/spell/undirected/conjure_item/vamp_sword,
 	)
 	lord_traits = list(TRAIT_HEAVYARMOR, TRAIT_NOSTAMINA)
@@ -46,6 +48,7 @@
 		TRAIT_LIMBATTACHMENT,
 		TRAIT_NASTY_EATER,
 		TRAIT_POISON_RESILIENCE,
+		TRAIT_KNOW_THIEF_DOORS,
 	)
 
 /datum/clan/nosferatu/get_downside_string()

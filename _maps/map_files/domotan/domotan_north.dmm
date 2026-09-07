@@ -6,6 +6,9 @@
 	},
 /turf/open/floor/church/violet,
 /area/indoors/shelter)
+"al" = (
+/turf/closed/wall/mineral/stone/moss,
+/area/indoors/town/church/crypt)
 "ap" = (
 /obj/structure/flora/grass/water,
 /obj/structure/flora/grass/water,
@@ -142,13 +145,6 @@
 "by" = (
 /turf/open/floor/grass/cold,
 /area/outdoors/beach)
-"bz" = (
-/obj/structure/notice_board,
-/obj/effect/decal/borderfall{
-	dir = 1
-	},
-/turf/open/floor/snow,
-/area/outdoors/woods/etgard)
 "bC" = (
 /obj/structure/fluff/railing/border{
 	dir = 8
@@ -160,7 +156,7 @@
 /obj/structure/closet/dirthole/closed,
 /obj/effect/mapping_helpers/structure/grave_spawner/t2/_elementalist,
 /turf/open/floor/dirt,
-/area/outdoors/town)
+/area/indoors/town/church/graveyard)
 "bP" = (
 /obj/effect/landmark/quest_spawner/easy,
 /turf/open/floor/snow,
@@ -177,8 +173,8 @@
 /area/under/cave)
 "cc" = (
 /obj/structure/flora/grass/bush,
-/turf/open/floor/grass/yel,
-/area/outdoors/town)
+/turf/open/floor/snow/patchy,
+/area/indoors/town/church/graveyard)
 "cd" = (
 /obj/structure/fluff/railing/tall/palisade{
 	dir = 4
@@ -216,7 +212,7 @@
 "db" = (
 /obj/structure/closet/dirthole/grave,
 /turf/open/floor/dirt,
-/area/outdoors/town)
+/area/indoors/town/church/graveyard)
 "dg" = (
 /turf/open/floor/twig,
 /area/under/cavewet)
@@ -282,7 +278,7 @@
 "dL" = (
 /obj/item/natural/stone,
 /turf/open/floor/dirt,
-/area/outdoors/town)
+/area/indoors/town/church/graveyard)
 "dQ" = (
 /turf/closed/wall/mineral/tent{
 	dir = 4
@@ -317,7 +313,7 @@
 	name = "Mortimer"
 	},
 /turf/open/floor/dirt/road,
-/area/outdoors/town)
+/area/indoors/town/church/graveyard)
 "es" = (
 /obj/structure/table/wood{
 	icon_state = "tablewood1"
@@ -380,7 +376,7 @@
 /area/outdoors/woods/etgard)
 "fT" = (
 /turf/closed/wall/mineral/wooddark,
-/area/outdoors/town)
+/area/indoors/town/church/graveyard)
 "fX" = (
 /turf/closed/wall/mineral/stone,
 /area/indoors/shelter)
@@ -412,13 +408,7 @@
 /area/outdoors/woods/etgard)
 "gp" = (
 /turf/open/floor/churchmarble,
-/area/indoors/town/church)
-"gx" = (
-/obj/effect/decal/borderfall{
-	dir = 1
-	},
-/turf/open/floor/grass/cold,
-/area/outdoors/woods/etgard)
+/area/indoors/town/church/crypt)
 "gH" = (
 /turf/closed/mineral/random/med,
 /area/under/cavewet)
@@ -476,9 +466,9 @@
 /turf/open/floor/snow,
 /area/outdoors/woods/lakeside)
 "hY" = (
-/obj/structure/closet/dirthole/grave,
-/turf/open/floor/dirt/road,
-/area/outdoors/town)
+/obj/structure/fluff/clodpile/dirt,
+/turf/open/floor/snow/patchy,
+/area/indoors/town/church/graveyard)
 "hZ" = (
 /obj/machinery/light/fueled/torchholder/l,
 /obj/item/natural/stone,
@@ -527,7 +517,7 @@
 "jg" = (
 /obj/structure/flora/grass/bush,
 /turf/open/floor/dirt/road,
-/area/outdoors/town)
+/area/indoors/town/church/graveyard)
 "jj" = (
 /obj/effect/landmark/map_load_mark/generic_tile,
 /turf/open/floor/dirt/road,
@@ -616,7 +606,7 @@
 	dir = 8
 	},
 /turf/open/floor/dirt,
-/area/indoors/town/church)
+/area/indoors/town/church/crypt)
 "kh" = (
 /obj/structure/fluff/traveltile{
 	aportalgoesto = "z1-northeast1-out";
@@ -698,7 +688,7 @@
 "lS" = (
 /obj/structure/fluff/psycross,
 /turf/open/floor/dirt/road,
-/area/outdoors/town)
+/area/indoors/town/church/graveyard)
 "lT" = (
 /obj/effect/landmark/map_load_mark/generic_tile/natural,
 /turf/open/floor/snow,
@@ -726,8 +716,8 @@
 /area/outdoors/woods/etgard)
 "mH" = (
 /obj/item/natural/rock,
-/turf/open/floor/grass/yel,
-/area/outdoors/town)
+/turf/open/floor/snow/patchy,
+/area/indoors/town/church/graveyard)
 "mI" = (
 /obj/structure/closet/crate/chest/crate{
 	name = "produce crate"
@@ -844,7 +834,7 @@
 /area/under/cavewet)
 "oL" = (
 /turf/open/floor/dirt,
-/area/outdoors/town)
+/area/indoors/town/church/graveyard)
 "oP" = (
 /obj/structure/table/wood{
 	icon_state = "longtable"
@@ -952,7 +942,7 @@
 "qt" = (
 /obj/structure/bars/cemetery,
 /turf/open/floor/snow,
-/area/outdoors/town)
+/area/indoors/town/church/graveyard)
 "qN" = (
 /turf/open/floor/sand,
 /area/outdoors/beach)
@@ -1029,15 +1019,16 @@
 /area/indoors/town)
 "re" = (
 /obj/machinery/light/fueled/firebowl/standing,
-/turf/open/floor/grass/yel,
-/area/outdoors/town)
+/turf/open/floor/grass/cold,
+/area/indoors/town/church/graveyard)
 "rs" = (
 /turf/open/floor/dirt/road,
 /area/outdoors/beach)
 "rt" = (
-/obj/structure/fluff/clodpile/dirt,
-/turf/open/floor/grass/yel,
-/area/outdoors/town)
+/obj/structure/closet/dirthole/closed,
+/obj/effect/mapping_helpers/structure/grave_spawner/t3/_elementalist,
+/turf/open/floor/dirt,
+/area/indoors/town/church/graveyard)
 "rx" = (
 /obj/structure/flora/grass/water/reeds,
 /turf/open/water/ocean/abyss,
@@ -1092,7 +1083,7 @@
 "sw" = (
 /obj/machinery/light/fueled/firebowl/standing,
 /turf/open/floor/dirt/road,
-/area/outdoors/town)
+/area/indoors/town/church/graveyard)
 "sD" = (
 /obj/structure/fluff/railing/border{
 	dir = 1;
@@ -1186,7 +1177,7 @@
 "um" = (
 /obj/item/natural/rock,
 /turf/open/floor/dirt,
-/area/outdoors/town)
+/area/indoors/town/church/graveyard)
 "up" = (
 /obj/structure/closet/crate/chest/lootbox,
 /obj/item/reagent_containers/glass/bucket/pot,
@@ -1205,7 +1196,7 @@
 /obj/structure/closet/dirthole/closed,
 /obj/effect/mapping_helpers/structure/grave_spawner/t2/_elementalist,
 /turf/open/floor/dirt/road,
-/area/outdoors/town)
+/area/indoors/town/church/graveyard)
 "uS" = (
 /obj/structure/flora/grass/pyroclasticflowers,
 /turf/open/floor/dirt/road,
@@ -1231,7 +1222,7 @@
 /obj/effect/mapping_helpers/access/keyset/church/grave,
 /obj/effect/mapping_helpers/access/locker,
 /turf/open/floor/churchrough,
-/area/indoors/town/church)
+/area/indoors/town/church/crypt)
 "vf" = (
 /obj/item/reagent_containers/glass/bucket/wooden,
 /turf/open/floor/dirt,
@@ -1292,7 +1283,7 @@
 	name = "To Crypt"
 	},
 /turf/open/floor/church,
-/area/indoors/town/church)
+/area/indoors/town/church/crypt)
 "vZ" = (
 /obj/structure/table/church/m,
 /obj/item/clothing/neck/psycross/silver/divine/golerkanh{
@@ -1368,7 +1359,7 @@
 "xu" = (
 /obj/effect/landmark/events/haunts,
 /turf/open/floor/dirt/road,
-/area/outdoors/town)
+/area/indoors/town/church/graveyard)
 "xv" = (
 /obj/structure/fluff/railing/tall,
 /turf/open/floor/dirt/road,
@@ -1411,7 +1402,7 @@
 "ys" = (
 /obj/structure/flora/grass/bush,
 /turf/open/floor/dirt,
-/area/outdoors/town)
+/area/indoors/town/church/graveyard)
 "yt" = (
 /obj/structure/closet/crate/chest/crate,
 /obj/item/weapon/pick,
@@ -1439,7 +1430,7 @@
 /area/indoors/shelter)
 "yQ" = (
 /turf/closed/wall/mineral/stone,
-/area/indoors/town/church)
+/area/indoors/town/church/crypt)
 "yT" = (
 /obj/item/grown/log/tree/stick,
 /turf/open/floor/cobble/mossy,
@@ -1466,7 +1457,7 @@
 /area/outdoors/woods/etgard)
 "zl" = (
 /turf/closed/mineral/random/cold,
-/area/indoors/town/church)
+/area/indoors/town/church/crypt)
 "zu" = (
 /obj/machinery/light/fueled/firebowl/stumpg,
 /turf/open/floor/dirt/road,
@@ -1500,13 +1491,13 @@
 /area/outdoors/woods/etgard)
 "Av" = (
 /obj/structure/flora/grass/bush_meagre,
-/turf/open/floor/grass/yel,
-/area/outdoors/town)
+/turf/open/floor/grass/cold,
+/area/indoors/town/church/graveyard)
 "Ax" = (
 /obj/structure/closet/dirthole/closed,
 /obj/effect/mapping_helpers/structure/grave_spawner/_elementalist,
 /turf/open/floor/dirt,
-/area/outdoors/town)
+/area/indoors/town/church/graveyard)
 "Ay" = (
 /obj/item/weapon/mace/woodclub,
 /turf/open/floor/naturalstone,
@@ -1523,7 +1514,7 @@
 "AV" = (
 /obj/structure/flora/grass/bush_meagre,
 /turf/open/floor/dirt/road,
-/area/outdoors/town)
+/area/indoors/town/church/graveyard)
 "Bc" = (
 /obj/effect/landmark/mapGenerator/domotan/forest{
 	endTurfX = 255;
@@ -1541,12 +1532,19 @@
 "Bo" = (
 /obj/structure/flora/grass/bush_meagre,
 /turf/open/floor/dirt,
-/area/outdoors/town)
+/area/indoors/town/church/graveyard)
 "By" = (
-/obj/structure/closet/dirthole/closed,
-/obj/effect/mapping_helpers/structure/grave_spawner/t2,
-/turf/open/floor/dirt/road,
-/area/outdoors/town)
+/obj/structure/carpet/navy,
+/obj/structure/fluff/psycross/valdala{
+	pixel_y = 22;
+	density = 0
+	},
+/obj/machinery/light/fueled/wallfire/candle/incense{
+	pixel_y = 2;
+	pixel_x = 9
+	},
+/turf/open/floor/churchmarble,
+/area/indoors/town/church/crypt)
 "BH" = (
 /turf/closed/mineral/copper,
 /area/under/cavewet)
@@ -1600,7 +1598,7 @@
 /area/outdoors/beach)
 "Dc" = (
 /turf/closed/wall/mineral/stone/moss,
-/area/indoors/town/church)
+/area/indoors/town/church/graveyard)
 "Dl" = (
 /obj/structure/bars,
 /turf/open/lava,
@@ -1649,8 +1647,8 @@
 /turf/closed/basic,
 /area)
 "Eq" = (
-/turf/open/floor/grass/yel,
-/area/outdoors/town)
+/turf/open/floor/grass/cold,
+/area/indoors/town/church/graveyard)
 "Et" = (
 /obj/structure/flora/rock/jungle,
 /turf/open/floor/grass/cold,
@@ -1726,8 +1724,8 @@
 /turf/open/floor/twig/platform,
 /area/under/cave)
 "FP" = (
-/turf/open/floor/snow,
-/area/outdoors/town)
+/turf/open/floor/snow/patchy,
+/area/indoors/town/church/graveyard)
 "FS" = (
 /turf/closed/wall/mineral/wooddark,
 /area/under/cavewet)
@@ -1763,7 +1761,7 @@
 /area/outdoors/woods/etgard)
 "Gg" = (
 /turf/open/floor/churchrough,
-/area/indoors/town/church)
+/area/indoors/town/church/crypt)
 "Gl" = (
 /obj/structure/composter/halffull,
 /turf/open/floor/snow,
@@ -1778,7 +1776,7 @@
 "GA" = (
 /obj/structure/stairs/stone,
 /turf/open/floor/church,
-/area/indoors/town/church)
+/area/indoors/town/church/crypt)
 "GF" = (
 /obj/structure/flora/grass/water,
 /obj/structure/flora/grass/water/reeds,
@@ -1923,7 +1921,7 @@
 "Ja" = (
 /obj/machinery/light/fueled/firebowl/standing/blue,
 /turf/open/floor/churchrough,
-/area/indoors/town/church)
+/area/indoors/town/church/crypt)
 "Jf" = (
 /obj/effect/decal/remains/human,
 /turf/open/floor/dirt,
@@ -2010,7 +2008,7 @@
 "KF" = (
 /obj/structure/flora/grass,
 /turf/open/floor/dirt,
-/area/outdoors/town)
+/area/indoors/town/church/graveyard)
 "KG" = (
 /turf/open/floor/dirt,
 /area/outdoors/woods/etgard)
@@ -2119,7 +2117,7 @@
 /obj/structure/door/iron/bars,
 /obj/effect/mapping_helpers/access/keyset/church/grave,
 /turf/open/floor/dirt/road,
-/area/outdoors/town)
+/area/indoors/town/church/graveyard)
 "MG" = (
 /obj/structure/flora/grass/water,
 /obj/structure/flora/grass/water/reeds,
@@ -2135,7 +2133,7 @@
 	dir = 8
 	},
 /turf/open/floor/church,
-/area/indoors/town/church)
+/area/indoors/town/church/crypt)
 "MU" = (
 /obj/structure/flora/ausbushes/genericbush,
 /turf/open/floor/sand,
@@ -2339,11 +2337,11 @@
 "QT" = (
 /obj/machinery/light/fueled/firebowl/standing,
 /turf/open/floor/dirt,
-/area/outdoors/town)
+/area/indoors/town/church/graveyard)
 "Ra" = (
 /obj/structure/chair/bench,
 /turf/open/floor/dirt/road,
-/area/outdoors/town)
+/area/indoors/town/church/graveyard)
 "Rc" = (
 /obj/structure/fluff/railing/border{
 	icon_state = "border";
@@ -2380,7 +2378,7 @@
 /area/under/cave)
 "RA" = (
 /turf/open/floor/dirt/road,
-/area/outdoors/town)
+/area/indoors/town/church/graveyard)
 "RD" = (
 /turf/closed/wall/mineral/wooddark,
 /area/indoors)
@@ -2486,6 +2484,15 @@
 	},
 /turf/open/floor/twig,
 /area/outdoors/beach)
+"Tv" = (
+/obj/structure/fluff/traveltile{
+	aportalgoesto = "z2-townsouth2-in";
+	aportalid = "z2-townsouth2-out";
+	dir = 1;
+	name = "To Old Doma"
+	},
+/turf/open/floor/dirt/road,
+/area/indoors)
 "Ty" = (
 /turf/closed/mineral/random/med,
 /area/under/cave)
@@ -2495,11 +2502,6 @@
 	},
 /turf/open/floor/ruinedwood/turned,
 /area/indoors/town)
-"TC" = (
-/obj/item/natural/stone,
-/obj/machinery/light/fueled/firebowl/standing,
-/turf/open/floor/dirt,
-/area/outdoors/town)
 "TJ" = (
 /obj/structure/table/wood{
 	icon_state = "longtable"
@@ -2527,14 +2529,11 @@
 /obj/structure/fluff/railing/border,
 /turf/open/floor/cobble/mossy,
 /area/under/cave)
-"TU" = (
-/turf/closed/wall/mineral/wooddark/end,
-/area/outdoors/woods/etgard)
 "TW" = (
 /obj/structure/closet/dirthole/closed,
 /obj/effect/mapping_helpers/structure/grave_spawner/t2/angros,
 /turf/open/floor/dirt/road,
-/area/outdoors/town)
+/area/indoors/town/church/graveyard)
 "TZ" = (
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/twig,
@@ -2623,6 +2622,9 @@
 /obj/item/storage/bag,
 /turf/open/floor/sand,
 /area/outdoors/beach)
+"Vv" = (
+/turf/closed/mineral/random/cold,
+/area/indoors/town/church/graveyard)
 "Vx" = (
 /obj/structure/table/wood{
 	dir = 1;
@@ -2651,9 +2653,6 @@
 /area/indoors/shelter)
 "Wk" = (
 /turf/open/floor/cobble/alt,
-/area/outdoors/woods/etgard)
-"WA" = (
-/turf/closed/wall/mineral/wooddark/vertical,
 /area/outdoors/woods/etgard)
 "WB" = (
 /obj/item/natural/stone,
@@ -2689,7 +2688,7 @@
 /obj/structure/closet/dirthole/closed,
 /obj/effect/mapping_helpers/structure/grave_spawner/_elementalist,
 /turf/open/floor/dirt/road,
-/area/outdoors/town)
+/area/indoors/town/church/graveyard)
 "WV" = (
 /obj/effect/landmark/map_load_mark/generic_tile,
 /turf/closed/mineral/random/cold,
@@ -2714,7 +2713,7 @@
 /obj/structure/closet/dirthole/closed,
 /obj/effect/mapping_helpers/structure/grave_spawner/t2/angros,
 /turf/open/floor/dirt,
-/area/outdoors/town)
+/area/indoors/town/church/graveyard)
 "Xo" = (
 /obj/structure/flora/grass,
 /turf/open/floor/snow,
@@ -2733,8 +2732,8 @@
 /area/indoors)
 "XA" = (
 /obj/structure/fluff/clodpile/dirt,
-/turf/open/floor/snow,
-/area/outdoors/town)
+/turf/open/floor/grass/cold,
+/area/indoors/town/church/graveyard)
 "XF" = (
 /obj/structure/flora/grass/water/reeds,
 /obj/structure/flora/grass/water,
@@ -2772,12 +2771,6 @@
 /obj/structure/flora/grass/water/reeds,
 /turf/open/floor/naturalstone,
 /area/under/cavewet)
-"YJ" = (
-/obj/effect/decal/borderfall{
-	dir = 1
-	},
-/turf/open/floor/snow,
-/area/outdoors/woods/etgard)
 "YP" = (
 /obj/structure/fluff/railing/wood,
 /turf/open/floor/snow,
@@ -33947,8 +33940,8 @@ Xy
 Hz
 Hz
 jW
-WA
-gx
+Hz
+Hz
 jW
 jW
 jW
@@ -34204,8 +34197,8 @@ Xy
 Hz
 Hz
 Xo
-TU
-bz
+Hz
+Hz
 OX
 jW
 OX
@@ -34461,8 +34454,8 @@ Xy
 Xy
 Xy
 Hz
-WA
-YJ
+Hz
+Hz
 Hz
 jW
 OX
@@ -37544,10 +37537,10 @@ Xy
 Xy
 Xy
 Xy
-OX
-OX
-OX
 Hz
+OX
+OX
+OX
 Hz
 OX
 OX
@@ -37800,9 +37793,9 @@ Xy
 Xy
 Xy
 Xy
-Xy
+Tv
 OX
-Hz
+OX
 Hz
 Hz
 Hz
@@ -38057,8 +38050,8 @@ Xy
 Xy
 Xy
 Xy
-Xy
-Hz
+Tv
+OX
 Hz
 Hz
 jW
@@ -49389,9 +49382,9 @@ Hz
 Hz
 Dc
 sw
-hY
+jg
 RA
-hY
+RA
 RA
 RA
 RA
@@ -49403,8 +49396,8 @@ KF
 db
 RA
 RA
-oL
-TC
+dL
+QT
 Dc
 Hz
 Hz
@@ -49645,15 +49638,15 @@ Hz
 Hz
 Hz
 qt
-ys
+db
 RA
-oL
+rt
 RA
-oL
+db
 RA
-XA
+hY
 RA
-FP
+Eq
 um
 RA
 QT
@@ -50162,8 +50155,8 @@ qt
 RA
 RA
 RA
-RA
 sw
+RA
 RA
 RA
 RA
@@ -50675,7 +50668,7 @@ eO
 Dc
 uw
 RA
-By
+uw
 RA
 WU
 RA
@@ -50684,7 +50677,7 @@ RA
 QT
 oL
 Bo
-aV
+Vv
 oL
 RA
 oL
@@ -50939,11 +50932,11 @@ RA
 RA
 oL
 KF
-rt
-aV
-aV
-aV
-aV
+XA
+Vv
+Vv
+Vv
+Vv
 oL
 oL
 RA
@@ -51196,10 +51189,10 @@ RA
 eg
 oL
 cc
-aV
-aV
-aV
-aV
+Vv
+Vv
+Vv
+Vv
 mH
 Eq
 oL
@@ -51448,17 +51441,17 @@ RA
 RA
 RA
 RA
-sw
 RA
 RA
 RA
-aV
-aV
-aV
-aV
-aV
-aV
-aV
+RA
+Vv
+Vv
+Vv
+Vv
+Vv
+Vv
+Vv
 db
 RA
 MF
@@ -51708,13 +51701,13 @@ oL
 Ax
 oL
 RA
-aV
-aV
-aV
-aV
-aV
-aV
-aV
+Vv
+Vv
+Vv
+Vv
+Vv
+Vv
+Vv
 oL
 oL
 RA
@@ -51958,21 +51951,21 @@ Hz
 Hz
 Hz
 qt
-Eq
+FP
 QT
 Eq
-oL
-Eq
+QT
+FP
 oL
 oL
 sw
-aV
-aV
-aV
-aV
-aV
-aV
-aV
+Vv
+Vv
+Vv
+Vv
+Vv
+Vv
+Vv
 RA
 RA
 qt
@@ -52223,12 +52216,12 @@ db
 oL
 RA
 RA
-aV
-aV
-aV
+Vv
+Vv
+Vv
 re
 oL
-aV
+Vv
 KF
 RA
 RA
@@ -52474,7 +52467,7 @@ Hz
 qt
 Eq
 RA
-Eq
+FP
 RA
 Eq
 RA
@@ -52482,7 +52475,7 @@ RA
 RA
 RA
 oL
-Eq
+FP
 RA
 oL
 RA
@@ -52985,15 +52978,15 @@ mY
 mY
 mY
 Hz
-Dc
-Dc
+al
+al
 yQ
-Dc
+al
 ve
 ve
 yQ
-Dc
-bX
+al
+al
 aV
 aV
 aV
@@ -53249,7 +53242,7 @@ Gg
 Gg
 Gg
 Ja
-Dc
+al
 aV
 aV
 aV
@@ -53758,8 +53751,8 @@ Hz
 aV
 yQ
 yQ
-Dc
-gp
+al
+By
 gp
 gp
 gp
@@ -54015,7 +54008,7 @@ Hz
 aV
 aV
 aV
-Dc
+al
 MQ
 kb
 kb

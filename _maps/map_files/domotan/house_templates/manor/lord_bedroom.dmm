@@ -1,6 +1,12 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "a" = (
-/turf/open/floor/carpet/purple,
+/obj/structure/window/openclose/reinforced{
+	dir = 8
+	},
+/obj/structure/curtain/purplecurtain/dir{
+	dir = 8
+	},
+/turf/open/floor/ruinedwood,
 /area/indoors/town/keep/lord_appt)
 "e" = (
 /turf/open/floor/wood,
@@ -13,11 +19,12 @@
 /area/indoors/town/keep/lord_appt)
 "h" = (
 /obj/structure/window/openclose/reinforced,
+/obj/structure/curtain/purplecurtain/dir,
 /turf/open/floor/ruinedwood,
 /area/indoors/town/keep/lord_appt)
 "m" = (
 /obj/structure/fluff/railing/wood,
-/turf/open/floor/carpet/purple,
+/turf/open/floor/ruinedwood/two,
 /area/indoors/town/keep/lord_appt)
 "n" = (
 /obj/structure/closet/crate/chest,
@@ -26,6 +33,12 @@
 /obj/item/clothing/gloves/angle,
 /obj/effect/mapping_helpers/access/keyset/manor/lord,
 /obj/effect/mapping_helpers/access/locker,
+/obj/item/weapon/sword/long/silver/decorated,
+/obj/structure/fluff/walldeco/bigpainting/relic,
+/obj/item/clothing/cloak/lordcloak/ladycloak,
+/obj/item/clothing/cloak/lordcloak,
+/obj/item/servant_bell/lord,
+/obj/item/clothing/armor/leather/jacket/tailcoat/lord,
 /turf/open/floor/wood,
 /area/indoors/town/keep/lord_appt)
 "o" = (
@@ -43,7 +56,9 @@
 "u" = (
 /obj/structure/bed/inn/double,
 /obj/item/bedsheet/fabric_double,
-/turf/open/floor/carpet/purple,
+/obj/machinery/light/fueled/wallfire/candle/r,
+/obj/structure/carpet/purple,
+/turf/open/floor/ruinedwood/two,
 /area/indoors/town/keep/lord_appt)
 "y" = (
 /obj/structure/curtain/bounty{
@@ -60,7 +75,7 @@
 	dir = 8
 	},
 /obj/structure/fluff/railing/wood,
-/turf/open/floor/carpet/purple,
+/turf/open/floor/ruinedwood/two,
 /area/indoors/town/keep/lord_appt)
 "H" = (
 /obj/structure/closet/crate/drawer/random{
@@ -90,8 +105,12 @@
 /turf/open/floor/ruinedwood/two,
 /area/indoors/town/keep/lord_appt)
 "T" = (
-/obj/machinery/light/fueled/wallfire/candle/r,
-/turf/open/floor/carpet/purple,
+/obj/structure/carpet/purple,
+/turf/open/floor/ruinedwood/two,
+/area/indoors/town/keep/lord_appt)
+"U" = (
+/obj/structure/fluff/walldeco/painting/flower,
+/turf/closed/wall/mineral/stonebrick,
 /area/indoors/town/keep/lord_appt)
 "Y" = (
 /obj/machinery/light/fueled/wallfire/candle/l,
@@ -100,7 +119,7 @@
 
 (1,1,1) = {"
 o
-o
+U
 o
 B
 y
@@ -119,8 +138,8 @@ o
 (3,1,1) = {"
 h
 H
-a
-a
+T
+T
 G
 e
 o
@@ -136,8 +155,8 @@ o
 "}
 (5,1,1) = {"
 o
-o
-o
+a
+a
 o
 o
 o

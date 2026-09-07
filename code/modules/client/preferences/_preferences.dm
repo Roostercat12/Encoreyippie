@@ -200,22 +200,23 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 <html lang="en">
 <head>
 	<style>
-		body {
-			background-color: #1a1a1a;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			height: 100%;
-			width: 100%;
+		html, body {
 			margin: 0;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			background-color: #1a1a1a;
 			image-rendering: pixelated;
 		}
 		.ui-container {
-			position: relative;
+			position: absolute;
+			top: 0;
+			left: 0;
 			width: 272px;
 			height: 315px;
 			background-image: url('Charsheet_BG.1.png');
 			background-size: cover;
+			transform-origin: top left;
 			transform: scale(3);
 		}
 		.sprite { position: absolute; background-repeat: no-repeat; cursor: pointer; }
@@ -349,6 +350,21 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 				element.offsetHeight;
 			}
 		}
+
+		var BASE_W = 272;
+		var BASE_H = 315;
+
+		function fitCreator() {
+			var w = document.documentElement.clientWidth || window.innerWidth;
+			var h = document.documentElement.clientHeight || window.innerHeight;
+			var s = Math.min(w / BASE_W, h / BASE_H);
+			if (s < 1) s = 1;
+			var el = document.querySelector('.ui-container');
+			if (el) el.style.transform = 'scale(' + s + ')';
+		}
+
+		window.addEventListener('resize', fitCreator);
+		window.addEventListener('load', fitCreator);
 
 		function updateField(fieldId, value) {
 			var elem = document.getElementById(fieldId);
@@ -593,11 +609,11 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 "}
 
 	winshow(user, "stonekeep_prefwin", TRUE)
+	winshow(user, "stonekeep_prefwin.preferences_browser", TRUE)
 	winshow(user, "stonekeep_prefwin.character_preview_map", TRUE)
-	// This should really be a browser datum
-	user << browse(dat.Join(), "window=preferences_browser;size=816x950")
+	user << browse(dat.Join(), "window=preferences_browser")
 	update_preview_icon()
-	// onclose(user, "stonekeep_prefwin", src)
+	user.client.fit_prefwin_preview()
 
 /datum/preferences/proc/update_menu_data(mob/user, list/fields_to_update)
 	if(!winexists(user, "preferences_browser"))
@@ -1143,16 +1159,18 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 
 		if("ooc_preview")
 			var/list/dat = list()
-			if(is_valid_headshot_link(null, read_preference(/datum/preference/text/headshot_link), TRUE))
-				dat += ("<div align='center'><img src='[read_preference(/datum/preference/text/headshot_link)]' width='350px' height='350px'></div>")
+			var/shot = read_preference(/datum/preference/text/headshot_link)
+			if(length(shot))
+				dat += ("<div align='center'><img src='[shot]' width='350px' height='350px'></div>")
 			if(read_preference(/datum/preference/text/flavortext) && read_preference(/datum/preference/text/flavortext_display))
 				dat += "<div align='left' style='line-height: 1.2;'>[read_preference(/datum/preference/text/flavortext_display)]</div>"
 			if(read_preference(/datum/preference/text/ooc_notes) && read_preference(/datum/preference/text/ooc_notes_display))
 				dat += "<br>"
 				dat += "<div align='center'><b>OOC notes</b></div>"
 				dat += "<div align='left' style='line-height: 1.2;'>[read_preference(/datum/preference/text/ooc_notes_display)]</div>"
-			if(read_preference(/datum/preference/text/ooc_extra))
-				dat += "[read_preference(/datum/preference/text/ooc_extra)]"
+			var/extra = read_preference(/datum/preference/text/ooc_extra)
+			if(length(extra))
+				dat += format_ooc_extra_html(extra)
 			var/datum/browser/popup = new(user, "[read_preference(/datum/preference/text/real_name)]", "<center>[read_preference(/datum/preference/text/real_name)]</center>", width = 480, height = 700)
 			popup.set_content(dat.Join())
 			popup.open(use_onclose = FALSE)
@@ -1372,42 +1390,90 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 			"}
 
 /proc/is_valid_headshot_link(mob/user, value, silent = FALSE, list/valid_extensions = list("jpg", "png", "jpeg", "gif"))
-	var/static/list/allowed_hosts = list("i.gyazo.com", "a.l3n.co", "b.l3n.co", "c.l3n.co", "images2.imgbox.com", "thumbs2.imgbox.com", "files.catbox.moe")
+	var/static/list/allowed_hosts = list(
+		"i.gyazo.com",
+		"a.l3n.co",
+		"b.l3n.co",
+		"c.l3n.co",
+		"images2.imgbox.com",
+		"thumbs2.imgbox.com",
+		"files.catbox.moe",
+	)
 
 	if(!length(value))
-		return FALSE
+		return TRUE
 
-	// Ensure link starts with "https://"
 	if(findtext(value, "https://") != 1)
 		if(!silent)
-			to_chat(user, "<span class='warning'>Your link must be https!</span>")
+			to_chat(user, span_warning("Your link must be https!"))
 		return FALSE
 
-	// Extract domain from the URL
 	var/start_index = length("https://") + 1
 	var/end_index = findtext(value, "/", start_index)
 	var/domain = (end_index ? copytext(value, start_index, end_index) : copytext(value, start_index))
 
-	// Check if domain is in the allowed list
 	if(!(domain in allowed_hosts))
 		if(!silent)
-			to_chat(user, "<span class='warning'>The image must be hosted on an approved site.</span>")
+			to_chat(user, span_warning("The image must be hosted on an approved site."))
 		return FALSE
 
-	// Extract the filename and extension
 	var/list/path_split = splittext(value, "/")
 	var/filename = path_split[length(path_split)]
 	var/list/file_parts = splittext(filename, ".")
-
 	if(length(file_parts) < 2)
 		return FALSE
 
 	var/extension = file_parts[length(file_parts)]
-
-	// Validate extension
 	if(!(extension in valid_extensions))
 		if(!silent)
-			to_chat(user, "<span class='warning'>The image must be one of the following extensions: '[english_list(valid_extensions)]'</span>")
+			to_chat(user, span_warning("The image must be one of the following extensions: '[english_list(valid_extensions)]'"))
 		return FALSE
 
 	return TRUE
+
+/proc/format_ooc_extra_html(value)
+	if(!length(value))
+		return ""
+
+	var/found_url = find_ooc_extra_url(value)
+	if(found_url)
+		return "<div align='center'><img src='[found_url]' width='350px'></div>"
+
+	return html_encode(value)
+
+/proc/find_ooc_extra_url(value)
+	var/start = findtext(value, "https://")
+	if(!start)
+		return ""
+
+	var/chunk = copytext(value, start)
+	var/cut = length(chunk) + 1
+	var/i = 1
+	while(i <= length(chunk))
+		var/ch = copytext(chunk, i, i + 1)
+		if((ch == " ") || (ch == "<") || (ch == ">") || (ch == "'") || (ch == "\"") || (ch == "\n"))
+			cut = i
+			break
+		i += 1
+
+	var/url = copytext(chunk, 1, cut)
+
+	if(is_valid_headshot_link(null, url, TRUE))
+		return url
+
+	var/end_pos = 0
+	if(findtext(url, ".jpeg"))
+		end_pos = findtext(url, ".jpeg") + 5
+	else if(findtext(url, ".jpg"))
+		end_pos = findtext(url, ".jpg") + 4
+	else if(findtext(url, ".png"))
+		end_pos = findtext(url, ".png") + 4
+	else if(findtext(url, ".gif"))
+		end_pos = findtext(url, ".gif") + 4
+
+	if(end_pos)
+		url = copytext(url, 1, end_pos)
+		if(is_valid_headshot_link(null, url, TRUE))
+			return url
+
+	return ""

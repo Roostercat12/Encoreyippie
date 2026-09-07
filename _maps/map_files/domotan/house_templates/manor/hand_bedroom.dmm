@@ -7,10 +7,15 @@
 /obj/item/clothing/gloves/leather/black,
 /obj/item/clothing/gloves/leather,
 /obj/structure/closet/crate/chest,
-/turf/open/floor/carpet/royalblack,
+/obj/item/clothing/armor/gambeson/hand,
+/obj/item/gem/amethyst,
+/turf/open/floor/ruinedwood/two,
 /area/indoors/town/keep/hand)
 "c" = (
 /obj/structure/window/openclose{
+	dir = 4
+	},
+/obj/structure/curtain/bluecurtain/dir{
 	dir = 4
 	},
 /turf/open/floor/ruinedwood,
@@ -26,24 +31,36 @@
 "j" = (
 /turf/closed/wall/mineral/stonebrick,
 /area/indoors/town/keep/hand)
+"l" = (
+/obj/structure/door/violet{
+	name = "Hand's Chambers"
+	},
+/obj/effect/mapping_helpers/access/locker,
+/obj/effect/mapping_helpers/access/keyset/manor/hand,
+/turf/open/floor/ruinedwood/two,
+/area/indoors/town/keep/hand)
 "m" = (
 /obj/machinery/light/fueled/wallfire/candle/l,
+/obj/structure/bookcase/fancy,
 /turf/open/floor/ruinedwood/two,
 /area/indoors/town/keep/hand)
 "n" = (
 /obj/structure/bed/inn/double,
 /obj/item/bedsheet/fabric_double,
-/turf/open/floor/ruinedwood,
+/turf/open/floor/ruinedwood/two,
 /area/indoors/town/keep/hand)
 "q" = (
 /obj/structure/table/wood{
 	dir = 8;
 	icon_state = "longtable"
 	},
+/obj/item/weapon/scabbard/cane/hand,
+/obj/item/weapon/sword/rapier/caneblade/hand,
 /turf/open/floor/ruinedwood/two,
 /area/indoors/town/keep/hand)
 "r" = (
-/turf/open/floor/carpet/royalblack,
+/obj/structure/carpet/blue,
+/turf/open/floor/ruinedwood/two,
 /area/indoors/town/keep/hand)
 "w" = (
 /turf/open/floor/ruinedwood/two,
@@ -54,7 +71,7 @@
 	icon_state = "longtable"
 	},
 /obj/item/weapon/sword/sabre,
-/turf/open/floor/carpet/royalblack,
+/turf/open/floor/ruinedwood/two,
 /area/indoors/town/keep/hand)
 "z" = (
 /obj/structure/closet/crate/drawer/random,
@@ -71,7 +88,8 @@
 /obj/machinery/light/fueled/wallfire{
 	pixel_y = 32
 	},
-/turf/open/floor/carpet/royalblack,
+/obj/structure/carpet/blue,
+/turf/open/floor/ruinedwood/two,
 /area/indoors/town/keep/hand)
 "U" = (
 /obj/structure/table/wood{
@@ -87,18 +105,19 @@
 	},
 /obj/item/paper/scroll,
 /obj/item/natural/feather,
-/turf/open/floor/carpet/royalblack,
+/turf/open/floor/ruinedwood/two,
 /area/indoors/town/keep/hand)
 "Y" = (
 /obj/structure/chair/wood{
 	dir = 8
 	},
+/obj/structure/carpet/blue,
 /turf/open/floor/ruinedwood/two,
 /area/indoors/town/keep/hand)
 
 (1,1,1) = {"
 j
-j
+c
 j
 c
 j
@@ -131,7 +150,7 @@ j
 z
 w
 w
-w
+r
 r
 n
 j
@@ -140,7 +159,7 @@ j
 j
 j
 j
-d
+l
 j
 j
 j

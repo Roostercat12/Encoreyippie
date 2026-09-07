@@ -1,0 +1,117 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/template_noop,
+/area/template_noop)
+"b" = (
+/obj/structure/flora/grass/thorn_bush,
+/turf/open/floor/dirt,
+/area/template_noop)
+"d" = (
+/obj/item/natural/rock/coal,
+/turf/open/floor/dirt,
+/area/template_noop)
+"h" = (
+/obj/structure/flora/grass/thorn_bush,
+/turf/open/floor/naturalstone,
+/area/template_noop)
+"m" = (
+/obj/effect/waterfall/acid,
+/turf/open/lava/acid,
+/area/template_noop)
+"p" = (
+/turf/closed/mineral/bedrock/moss,
+/area/template_noop)
+"r" = (
+/obj/effect/spawner/map_spawner/necropolis,
+/obj/item/natural/clod/dirt,
+/turf/open/floor/dirt,
+/area/template_noop)
+"y" = (
+/turf/open/floor/dirt,
+/area/template_noop)
+"A" = (
+/obj/effect/spawner/map_spawner/necropolis,
+/turf/open/floor/naturalstone,
+/area/template_noop)
+"J" = (
+/turf/open/lava/acid,
+/area/template_noop)
+"N" = (
+/turf/open/floor/naturalstone,
+/area/template_noop)
+"O" = (
+/obj/structure/table/wood/treestump/burnt,
+/turf/open/floor/naturalstone,
+/area/template_noop)
+"P" = (
+/obj/effect/decal/remains/human,
+/turf/open/floor/dirt,
+/area/template_noop)
+"W" = (
+/obj/item/natural/clod/dirt,
+/turf/open/floor/dirt,
+/area/template_noop)
+
+(1,1,1) = {"
+b
+b
+a
+P
+b
+b
+a
+"}
+(2,1,1) = {"
+a
+p
+m
+A
+b
+b
+b
+"}
+(3,1,1) = {"
+b
+b
+y
+J
+J
+b
+a
+"}
+(4,1,1) = {"
+b
+p
+m
+J
+J
+J
+N
+"}
+(5,1,1) = {"
+h
+p
+m
+J
+d
+O
+a
+"}
+(6,1,1) = {"
+a
+a
+r
+b
+W
+J
+a
+"}
+(7,1,1) = {"
+a
+a
+a
+b
+J
+a
+a
+"}

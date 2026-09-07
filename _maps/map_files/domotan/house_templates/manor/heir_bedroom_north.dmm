@@ -9,10 +9,12 @@
 /obj/item/clothing/armor/gambeson/hunts,
 /obj/item/clothing/neck/coif,
 /obj/item/storage/belt/leather/plaquesilver,
-/turf/open/floor/carpet/royalblack,
+/obj/structure/carpet/green,
+/turf/open/floor/ruinedwood/two,
 /area/indoors/town/keep/heir/heir2)
 "k" = (
 /obj/machinery/light/fueled/wallfire/candle/r,
+/obj/structure/carpet/green,
 /turf/open/floor/ruinedwood/two,
 /area/indoors/town/keep/heir/heir2)
 "o" = (
@@ -20,6 +22,9 @@
 /area/indoors/town/keep/heir/heir2)
 "q" = (
 /obj/structure/window/openclose{
+	dir = 8
+	},
+/obj/structure/curtain/greencurtain/dir{
 	dir = 8
 	},
 /turf/open/floor/ruinedwood,
@@ -32,7 +37,7 @@
 /obj/machinery/light/fueled/wallfire{
 	pixel_y = 32
 	},
-/turf/open/floor/carpet/royalblack,
+/turf/open/floor/ruinedwood/two,
 /area/indoors/town/keep/heir/heir2)
 "B" = (
 /obj/item/scomstone,
@@ -55,7 +60,8 @@
 "G" = (
 /obj/structure/bed/inn/double,
 /obj/item/bedsheet/fabric_double,
-/turf/open/floor/carpet/royalblack,
+/obj/structure/carpet/green,
+/turf/open/floor/ruinedwood/two,
 /area/indoors/town/keep/heir/heir2)
 "J" = (
 /obj/structure/mannequin/male,
@@ -64,6 +70,10 @@
 /obj/item/clothing/gloves/leather/advanced,
 /obj/item/clothing/armor/cuirass,
 /obj/item/clothing/head/helmet/visored/sallet,
+/turf/open/floor/ruinedwood/two,
+/area/indoors/town/keep/heir/heir2)
+"L" = (
+/obj/structure/carpet/green,
 /turf/open/floor/ruinedwood/two,
 /area/indoors/town/keep/heir/heir2)
 "V" = (
@@ -115,7 +125,7 @@ Z
 (4,1,1) = {"
 a
 y
-o
+L
 d
 C
 "}

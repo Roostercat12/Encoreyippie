@@ -640,23 +640,23 @@
 	tick_interval = STATUS_EFFECT_NO_TICK
 
 /atom/movable/screen/alert/status_effect/debuff/curse_t1
-	name = "Necra's Gaze"
-	desc = "The Undermaiden's gaze falls lightly upon me, I've displeased her."
+	name = "Valdala's Gaze"
+	desc = "The Valkyrie's gaze falls lightly upon me, I've displeased her."
 	icon_state = "curse_necra_1"
 
 /atom/movable/screen/alert/status_effect/debuff/curse_t2
-	name = "Necra's Curse"
-	desc = "The Undermaiden's gaze falls upon me, I've upset her."
+	name = "Valdala's Curse"
+	desc = "The Valkyrie's gaze falls upon me, I've upset her."
 	icon_state = "curse_necra_2"
 
 /atom/movable/screen/alert/status_effect/debuff/curse_t3
-	name = "Necra's Ire"
-	desc = "The Undermaiden's gaze falls upon me, I've angered her deeply!"
+	name = "Valdala's Ire"
+	desc = "The Valkyrie's gaze falls upon me, I've angered her deeply!"
 	icon_state = "curse_necra_3"
 
 /atom/movable/screen/alert/status_effect/debuff/curse_t4
-	name = "Necra's Rage"
-	desc = "The Undermaiden's hateful gaze falls upon me, I've enraged her, and she will torment me till the day I enter her embrace!"
+	name = "Valdala's Rage"
+	desc = "The Valkyrie's hateful gaze falls upon me, I've enraged her, and she will torment me till the day I enter her embrace!"
 	icon_state = "curse_necra_4"
 
 /datum/status_effect/debuff/cursed

@@ -11,6 +11,12 @@
 	var/lastsmoke = 0
 	soundloop = /datum/looping_sound/fireloop
 
+/obj/machinery/light/fueled/oven/fire_act(added, maxstacks)
+	var/was_lit = on
+	. = ..()
+	if(!was_lit && on)
+		SEND_SIGNAL(src, COMSIG_STORAGE_CLOSED) // this kinda janky but i like it
+
 /obj/machinery/light/fueled/oven/Initialize()
 	. = ..()
 	AddComponent(/datum/component/storage/concrete/grid/food/cooking/oven)

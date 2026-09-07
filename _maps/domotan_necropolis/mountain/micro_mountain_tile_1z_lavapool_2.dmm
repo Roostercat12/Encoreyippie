@@ -1,0 +1,88 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/template_noop,
+/area/template_noop)
+"g" = (
+/turf/closed/mineral/gemeralds/deep,
+/area/template_noop)
+"p" = (
+/obj/item/natural/rock/random_ore,
+/turf/open/floor/dirt,
+/area/template_noop)
+"r" = (
+/turf/open/lava,
+/area/template_noop)
+"A" = (
+/turf/open/floor/naturalstone,
+/area/template_noop)
+"N" = (
+/turf/closed/mineral/deep,
+/area/template_noop)
+"R" = (
+/obj/item/natural/rock/random_ore,
+/turf/open/floor/naturalstone,
+/area/template_noop)
+
+(1,1,1) = {"
+a
+A
+a
+r
+r
+a
+a
+"}
+(2,1,1) = {"
+A
+r
+A
+r
+r
+r
+r
+"}
+(3,1,1) = {"
+A
+r
+r
+p
+N
+r
+a
+"}
+(4,1,1) = {"
+r
+r
+r
+r
+g
+N
+r
+"}
+(5,1,1) = {"
+a
+r
+p
+N
+N
+r
+r
+"}
+(6,1,1) = {"
+a
+R
+r
+r
+r
+r
+A
+"}
+(7,1,1) = {"
+r
+a
+A
+A
+r
+A
+A
+"}

@@ -219,7 +219,7 @@
 	icon_state = "lavender"
 
 /obj/item/alch/herb/necralily
-	name = "necran lily"
+	name = "valdalan lily"
 	desc = "The un-initiated are forbidden from picking this holy flower, which is said to watch over the graves near where it blooms. A sign that the deceased are now in a better place..."
 	dropshrink = 0.75
 	icon_state = "necralily"

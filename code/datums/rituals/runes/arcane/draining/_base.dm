@@ -1,5 +1,7 @@
-/// Tiles (3D-distance) within which subscribers receive the buff refresh
+/// Tiles (2D-distance) within which subscribers receive the buff refresh
 #define MANA_SIPHON_BUFF_RANGE 7
+/// Tiles (z-distance) within which subscribers recieve the buff refresh
+#define MANA_SIPHON_BUFF_ZRANGE 3
 /// Mana drained from anything per process tick
 #define MANA_SIPHON_BASE_DRAIN 0.4
 /// Process rate in deciseconds
@@ -9,11 +11,11 @@
 
 /obj/effect/decal/cleanable/ritual_rune/arcyne/mana_siphon
 	name = "arcyne mana siphon"
-	desc = "A hungry, pulsing sigil that draws power from the world and feeds it to those bound to it..."
+	desc = "A hungry, pulsing sigil that draws power from the world..."
 	icon = 'icons/effects/160x160.dmi'
 	icon_state = "imbuement"
 	tier = 2
-	runesize = 3
+	runesize = 1
 	SET_BASE_PIXEL(-64, -64)
 	pixel_z = 0
 	invocation = "Shar'kael un'veth draum!"
@@ -96,10 +98,6 @@
 		to_chat(L, span_warning("You aren't able to commune with these symbols."))
 		return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
 
-	if(!L.get_bleed_rate())
-		to_chat(L, span_hierophant_warning("The rune demands a blood-price, you must be bleeding to bind yourself to it."))
-		return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
-
 	if(L in subscribers)
 		subscribers -= L
 		to_chat(L, span_cultsmall("You withdraw your bond from the siphon."))
@@ -107,7 +105,7 @@
 	else
 		subscribers += L
 		playsound(src, 'sound/magic/glass.ogg', 50, TRUE)
-		to_chat(L, span_hierophant_warning("Your blood seals the bond, the siphon will feed you while you remain close."))
+		to_chat(L, span_hierophant_warning("Your arcyne connection seals the bond, the siphon will work with you while you remain close."))
 
 	return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
 
@@ -157,7 +155,7 @@
 			break
 
 	if(!mana_found)
-		if(activating_mob && !QDELETED(activating_mob) && activating_mob.stat == CONSCIOUS)
+		if(activating_mob && !QDELETED(activating_mob) && activating_mob.stat == CONSCIOUS && here.InCylindar(get_turf(activating_mob), MANA_SIPHON_BUFF_RANGE + 1, MANA_SIPHON_BUFF_ZRANGE + 1))
 			if(!isnull(activating_mob.mana_pool) && activating_mob.mana_pool.amount > mana_cost * max(1, length(subscribers)))
 				var/drain = min(activating_mob.mana_pool.amount, mana_cost * max(1, length(subscribers)))
 				activating_mob.mana_pool.adjust_mana(-drain)
@@ -167,6 +165,13 @@
 				mana_found = TRUE
 	return mana_found
 
+/turf/proc/InCylindar(turf/T, range, vRange)
+	if (!T || !istype(T))
+		return 0
+	var/dx = abs(x - T.x)
+	var/dy = abs(y - T.y)
+	var/inZ = abs(z - T.z) <= vRange
+	return ((dx + dy) <= range) && inZ
 
 /obj/effect/decal/cleanable/ritual_rune/arcyne/mana_siphon/proc/trigger_effects()
 	var/turf/source_turf = loc
@@ -174,10 +179,10 @@
 		if(QDELETED(sub))
 			subscribers -= sub
 			continue
+		// the buff will auto-refresh if in range, this is so we can apply buff to new subs
 		if(sub.has_status_effect(buff))
 			continue
-		var/dist = source_turf.Distance3D(get_turf(sub))
-		if(dist > MANA_SIPHON_BUFF_RANGE)
+		if(!source_turf.InCylindar(get_turf(sub), MANA_SIPHON_BUFF_RANGE, MANA_SIPHON_BUFF_ZRANGE))
 			continue
 		sub.apply_status_effect(buff, null, src)
 
@@ -209,9 +214,9 @@
 	if(!source_rune.siphon_active)
 		owner.remove_status_effect(src.type)
 		return
-	var/dist = source.Distance3D(get_turf(owner))
-	if(dist > max_range)
+	if(!source.InCylindar(get_turf(owner), MANA_SIPHON_BUFF_RANGE, MANA_SIPHON_BUFF_ZRANGE))
 		return
+	// if rune active and still in range, reset the duration
 	duration = initial(duration)
 	return
 
@@ -222,6 +227,7 @@
 	icon_state = "censerbuff" // reuse an existing mana icon; swap as needed
 
 #undef MANA_SIPHON_BUFF_RANGE
+#undef MANA_SIPHON_BUFF_ZRANGE
 #undef MANA_SIPHON_BASE_DRAIN
 #undef MANA_SIPHON_PROCESS_RATE
 #undef MANA_SIPHON_BUFF_DURATION

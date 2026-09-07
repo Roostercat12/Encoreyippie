@@ -40,7 +40,6 @@
 
 /obj/item/essence_connector/proc/complete_connection(obj/machinery/essence/target, mob/user)
 	var/obj/machinery/essence/from = source_device
-	// Clear state FIRST before any early returns so we're never left in a broken half-state
 	source_device.cut_overlay(get_connection_overlay("source"))
 	source_device = null
 	connecting = FALSE
@@ -49,17 +48,24 @@
 		to_chat(user, span_warning("Cannot connect a device to itself."))
 		return
 
-	for(var/datum/essence_link/existing in from.links)
-		if(existing.source == from && existing.sink == target)
+	var/obj/machinery/essence/link_from = from
+	var/obj/machinery/essence/link_to = target
+
+	if(istype(from, /obj/machinery/essence/cauldron_node) && !istype(target, /obj/machinery/essence/cauldron_node))
+		link_from = target
+		link_to = from
+
+	for(var/datum/essence_link/existing in link_from.links)
+		if(existing.source == link_from && existing.sink == link_to)
 			to_chat(user, span_warning("These devices are already linked in that direction."))
 			return
 
-	var/datum/essence_link/link = essence_create_link(from, target)
+	var/datum/essence_link/link = essence_create_link(link_from, link_to)
 	if(!link)
 		to_chat(user, span_warning("Could not create link, check that both machines accept connections in that direction."))
 		return
 
-	to_chat(user, span_info("Linked [get_display_name(from)] → [get_display_name(target)]."))
+	to_chat(user, span_info("Linked [get_display_name(link_from)] → [get_display_name(link_to)]."))
 
 /obj/item/essence_connector/proc/cancel_connection(mob/user)
 	if(source_device)

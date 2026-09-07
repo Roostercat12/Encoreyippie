@@ -6,29 +6,35 @@
 	maximum_value_length = 512
 	should_update_preview = FALSE
 
+/datum/preference/text/headshot_link/create_default_value()
+	return ""
+
 /datum/preference/text/headshot_link/is_valid(value, datum/preferences/prefs)
-	// Empty string is always valid (no headshot set).
-	if (!length(value))
+	if(!length(value))
 		return TRUE
 	return ..() && is_valid_headshot_link(null, value, TRUE)
 
-/datum/preference/text/headshot_link/apply_to_human(mob/living/carbon/human/H, value, datum/preferences/prefs)
-	H.headshot_link = value
+/datum/preference/text/headshot_link/apply_to_human(mob/living/carbon/human/target, value, datum/preferences/prefs)
+	target.headshot_link = value
 
-/datum/preference/text/headshot_link/handle_link(datum/preferences/prefs, mob/user)
-	if(!prefs.donator)
-		to_chat(user, "This is a donator exclusive feature, your headshot link will be applied but others will only be able to view it if you are a Patreon supporter or Twitch subscriber.")
+/datum/preference/text/headshot_link/handle_link(datum/preferences/preferences, mob/user)
+	var/current = preferences.read_preference(type)
+	var/new_value = input(
+		user,
+		"Paste an https link (gyazo, lensdump, imgbox, catbox). Clear the box and press OK to remove. Cancel keeps the current photo.",
+		"Headshot",
+		current,
+	) as text|null
 
-	to_chat(user, span_notice("Please use an image of the head and shoulder area to maintain immersion level. Lastly, ["<span class='bold'>do not use a real life photo or ANYTHING AI generated.</span>"]"))
-	to_chat(user, span_notice("If the photo doesn't show up properly in-game, ensure that it's a direct image link that opens properly in a browser."))
-	to_chat(user, span_notice("Keep in mind that the photo will be downsized to 325x325 pixels, so the more square the photo, the better it will look."))
-	var/new_headshot_link = input(user, "Input the headshot link (https, hosts: gyazo, lensdump, imgbox, catbox):", "Headshot", prefs.read_preference(/datum/preference/text/headshot_link)) as text|null
-	if(!new_headshot_link)
+	if(isnull(new_value))
 		return
-	var/is_valid_link = is_valid_headshot_link(user, new_headshot_link, FALSE)
-	if(!is_valid_link)
-		to_chat(user, span_notice("Failed to update headshot"))
+
+	new_value = trim(new_value)
+	if(!is_valid(new_value, preferences))
+		if(length(new_value))
+			is_valid_headshot_link(user, new_value, FALSE)
 		return
-	prefs.write_preference(/datum/preference/text/headshot_link, new_headshot_link)
-	to_chat(user, span_notice("Successfully updated headshot picture"))
-	log_game("[user] has set their Headshot image to '[prefs.read_preference(/datum/preference/text/headshot_link)]'.")
+
+	preferences.update_preference(src, new_value)
+	if(!length(new_value))
+		to_chat(user, span_notice("Headshot removed."))

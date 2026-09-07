@@ -25,8 +25,8 @@
 	prefs.write_preference(/datum/preference/text/ooc_notes, new_ooc_notes)
 
 	var/ooc = prefs.read_preference(/datum/preference/text/ooc_notes)
-	ooc = html_encode(ooc)
 	ooc = replacetext(parsemarkdown_basic(ooc), "\n", "<BR>")
+	ooc = html_encode(ooc)
 	prefs.write_preference(/datum/preference/text/ooc_notes_display, ooc)
 	to_chat(user, span_notice("Successfully updated OOC notes."))
 	log_game("[user] has set their OOC notes'.")

@@ -124,7 +124,6 @@
 			var/moved = from_storage.transfer_to(sink_store, etype, min(link.bandwidth, deficit))
 			if(moved > 0)
 				create_essence_flow_effect(sink, etype, moved)
-				break
 
 /obj/machinery/essence/proc/get_allowed_amount(essence_type)
 	var/list/allowed = network \
@@ -158,7 +157,6 @@
 			var/moved = src_store.transfer_to(into_storage, etype, min(link.bandwidth, deficit))
 			if(moved > 0)
 				create_essence_flow_effect(source, etype, moved)
-				break
 
 /// Spawns a travelling orb effect to visualise essence moving between machines.
 /obj/machinery/essence/proc/create_essence_flow_effect(obj/machinery/target, essence_type, amount)

@@ -1,0 +1,105 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/template_noop,
+/area/template_noop)
+"g" = (
+/obj/structure/flora/tree/stump/pine,
+/turf/open/floor/dirt,
+/area/template_noop)
+"k" = (
+/obj/structure/flora/tree/dying_bush,
+/turf/open/floor/dirt,
+/area/template_noop)
+"q" = (
+/obj/item/grown/log/tree,
+/turf/open/floor/dirt,
+/area/template_noop)
+"r" = (
+/turf/open/water/blood,
+/area/template_noop)
+"w" = (
+/obj/effect/decal/cleanable/blood,
+/mob/living/simple_animal/hostile/retaliate/bat,
+/turf/open/floor/dirt,
+/area/template_noop)
+"x" = (
+/obj/effect/spawner/map_spawner/treeorbush,
+/turf/open/floor/dirt,
+/area/template_noop)
+"z" = (
+/obj/structure/flora/tree/dying_bush,
+/mob/living/simple_animal/hostile/retaliate/bat,
+/turf/open/floor/dirt,
+/area/template_noop)
+"H" = (
+/obj/item/reagent_containers/food/snacks/crow,
+/turf/open/floor/dirt,
+/area/template_noop)
+"L" = (
+/obj/structure/flora/tree/burnt,
+/turf/open/floor/dirt,
+/area/template_noop)
+
+(1,1,1) = {"
+a
+a
+a
+H
+a
+z
+a
+"}
+(2,1,1) = {"
+a
+a
+L
+r
+a
+a
+a
+"}
+(3,1,1) = {"
+a
+a
+r
+r
+r
+a
+g
+"}
+(4,1,1) = {"
+a
+w
+r
+r
+r
+r
+a
+"}
+(5,1,1) = {"
+a
+k
+r
+r
+r
+a
+x
+"}
+(6,1,1) = {"
+a
+H
+x
+q
+a
+L
+w
+"}
+(7,1,1) = {"
+a
+a
+a
+a
+a
+a
+k
+"}

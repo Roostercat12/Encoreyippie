@@ -18,6 +18,7 @@
 #define ACCESS_ARTIFICER "artificer"
 #define ACCESS_MINER "miner"
 #define ACCESS_BATHHOUSE "bathhouse"
+#define ACCESS_YEOMAN "yeoman"
 
 // Town Garrison (Including forest)
 #define ACCESS_GARRISON "garrison"
@@ -63,6 +64,10 @@
 #define ACCESS_SHOP_III "shop3"
 #define ACCESS_SHOP_IV "shop4"
 #define ACCESS_SHOP_V "shop5"
+
+// Workplaces
+#define ACCESS_WORKPLACE_I "workplace1"
+#define ACCESS_WORKPLACE_II "workplace2"
 
 // House
 #define ACCESS_HOUSE_I "house1"

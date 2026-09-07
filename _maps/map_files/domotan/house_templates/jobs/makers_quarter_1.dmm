@@ -1,0 +1,175 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/closed/wall/mineral/stone/moss,
+/area/indoors/town/shop)
+"c" = (
+/obj/machinery/light/fueled/torchholder/l,
+/turf/open/floor/tile/brick,
+/area/indoors/town/shop)
+"e" = (
+/obj/structure/window/openclose/reinforced{
+	dir = 8
+	},
+/turf/open/floor/tile/brick,
+/area/indoors/town/shop)
+"j" = (
+/obj/machinery/light/fueled/torchholder/r,
+/turf/open/floor/tile/brick,
+/area/indoors/town/shop)
+"l" = (
+/obj/structure/fluff/walldeco/vinez/red,
+/turf/closed/wall/mineral/stone,
+/area/indoors/town/shop)
+"m" = (
+/obj/machinery/light/fueled/torchholder/c,
+/turf/open/floor/tile/brick,
+/area/indoors/town/shop)
+"p" = (
+/turf/closed/wall/mineral/stone,
+/area/indoors/town/shop)
+"r" = (
+/obj/structure/window/openclose/reinforced,
+/turf/open/floor/blocks/stonered,
+/area/indoors/town/shop)
+"t" = (
+/obj/structure/sign/property_sign/claim,
+/turf/closed/wall/mineral/stone/moss,
+/area/indoors/town/shop)
+"w" = (
+/obj/structure/window/openclose/reinforced{
+	dir = 1
+	},
+/turf/open/floor/cobble/alt,
+/area/indoors/town/shop)
+"x" = (
+/obj/structure/rack/shelf/biggest,
+/turf/open/floor/tile/brick,
+/area/indoors/town/shop)
+"y" = (
+/obj/structure/fluff/walldeco/masonflag,
+/turf/closed/wall/mineral/stone,
+/area/indoors/town/shop)
+"G" = (
+/obj/structure/window/openclose/reinforced{
+	dir = 4
+	},
+/turf/open/floor/cobble/alt,
+/area/indoors/town/shop)
+"H" = (
+/obj/structure/fluff/walldeco/vinez/red,
+/turf/closed/wall/mineral/stone/moss,
+/area/indoors/town/shop)
+"J" = (
+/turf/open/floor/tile/brick,
+/area/indoors/town/shop)
+"L" = (
+/obj/structure/door/window{
+	name = "Maker's Quarter"
+	},
+/turf/open/floor/tile/brick,
+/area/indoors/town/shop)
+"P" = (
+/obj/structure/door{
+	name = "Maker's Quarter"
+	},
+/turf/open/floor/tile/brick,
+/area/indoors/town/shop)
+"U" = (
+/obj/structure/fake_machine/scomm,
+/turf/open/floor/tile/brick,
+/area/indoors/town/shop)
+"X" = (
+/obj/machinery/light/fueled/torchholder/r{
+	dir = 4
+	},
+/turf/open/floor/tile/brick,
+/area/indoors/town/shop)
+
+(1,1,1) = {"
+y
+G
+L
+L
+G
+y
+"}
+(2,1,1) = {"
+t
+J
+J
+J
+c
+w
+"}
+(3,1,1) = {"
+P
+J
+J
+J
+J
+L
+"}
+(4,1,1) = {"
+r
+J
+J
+J
+J
+L
+"}
+(5,1,1) = {"
+l
+m
+J
+J
+J
+w
+"}
+(6,1,1) = {"
+H
+J
+J
+J
+J
+a
+"}
+(7,1,1) = {"
+a
+U
+J
+J
+J
+a
+"}
+(8,1,1) = {"
+p
+m
+J
+J
+J
+X
+"}
+(9,1,1) = {"
+P
+J
+J
+J
+J
+J
+"}
+(10,1,1) = {"
+a
+x
+x
+j
+J
+J
+"}
+(11,1,1) = {"
+a
+a
+e
+e
+p
+a
+"}

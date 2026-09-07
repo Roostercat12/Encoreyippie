@@ -46,9 +46,38 @@ GLOBAL_LIST_EMPTY(secret_door_managers)
 
 /datum/secret_door_manager/proc/on_job_spawn(source, datum/job/job, mob/living/spawned, client/player_client)
 	SIGNAL_HANDLER
-	if((job.type in vips) || (accessor_trait && (accessor_trait in job.mind_traits) || (accessor_trait in job.traits)))
-		var/msg = "The [memory_name] secret doors answer to: '[open_phrase]'"
-		spawned.mind?.store_memory(msg)
+	if(!spawned)
+		return
+	if(!should_inform(job, spawned))
+		return
+	addtimer(CALLBACK(src, PROC_REF(inform_spawned), spawned), 1)
+
+/datum/secret_door_manager/proc/should_inform(datum/job/job, mob/living/spawned)
+	if(!job)
+		job = spawned.mind?.assigned_role
+	if(!job)
+		return FALSE
+	if(job.type in vips)
+		return TRUE
+	if(job.parent_job?.type in vips)
+		return TRUE
+	if(accessor_trait)
+		if(accessor_trait in job.mind_traits)
+			return TRUE
+		if(accessor_trait in job.traits)
+			return TRUE
+		if(HAS_TRAIT(spawned, accessor_trait) || (spawned.mind && HAS_TRAIT(spawned.mind, accessor_trait)))
+			return TRUE
+	return FALSE
+
+/datum/secret_door_manager/proc/inform_spawned(mob/living/spawned)
+	if(QDELETED(spawned) || !spawned.mind)
+		return
+	var/msg = "The [memory_name] secret doors answer to: '[open_phrase]'"
+	if(findtext(spawned.mind.memory, msg))
+		return
+	spawned.mind.store_memory(msg)
+	to_chat(spawned, span_purple(msg))
 
 /datum/secret_door_manager/proc/add_door(obj/structure/door/secret/new_door)
 	if(new_door in doors)

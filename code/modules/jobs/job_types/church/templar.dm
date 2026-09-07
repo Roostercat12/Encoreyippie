@@ -13,6 +13,8 @@
 		/datum/attribute/skill/magic/holy = 30,
 		/datum/attribute/skill/misc/medicine = 10,
 		/datum/attribute/skill/misc/sewing = 20,
+		/datum/attribute/skill/magic/arcane = 30,
+		/datum/attribute/skill/craft/alchemy = 10,
 	)
 
 /datum/attribute_holder/sheet/job/templar/patron/visires
@@ -34,12 +36,18 @@
 /datum/attribute_holder/sheet/job/templar/patron/akan
 	raw_attribute_list = list(
 		/datum/attribute/skill/labor/mathematics = 20,
-		/datum/attribute/skill/misc/reading = 20
+		/datum/attribute/skill/misc/reading = 20,
+		/datum/attribute/skill/craft/alchemy = 20
 	)
 
 /datum/attribute_holder/sheet/job/templar/patron/akan/sword
 	raw_attribute_list = list(
 		/datum/attribute/skill/combat/swords = 40
+	)
+
+/datum/attribute_holder/sheet/job/templar/patron/akan/flail
+	raw_attribute_list = list(
+		/datum/attribute/skill/combat/whipsflails = 40
 	)
 
 /datum/attribute_holder/sheet/job/templar/patron/akan/spear
@@ -50,7 +58,8 @@
 /datum/attribute_holder/sheet/job/templar/patron/gani
 	raw_attribute_list = list(
 		/datum/attribute/skill/labor/farming = 20,
-		/datum/attribute/skill/misc/medicine = 20
+		/datum/attribute/skill/misc/medicine = 20,
+		/datum/attribute/skill/craft/alchemy = 10
 	)
 
 /datum/attribute_holder/sheet/job/templar/patron/gani/polearm
@@ -71,7 +80,8 @@
 /datum/attribute_holder/sheet/job/templar/patron/valdala
 	raw_attribute_list = list(
 		/datum/attribute/skill/misc/medicine = 20,
-		/datum/attribute/skill/craft/alchemy = 20
+		/datum/attribute/skill/craft/alchemy = 20,
+		/datum/attribute/skill/craft/masonry = 20
 	)
 
 /datum/attribute_holder/sheet/job/templar/patron/valdala/flail
@@ -152,7 +162,8 @@
 		/datum/attribute/skill/combat/whipsflails = 40,
 		/datum/attribute/skill/misc/sneaking = 30,
 		/datum/attribute/skill/misc/stealing = 30,
-		/datum/attribute/skill/misc/lockpicking = 30
+		/datum/attribute/skill/misc/lockpicking = 30,
+		/datum/attribute/skill/craft/alchemy = 20
 	)
 
 /datum/attribute_holder/sheet/job/templar/patron/iliope/whip
@@ -173,7 +184,8 @@
 /datum/attribute_holder/sheet/job/templar/patron/pomette
 	raw_attribute_list = list(
 		/datum/attribute/skill/labor/farming = 20,
-		/datum/attribute/skill/craft/cooking = 20
+		/datum/attribute/skill/craft/cooking = 20,
+		/datum/attribute/skill/craft/alchemy = 10
 	)
 
 /datum/attribute_holder/sheet/job/templar/patron/pomette/sword
@@ -253,6 +265,7 @@
 
 	traits = list(
 		TRAIT_HEAVYARMOR,
+		TRAIT_MEDIUMARMOR,
 		TRAIT_STEELHEARTED,
 		TRAIT_VIRGIN,
 	)
@@ -315,6 +328,15 @@
 					spawned.attributes?.add_sheet(/datum/attribute_holder/sheet/job/templar/patron/akan/spear)
 				if("Moonlight Khopesh (Swords)")
 					spawned.attributes?.add_sheet(/datum/attribute_holder/sheet/job/templar/patron/akan/sword)
+
+			var/static/list/selectable_books = list(
+				"Storm-Charged Tome (Lightning)" = /obj/item/spellbook/mid/starter/lightning,
+				"Thrice-Warded Tome (Arcane)" = /obj/item/spellbook/mid/starter/arcane,
+				"Windswept Tome (Air)" = /obj/item/spellbook/mid/starter/air,
+			)
+
+			grant_selected_spellbooks(spawned, selectable_books, 1)
+
 		if(/datum/patron/divine/gani)
 			spawned.attributes?.add_sheet(/datum/attribute_holder/sheet/job/templar/patron/gani)
 			spawned.cmode_music = 'sound/music/cmode/church/CombatDendor.ogg'
@@ -504,6 +526,7 @@
 			wrists = /obj/item/clothing/neck/psycross/silver/divine/akan
 			head = /obj/item/clothing/head/helmet/heavy/necked/akan
 			cloak = /obj/item/clothing/cloak/stabard/templar/akan
+			backpack_contents += /obj/item/chalk
 		if(/datum/patron/divine/gani)
 			wrists = /obj/item/clothing/neck/psycross/silver/divine/gani
 			head = /obj/item/clothing/head/helmet/heavy/necked/ganihelm

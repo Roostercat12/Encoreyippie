@@ -18,6 +18,25 @@
 	spell_flags = SPELL_RITUOS
 	projectile_type = /obj/projectile/magic/repel
 
+/datum/action/cooldown/spell/projectile/repel/fire_projectile(atom/target)
+	var/mob/living/carbon/caster = owner
+	if(istype(caster) && caster.in_throw_mode)
+		var/obj/item/held = caster.get_active_held_item()
+		if(held && !(held.item_flags & ABSTRACT) && !istype(held, /obj/item/grabbing))
+			if(caster.dropItemToGround(held, silent = TRUE))
+				caster.throw_mode_off()
+				var/atom/throw_target = get_turf(target) || get_edge_target_turf(caster, get_dir(caster, target))
+				held.safe_throw_at(throw_target, 7, 4, caster)
+				caster.visible_message(
+					span_danger("[caster] throws [held] with extreme force!"),
+					span_danger("I launch [held] with Repel!")
+				)
+				if(sound)
+					playsound(get_turf(caster), sound, 60, FALSE)
+				current_amount--
+				return TRUE
+	return ..()
+
 /obj/projectile/magic/repel
 	name = "bolt of repeling"
 	icon = 'icons/effects/effects.dmi'

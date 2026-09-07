@@ -225,16 +225,16 @@
 	keys = list(/obj/item/key/dungeon, /obj/item/key/garrison, /obj/item/key/forrestgarrison, /obj/item/key/atarms, /obj/item/key/manor, /obj/item/key/guest, /obj/item/key/vault)
 
 /obj/item/storage/keyring/guard
-	keys = list(/obj/item/key/garrison)
+	keys = list(/obj/item/key/garrison, /obj/item/key/gatehouse)
 
 /obj/item/storage/keyring/lieutenant
 	keys = list(/obj/item/key/garrison, /obj/item/key/lieutenant)
 
 /obj/item/storage/keyring/manorguard
-	keys = list(/obj/item/key/manor, /obj/item/key/dungeon, /obj/item/key/atarms, /obj/item/key/garrison)
+	keys = list(/obj/item/key/manor, /obj/item/key/dungeon, /obj/item/key/atarms, /obj/item/key/garrison, /obj/item/key/gatehouse)
 
 /obj/item/storage/keyring/archivist
-	keys = list(/obj/item/key/archive, /obj/item/key/manor, /obj/item/key/tower)
+	keys = list(/obj/item/key/archive, /obj/item/key/manor, /obj/item/key/tower, /obj/item/key/gatehouse)
 
 /obj/item/storage/keyring/merchant
 	keys = list(/obj/item/key/merchant, /obj/item/key/mercenary, /obj/item/key/warehouse)
@@ -271,13 +271,14 @@
 		/obj/item/key/garrison,
 		/obj/item/key/forrestgarrison,
 		/obj/item/key/atarms,
+		/obj/item/key/magister,
 	)
 
 /obj/item/storage/keyring/courtagent
 	keys = list(/obj/item/key/courtagent, /obj/item/key/manor)
 
 /obj/item/storage/keyring/steward
-	keys = list(/obj/item/key/steward, /obj/item/key/vault, /obj/item/key/manor, /obj/item/key/warehouse)
+	keys = list(/obj/item/key/steward, /obj/item/key/vault, /obj/item/key/manor, /obj/item/key/warehouse, /obj/item/key/merchant)
 
 /obj/item/storage/keyring/dungeoneer
 	keys = list(/obj/item/key/dungeon, /obj/item/key/manor, /obj/item/key/gatehouse, /obj/item/key/atarms)
