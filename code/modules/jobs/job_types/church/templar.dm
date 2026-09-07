@@ -337,6 +337,9 @@
 
 			grant_selected_spellbooks(spawned, selectable_books, 1)
 
+			form_points = 2
+			technique_points = 2
+
 		if(/datum/patron/divine/gani)
 			spawned.attributes?.add_sheet(/datum/attribute_holder/sheet/job/templar/patron/gani)
 			spawned.cmode_music = 'sound/music/cmode/church/CombatDendor.ogg'

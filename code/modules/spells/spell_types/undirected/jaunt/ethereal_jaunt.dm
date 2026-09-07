@@ -31,7 +31,8 @@
 	cooldown_time = 95 SECONDS
 	required_form = FORM_ARCANE
 	required_technique = TECHNIQUE_ALTERATION
-	required_level = 12 //lol
+	required_items = list(/obj/item/spellbook)
+	required_level = 8 //lol
 	initial_charges = 3
 
 /datum/action/cooldown/spell/undirected/jaunt/ethereal_jaunt/enter_jaunt(mob/living/jaunter, turf/loc_override)

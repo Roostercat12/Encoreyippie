@@ -116,6 +116,9 @@
 
 			grant_selected_spellbooks(spawned, selectable_books, 2)
 
+			form_points = 4
+			technique_points = 4
+
 /datum/outfit/priest
 	name = "Priest"
 	head = /obj/item/clothing/head/priestmask

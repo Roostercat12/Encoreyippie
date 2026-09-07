@@ -454,8 +454,12 @@
 	honorary = "Magister"
 	honorary_f = "Magistrix"
 
-	form_points = 6
-	technique_points = 8
+	form_points = 10
+	technique_points = 10
+
+	spells = list(
+		/datum/action/cooldown/spell/undirected/touch/prestidigitation,
+	)
 
 	traits = list(
 		TRAIT_NOBLE_BLOOD,
@@ -504,7 +508,7 @@
 	)
 	armor = /obj/item/clothing/armor/gambeson/hand
 	cloak = /obj/item/clothing/cloak/half
-	pants = /obj/item/clothing/pants/tights/colored/black
+	pants = /obj/item/clothing/pants/trou/formal
 	shoes = /obj/item/clothing/shoes/boots
 	beltl = /obj/item/storage/magebag/apprentice
 

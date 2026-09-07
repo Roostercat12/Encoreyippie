@@ -8,6 +8,7 @@
 	required_form = FORM_AIR
 	required_technique = TECHNIQUE_ILLUSION
 	required_level = 6
+	required_items = list(/obj/item/spellbook)
 
 	charge_time = 2 SECONDS
 	cooldown_time = 20 SECONDS

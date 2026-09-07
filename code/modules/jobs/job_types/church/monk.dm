@@ -226,6 +226,9 @@
 
 			grant_selected_spellbooks(spawned, selectable_books, 2)
 
+			form_points = 3
+			technique_points = 3
+
 /datum/outfit/monk
 	name = JOB_ACOLYTE
 	belt = /obj/item/storage/belt/leather/rope
