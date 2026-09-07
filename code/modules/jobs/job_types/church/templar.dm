@@ -337,8 +337,8 @@
 
 			grant_selected_spellbooks(spawned, selectable_books, 1)
 
-			form_points = 2
-			technique_points = 2
+			form_points = 3
+			technique_points = 3
 
 		if(/datum/patron/divine/gani)
 			spawned.attributes?.add_sheet(/datum/attribute_holder/sheet/job/templar/patron/gani)

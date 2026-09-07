@@ -226,8 +226,8 @@
 
 			grant_selected_spellbooks(spawned, selectable_books, 2)
 
-			form_points = 3
-			technique_points = 3
+			form_points = 4
+			technique_points = 4
 
 /datum/outfit/monk
 	name = JOB_ACOLYTE
