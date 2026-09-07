@@ -30,7 +30,7 @@
 	if(turf)
 		update_z(turf.z)
 	if(is_boss)
-		AddComponent(/datum/component/boss_healthbar)
+		sync_boss_healthbar()
 
 /mob/living/Destroy()
 	update_z(null)
@@ -3242,6 +3242,7 @@
 	return
 
 /mob/living/proc/set_boss(new_value)
+	new_value = !!new_value
 	if(is_boss == new_value)
 		return
 	is_boss = new_value
