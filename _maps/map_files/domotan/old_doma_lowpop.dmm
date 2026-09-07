@@ -4725,7 +4725,7 @@
 	dir = 5
 	},
 /turf/open/floor/dirt/road,
-/area/outdoors/beach)
+/area/outdoors/town/neighborhood/west)
 "dwM" = (
 /obj/structure/rack/shelf/biggest,
 /turf/open/floor/church,
@@ -8029,11 +8029,9 @@
 	},
 /turf/open/openspace,
 /area/outdoors/beach/boat)
-"fKl" = (
+"fKE" = (
 /turf/open/floor/blocks/stonered,
 /area/outdoors/town/neighborhood/west)
-"fKE" = (
-)
 "fKY" = (
 /obj/structure/door/green{
 	name = "Garrison"
@@ -27075,7 +27073,7 @@
 	dir = 4
 	},
 /turf/open/floor/snow,
-/area/outdoors/beach)
+/area/outdoors/town/neighborhood/west)
 "sGP" = (
 /obj/structure/fluff/wallclock{
 	pixel_x = 32;
@@ -32214,7 +32212,7 @@
 "wkq" = (
 /obj/structure/flora/ausbushes/ywflowers,
 /turf/open/floor/dirt/road,
-/area/outdoors/beach)
+/area/outdoors/town/neighborhood/west)
 "wkw" = (
 /obj/effect/mapping_helpers/secret_door_creator/thieves_guild{
 	redstone_id = "slitherway2"
@@ -54550,7 +54548,7 @@ bZh
 jij
 mgy
 bZh
-fKl
+fKE
 lpy
 wbR
 ioA
