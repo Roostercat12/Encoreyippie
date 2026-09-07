@@ -317,7 +317,7 @@ GLOBAL_LIST_EMPTY(save_whitelist)
 		obj_blacklist += typesof(/obj/effect/landmark/start)
 
 	//Step 0: Calculate the amount of letters we need (26 ^ n > turf count)
-	var/turfs_needed = width * height
+	var/turfs_needed = (width + 1) * (height + 1) * (depth + 1)
 	var/layers = FLOOR(log(GLOB.save_file_chars.len, turfs_needed) + 0.999,1)
 
 	//Step 1: Run through the area and generate file data
