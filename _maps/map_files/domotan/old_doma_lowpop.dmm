@@ -261,12 +261,6 @@
 	},
 /turf/open/floor/ruinedwood/turned,
 /area/indoors/town/keep/magician)
-"aiN" = (
-/obj/structure/fluff/railing/border{
-	dir = 9
-	},
-/turf/open/floor/cobble,
-/area/indoors/town/keep/gate)
 "aiU" = (
 /obj/structure/flora/grass/bush/tundra,
 /turf/open/floor/dirt/road,
@@ -2539,9 +2533,6 @@
 /obj/effect/decal/cobbleedge{
 	dir = 10;
 	icon_state = "cobbleedge-w"
-	},
-/obj/structure/fluff/railing/border{
-	dir = 10
 	},
 /obj/structure/fluff/fibermat/square,
 /turf/open/floor/blocks,
@@ -7750,10 +7741,6 @@
 /turf/open/floor/ruinedwood/two,
 /area/indoors/town/keep/magician)
 "fAL" = (
-/obj/structure/bars/passage/shutter/open{
-	name = "Etgard Lockdown Shutter";
-	redstone_id = "keep_lockdown"
-	},
 /obj/structure/stairs/stone,
 /turf/open/floor/cobblerock,
 /area/indoors/town/keep/gate)
@@ -8854,6 +8841,10 @@
 /obj/effect/decal/cobbleedge{
 	dir = 6
 	},
+/obj/structure/gate/bars/preopen{
+	redstone_id = "keep_lockdown";
+	name = "Etgard Lockdown Gate"
+	},
 /turf/open/floor/cobblerock,
 /area/outdoors/exposed)
 "gtf" = (
@@ -9543,13 +9534,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/cobble,
 /area/outdoors/exposed)
-"gQC" = (
-/obj/structure/winch{
-	name = "winch (north)";
-	redstone_id = "keepgatenorth"
-	},
-/turf/open/floor/cobble,
-/area/indoors/town/keep/gate)
 "gQK" = (
 /obj/effect/decal/carpet{
 	dir = 4
@@ -13629,8 +13613,8 @@
 /area/outdoors/town)
 "jta" = (
 /obj/structure/winch{
-	name = "winch (south)";
-	redstone_id = "keepgatesouth"
+	name = "winch (floor trap)";
+	redstone_id = "keepgatekybraxor"
 	},
 /turf/open/floor/cobble,
 /area/indoors/town/keep/gate)
@@ -13934,16 +13918,6 @@
 	},
 /turf/open/floor/blocks,
 /area/indoors/town/church/crypt)
-"jEf" = (
-/obj/effect/decal/cobbleedge{
-	dir = 10;
-	icon_state = "cobbleedge-w"
-	},
-/obj/structure/fluff/railing/border{
-	dir = 8
-	},
-/turf/open/floor/blocks,
-/area/indoors/town/keep/gate)
 "jEG" = (
 /obj/structure/chair/wood{
 	dir = 1
@@ -16384,17 +16358,6 @@
 /obj/machinery/light/fueledstreet/orange/wall,
 /turf/open/floor/cobble,
 /area/outdoors/exposed)
-"lui" = (
-/obj/effect/decal/cobbleedge{
-	dir = 10;
-	icon_state = "cobbleedge-w"
-	},
-/obj/structure/table/wood{
-	icon_state = "tablewood1"
-	},
-/obj/item/signal_horn,
-/turf/open/floor/blocks,
-/area/indoors/town/keep/gate)
 "luA" = (
 /obj/structure/table/wood/plain_alt,
 /obj/item/paint_palette{
@@ -28311,20 +28274,6 @@
 /obj/machinery/light/fueled/wallfire/candle/l,
 /turf/open/floor/carpet/red,
 /area/indoors/town/tavern/saiga)
-"tCB" = (
-/obj/effect/decal/cobbleedge{
-	dir = 10;
-	icon_state = "cobbleedge-e"
-	},
-/obj/structure/lever/wall{
-	dir = 4;
-	name = "floor trap lever";
-	redstone_id = "keepgatekybraxor";
-	pixel_y = -10;
-	pulltime = 160
-	},
-/turf/open/floor/blocks,
-/area/indoors/town/keep/gate)
 "tCH" = (
 /obj/structure/flora/newtree/snow,
 /turf/open/floor/snow/rough,
@@ -29304,7 +29253,10 @@
 /area/under/town/sewer)
 "uli" = (
 /obj/machinery/light/fueled/torchholder/l,
-/obj/structure/stairs/stone,
+/obj/structure/table/wood{
+	icon_state = "tablewood1"
+	},
+/obj/item/signal_horn,
 /turf/open/floor/cobble,
 /area/indoors/town/keep/gate)
 "uly" = (
@@ -67621,7 +67573,7 @@ xGh
 osy
 xqA
 cAv
-gQC
+gVW
 jta
 gVW
 uli
@@ -67756,8 +67708,8 @@ hah
 hah
 aFS
 bUt
-jEf
-aiN
+aFS
+gVW
 lSl
 xyQ
 bKC
@@ -67887,9 +67839,9 @@ xqA
 tgr
 aME
 rUi
-tCB
+hah
 sjB
-lui
+aFS
 nHu
 xyj
 bKC
