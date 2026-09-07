@@ -1,27 +1,28 @@
 /atom/movable/screen/movable/boss_health
 	name = "Boss"
-	//icon = 'icons/hud/boss_health.dmi'
-	//icon_state = "bar_bg"
-	icon = 'icons/mob/screen_gen.dmi'
-	icon_state = "block"
-	screen_loc = "CENTER,NORTH:-8"
+	icon = 'icons/UI_Icons/bosshealthbar.dmi'
+	icon_state = "base"
+	screen_loc = "WEST,NORTH:-40"
 	plane = ABOVE_HUD_PLANE
 	mouse_opacity = MOUSE_OPACITY_ICON
 	clear_with_screen = FALSE
 	maptext_width = 400
-	maptext_height = 72
-	maptext_x = -184
-	maptext_y = 0
-	x_off = -16
-	y_off = -16
+	maptext_height = 32
+	maptext_x = 0
+	maptext_y = 20
+	x_off = -200
+	y_off = -36
 
 	var/mob/living/boss
 	var/atom/movable/screen/health_fill/fill
+	var/atom/movable/screen/boss_name/title
 
 /atom/movable/screen/movable/boss_health/Initialize(mapload, mob/living/owner_boss)
 	. = ..()
 	boss = owner_boss
 	name = owner_boss.boss_name || owner_boss.name
+	title = new
+	title.set_boss_name(name)
 
 	fill = new
 	vis_contents += fill
@@ -31,6 +32,7 @@
 /atom/movable/screen/movable/boss_health/Destroy()
 	boss = null
 	QDEL_NULL(fill)
+	QDEL_NULL(title)
 	return ..()
 
 /atom/movable/screen/movable/boss_health/proc/update_boss_name()
@@ -51,18 +53,32 @@
 	moved = TRUE
 
 /atom/movable/screen/movable/boss_health/proc/set_stack_index(index)
-	if(moved)
-		return
-	screen_loc = "CENTER,NORTH:[-8 - (index * 28)]"
+	screen_loc = "WEST,NORTH:[-40 - (index * 28)]"
+	if(title)
+		title.screen_loc = "WEST,NORTH:[-12 - (index * 28)]"
 
 /atom/movable/screen/health_fill
-	//icon = 'icons/hud/boss_health.dmi'
-	//icon_state = "bar_fill"
-	icon = 'icons/mob/screen_gen.dmi'
-	icon_state = "blank"
+	icon = 'icons/UI_Icons/bosshealthbar.dmi'
+	icon_state = "dam0"
 	appearance_flags = KEEP_TOGETHER
-	var/bar_width = 96
+	layer = 0.1
 
 /atom/movable/screen/health_fill/proc/update_ratio(ratio)
-	var/lost = 1 - ratio
-	animate(src, pixel_w = -round(bar_width * lost), time = 0.3 SECONDS)
+	ratio = CLAMP(ratio, 0, 1)
+	var/step = round((1 - ratio) * 10) * 10
+	step = CLAMP(step, 0, 100)
+	icon_state = "dam[step]"
+
+/atom/movable/screen/boss_name
+	icon = 'icons/mob/screen_gen.dmi'
+	icon_state = "blank"
+	plane = ABOVE_HUD_PLANE
+	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
+	clear_with_screen = FALSE
+	maptext_width = 400
+	maptext_height = 32
+	maptext_x = 0
+	maptext_y = 0
+
+/atom/movable/screen/boss_name/proc/set_boss_name(displayed_name)
+	maptext = {"<span style="font-family: 'Blackmoor LET'; font-size: 24px; color: #FFFFFF; text-align: center; -dm-text-outline: 1px black">[displayed_name]</span>"}
