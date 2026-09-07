@@ -1,4 +1,0 @@
-author: "furrycactus"
-delete-after: True
-changes:
-  - bugfix: "Hand no longer spawns with their caneblade in hand, but it's safely in their room in Etgard."

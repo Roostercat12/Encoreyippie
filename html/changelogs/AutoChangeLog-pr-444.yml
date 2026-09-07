@@ -1,4 +1,0 @@
-author: "MisterLayne"
-delete-after: True
-changes:
-  - bugfix: "Cauldrons no longer incorrectly take from essence reservoirs."

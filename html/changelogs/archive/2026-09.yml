@@ -435,3 +435,23 @@
   - bugfix: Fixes cyclops vision being on the wrong eyes
   - bugfix: Tried desperately to fix workplace saving.
   - rscadd: adds fluff road signsa
+2026-09-07:
+  MisterLayne:
+  - bugfix: Cauldrons no longer incorrectly take from essence reservoirs.
+  - bugfix: Regents now know vault code on late-join.
+  - bugfix: Kill scrolls only lead to alive targets now.
+  - bugfix: Oven cooks better overall.
+  - bugfix: Phantom ear now works better.
+  - bugfix: Repel spell now can be used to throw items at a stronger force.
+  - bugfix: Flint no longer sparks at everything.
+  - bugfix: Phoenix Guard ignores rock-eating individuals.
+  - bugfix: OOC Extra is fixed.
+  - bugfix: Empty headshot links are back.
+  furrycactus:
+  - map: Various fixes to Old Doma.
+  - bugfix: Hand no longer spawns with their caneblade in hand, but it's safely in
+      their room in Etgard.
+  - rscadd: Hoods can now be worn on the Neck and Mask slot.
+  - rscadd: Robes can now be worn on the Cloak slot.
+  kyres1:
+  - bugfix: Tries fixing the satanic template again.
