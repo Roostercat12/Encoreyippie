@@ -936,6 +936,14 @@
 	},
 /turf/open/openspace,
 /area/indoors/town/keep/magician)
+"aKq" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-n"
+	},
+/obj/structure/fluff/walldeco/sign/wynceslar_tavern/left,
+/turf/open/floor/ruinedwood,
+/area/outdoors/town)
 "aKt" = (
 /obj/machinery/light/fueled/wallfire/candle/r,
 /obj/structure/curtain/bounty,
@@ -1942,7 +1950,8 @@
 /area/indoors/town/keep/magician)
 "bvE" = (
 /obj/machinery/light/fueledstreet/blue/wall,
-/turf/open/floor/blocks/stonered,
+/obj/structure/flora/newtree/snow,
+/turf/open/floor/grass/cold,
 /area/outdoors/town/plaza)
 "bvQ" = (
 /turf/closed/wall/mineral/stone,
@@ -3182,7 +3191,8 @@
 /area/indoors/town/keep/hand)
 "cqP" = (
 /obj/structure/chair/wood,
-/turf/open/floor/carpet/red,
+/obj/structure/carpet/green,
+/turf/open/floor/ruinedwood/two,
 /area/indoors/town/tavern/saiga)
 "crc" = (
 /obj/structure/closet/crate/chest/crafted,
@@ -3309,6 +3319,7 @@
 	pixel_y = 5
 	},
 /obj/machinery/light/fueled/torchholder/l,
+/obj/item/cooking/skewer,
 /turf/open/floor/ruinedwood/two,
 /area/indoors/town/tavern/saiga)
 "cwz" = (
@@ -3559,6 +3570,8 @@
 "cFA" = (
 /obj/structure/door/window,
 /obj/effect/mapping_helpers/access/keyset/town/inn,
+/obj/effect/mapping_helpers/access/locker,
+/obj/structure/carpet,
 /turf/open/floor/cobble,
 /area/indoors/town/tavern/saiga)
 "cFC" = (
@@ -4596,6 +4609,9 @@
 	pixel_y = 15
 	},
 /obj/structure/chair/stool/bar,
+/obj/structure/fake_machine/hailerboard{
+	desc = "A notice board that shows all the notices the Adventurer's Guild has put up. Want to post your own? Look for the HAILER in the town square!"
+	},
 /turf/open/floor/ruinedwood/two,
 /area/indoors/town/tavern/saiga)
 "dsB" = (
@@ -4700,7 +4716,7 @@
 	dir = 5
 	},
 /turf/open/floor/dirt/road,
-/area/outdoors/beach)
+/area/outdoors/town/neighborhood/west)
 "dwM" = (
 /obj/structure/rack/shelf/biggest,
 /turf/open/floor/church,
@@ -5010,7 +5026,8 @@
 /obj/item/candle/yellow{
 	pixel_x = 6
 	},
-/turf/open/floor/carpet/red,
+/obj/structure/carpet/green,
+/turf/open/floor/ruinedwood/two,
 /area/indoors/town/tavern/saiga)
 "dJi" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -5083,8 +5100,10 @@
 /turf/open/floor/tile,
 /area/indoors/town/keep/kitchen)
 "dKp" = (
-/turf/closed/wall/mineral/wooddark,
-/area/indoors/town/tavern)
+/obj/structure/window,
+/obj/structure/curtain/browncurtain/dir,
+/turf/open/floor/cobble,
+/area/indoors/town/tavern/saiga)
 "dKE" = (
 /obj/effect/decal/cobbleedge{
 	dir = 10;
@@ -5505,10 +5524,6 @@
 	},
 /turf/open/floor/tile,
 /area/indoors/town/clinic_large)
-"ebm" = (
-/obj/structure/fermentation_keg/random/water,
-/turf/open/floor/ruinedwood/platform,
-/area/indoors/town/tavern/saiga)
 "ebT" = (
 /obj/structure/chair/bench{
 	dir = 8
@@ -6791,6 +6806,9 @@
 	icon_state = "longtable"
 	},
 /obj/item/instrument/lute,
+/obj/structure/bars/passage/shutter{
+	redstone_id = "tavern_interior"
+	},
 /turf/open/floor/ruinedwood/spiral,
 /area/indoors/town/tavern/saiga)
 "eUN" = (
@@ -7316,6 +7334,7 @@
 /obj/effect/landmark/quest_dropoff/counter{
 	board_id = "guild_1"
 	},
+/obj/structure/bars/bent,
 /turf/open/floor/ruinedwood/platform,
 /area/indoors/town/tavern/saiga)
 "flC" = (
@@ -7965,6 +7984,9 @@
 /obj/structure/window/openclose{
 	dir = 8
 	},
+/obj/structure/curtain/browncurtain/dir{
+	dir = 8
+	},
 /turf/open/floor/ruinedwood/spiral,
 /area/indoors/town/tavern/saiga)
 "fIW" = (
@@ -7994,7 +8016,7 @@
 	},
 /turf/open/openspace,
 /area/outdoors/beach/boat)
-"fKl" = (
+"fKE" = (
 /turf/open/floor/blocks/stonered,
 /area/outdoors/town/neighborhood/west)
 "fKY" = (
@@ -10037,6 +10059,10 @@
 /obj/structure/fluff/flag,
 /turf/open/floor/rooftop,
 /area/outdoors/town/roofs)
+"hhC" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/cobble,
+/area/indoors/town/tavern/saiga)
 "hhL" = (
 /turf/open/floor/ruinedwood/two,
 /area/indoors/town/tavern/saiga)
@@ -10152,7 +10178,7 @@
 /obj/structure/fluff/railing/border{
 	dir = 8
 	},
-/obj/structure/chair/wood/alt/chair3,
+/obj/structure/fermentation_keg/random/water,
 /turf/open/floor/cobble,
 /area/indoors/town/tavern/saiga)
 "hmf" = (
@@ -10343,6 +10369,9 @@
 	},
 /obj/item/dmusicbox,
 /obj/structure/fluff/walldeco/wantedposter,
+/obj/structure/bars/passage/shutter{
+	redstone_id = "tavern_interior"
+	},
 /turf/open/floor/cobble,
 /area/indoors/town/tavern/saiga)
 "hsh" = (
@@ -12044,7 +12073,7 @@
 /obj/effect/decal/cobbleedge{
 	dir = 6
 	},
-/obj/structure/fluff/walldeco/sign/saiga/left,
+/obj/structure/fluff/walldeco/sign/wynceslar_tavern/left,
 /turf/open/floor/grass/cold,
 /area/outdoors/town)
 "ivh" = (
@@ -12306,7 +12335,8 @@
 	icon_state = "largetable"
 	},
 /obj/item/toy/cards/deck/syndicate,
-/turf/open/floor/carpet/red,
+/obj/structure/carpet/green,
+/turf/open/floor/ruinedwood/two,
 /area/indoors/town/tavern/saiga)
 "iDH" = (
 /obj/structure/fluff/railing/border{
@@ -13015,7 +13045,8 @@
 	icon_state = "largetable"
 	},
 /obj/item/dice/d6,
-/turf/open/floor/carpet/red,
+/obj/structure/carpet/green,
+/turf/open/floor/ruinedwood/two,
 /area/indoors/town/tavern/saiga)
 "iYE" = (
 /obj/structure/closet/crate/chest/wicker,
@@ -13912,7 +13943,8 @@
 /obj/structure/chair/wood{
 	dir = 1
 	},
-/turf/open/floor/carpet/red,
+/obj/structure/carpet/green,
+/turf/open/floor/ruinedwood/two,
 /area/indoors/town/tavern/saiga)
 "jFb" = (
 /turf/open/floor/blocks/stonered,
@@ -14233,6 +14265,9 @@
 	},
 /obj/item/reagent_containers/glass/cup/wooden{
 	pixel_x = 10
+	},
+/obj/structure/bars/passage/shutter{
+	redstone_id = "tavern_interior"
 	},
 /turf/open/floor/cobble,
 /area/indoors/town/tavern/saiga)
@@ -16427,6 +16462,7 @@
 	name = "Inn Basement"
 	},
 /obj/effect/mapping_helpers/access/keyset/town/inn,
+/obj/effect/mapping_helpers/access/locker,
 /turf/open/floor/blocks/stonered,
 /area/indoors/town/tavern)
 "lxc" = (
@@ -16496,6 +16532,10 @@
 /obj/item/cooking/skewer,
 /obj/item/cooking/skewer,
 /obj/item/cooking/skewer,
+/obj/structure/lever{
+	pixel_y = 21;
+	redstone_id = "tavern_interior"
+	},
 /turf/open/floor/cobble,
 /area/indoors/town/tavern/saiga)
 "lzO" = (
@@ -16629,6 +16669,9 @@
 	icon_state = "longtable_mid"
 	},
 /obj/effect/spawner/map_spawner/loot/coin/low,
+/obj/structure/bars/passage/shutter{
+	redstone_id = "tavern_interior"
+	},
 /turf/open/floor/cobble,
 /area/indoors/town/tavern/saiga)
 "lDY" = (
@@ -17825,12 +17868,12 @@
 /turf/open/floor/blocks/stonered/tiny,
 /area/indoors/town/waterworks)
 "mlU" = (
-/obj/machinery/light/fueled/torchholder/l,
-/obj/structure/chair/wood/alt/chair3{
+/obj/structure/window,
+/obj/structure/curtain/browncurtain/dir{
 	dir = 4
 	},
-/turf/open/floor/ruinedwood/darker,
-/area/outdoors/town)
+/turf/open/floor/cobble,
+/area/indoors/town/tavern/saiga)
 "mmb" = (
 /obj/structure/fluff/walldeco/bath/wallpipes/outie{
 	dir = 6
@@ -17985,8 +18028,13 @@
 /turf/closed/wall/mineral/stone/moss,
 /area/under/town/basement/smugglers_tunnels)
 "mrn" = (
-/obj/structure/fluff/walldeco/sign/saiga/left,
-/turf/closed/wall/mineral/wooddark,
+/obj/structure/table/wood/plain,
+/obj/effect/landmark/quest_dropoff/counter{
+	board_id = "guild_1"
+	},
+/obj/structure/bars/bent,
+/obj/structure/fake_machine/merchantvend/public/tavern,
+/turf/open/floor/ruinedwood/platform,
 /area/indoors/town/tavern/saiga)
 "mrr" = (
 /obj/structure/door/viewport{
@@ -18430,7 +18478,8 @@
 /obj/structure/table/wood{
 	icon_state = "largetable"
 	},
-/turf/open/floor/carpet/red,
+/obj/structure/carpet/green,
+/turf/open/floor/ruinedwood/two,
 /area/indoors/town/tavern/saiga)
 "mGj" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -18563,6 +18612,15 @@
 	},
 /turf/open/openspace,
 /area/outdoors/town/roofs)
+"mJD" = (
+/obj/structure/window/openclose{
+	dir = 8
+	},
+/obj/structure/curtain/browncurtain/dir{
+	dir = 8
+	},
+/turf/open/floor/ruinedwood/two,
+/area/indoors/town/tavern/saiga)
 "mJF" = (
 /turf/open/floor/church/pale,
 /area/under/town/basement)
@@ -19856,6 +19914,10 @@
 	},
 /turf/open/water/ocean,
 /area/indoors/town/waterworks)
+"nEy" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/wood,
+/area/indoors/town/tavern/saiga)
 "nEQ" = (
 /obj/item/bedsheet/cloth,
 /obj/effect/decal/cobbleedge{
@@ -21369,6 +21431,10 @@
 	},
 /turf/open/floor/church/pale,
 /area/indoors/town/steward)
+"oGR" = (
+/obj/structure/carpet,
+/turf/open/floor/ruinedwood/platform,
+/area/indoors/town/tavern/saiga)
 "oHe" = (
 /obj/structure/fluff/railing/border,
 /obj/structure/fluff/railing/border{
@@ -22239,6 +22305,11 @@
 	},
 /turf/open/floor/ruinedwood/spiral,
 /area/indoors/town/clinic_large)
+"pmQ" = (
+/obj/structure/window/openclose,
+/obj/structure/curtain/browncurtain/dir,
+/turf/open/floor/ruinedwood/two,
+/area/indoors/town/tavern/saiga)
 "pop" = (
 /obj/structure/fluff/railing/wood{
 	dir = 4;
@@ -23688,6 +23759,7 @@
 "qkF" = (
 /obj/structure/door/window,
 /obj/effect/mapping_helpers/access/keyset/town/inn,
+/obj/effect/mapping_helpers/access/locker,
 /turf/open/floor/ruinedwood/platform,
 /area/indoors/town/tavern/saiga)
 "qkL" = (
@@ -24009,7 +24081,8 @@
 	pixel_x = -14;
 	pixel_y = -10
 	},
-/turf/open/floor/carpet/red,
+/obj/structure/carpet/green,
+/turf/open/floor/ruinedwood/two,
 /area/indoors/town/tavern/saiga)
 "qun" = (
 /obj/structure/fluff/walldeco/painting/queen{
@@ -25638,7 +25711,7 @@
 /obj/effect/decal/cobbleedge{
 	icon_state = "cobbleedge-n"
 	},
-/obj/structure/fluff/walldeco/sign/saiga/left,
+/obj/structure/fluff/walldeco/sign/wynceslar_tavern/left,
 /turf/open/floor/snow,
 /area/outdoors/town/plaza)
 "rGo" = (
@@ -26575,6 +26648,9 @@
 /obj/structure/table/wood{
 	icon_state = "longtable_mid"
 	},
+/obj/structure/bars/passage/shutter{
+	redstone_id = "tavern_interior"
+	},
 /turf/open/floor/cobble,
 /area/indoors/town/tavern/saiga)
 "stf" = (
@@ -26960,7 +27036,7 @@
 	dir = 4
 	},
 /turf/open/floor/snow,
-/area/outdoors/beach)
+/area/outdoors/town/neighborhood/west)
 "sGP" = (
 /obj/structure/fluff/wallclock{
 	pixel_x = 32;
@@ -28588,6 +28664,7 @@
 "tLv" = (
 /obj/machinery/light/fueled/torchholder/l,
 /obj/structure/chair/stool,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/cobble,
 /area/indoors/town/tavern/saiga)
 "tLz" = (
@@ -28753,6 +28830,12 @@
 /obj/item/reagent_containers/glass/bucket/wooden,
 /turf/open/floor/dirt,
 /area/outdoors/town/neighborhood/east)
+"tRG" = (
+/obj/effect/decal/carpet{
+	dir = 4
+	},
+/turf/open/floor/ruinedwood/two,
+/area/indoors/town/tavern/saiga)
 "tRW" = (
 /turf/closed/wall/mineral/craftstone,
 /area/indoors/town/church/crypt)
@@ -28811,7 +28894,8 @@
 	pixel_x = 6;
 	pixel_y = -2
 	},
-/turf/open/floor/carpet/red,
+/obj/structure/carpet/green,
+/turf/open/floor/ruinedwood/two,
 /area/indoors/town/tavern/saiga)
 "tTP" = (
 /obj/structure/chair/wood,
@@ -30055,6 +30139,7 @@
 "uPw" = (
 /obj/structure/door/window,
 /obj/effect/mapping_helpers/access/keyset/town/inn,
+/obj/effect/mapping_helpers/access/locker,
 /turf/open/floor/tile,
 /area/indoors/town/tavern/saiga)
 "uPI" = (
@@ -30371,6 +30456,11 @@
 	},
 /turf/open/floor/blocks/stonered/tiny,
 /area/indoors/town/waterworks)
+"uZu" = (
+/obj/machinery/light/fueled/wallfire/candle/l,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/wood,
+/area/indoors/town/tavern/saiga)
 "uZw" = (
 /obj/machinery/light/fueled/torchholder/r,
 /turf/open/floor/twig,
@@ -30837,6 +30927,9 @@
 	icon_state = "longtable_mid"
 	},
 /obj/item/reagent_containers/glass/rag,
+/obj/structure/bars/passage/shutter{
+	redstone_id = "tavern_interior"
+	},
 /turf/open/floor/cobble,
 /area/indoors/town/tavern/saiga)
 "vqr" = (
@@ -32071,7 +32164,7 @@
 "wkq" = (
 /obj/structure/flora/ausbushes/ywflowers,
 /turf/open/floor/dirt/road,
-/area/outdoors/beach)
+/area/outdoors/town/neighborhood/west)
 "wkw" = (
 /obj/effect/mapping_helpers/secret_door_creator/thieves_guild{
 	redstone_id = "slitherway2"
@@ -33582,10 +33675,10 @@
 /turf/open/floor/ruinedwood/turned,
 /area/indoors/town/merc_guild)
 "xkI" = (
-/obj/structure/fake_machine/hailerboard{
-	desc = "A notice board that shows all the notices the Adventurer's Guild has put up. Want to post your own? Look for the HAILER in the town square!"
+/obj/structure/window/openclose{
+	dir = 8
 	},
-/obj/effect/decal/carpet,
+/obj/structure/fluff/walldeco/sign/wynceslar_tavern/left,
 /turf/open/floor/ruinedwood/two,
 /area/indoors/town/tavern/saiga)
 "xkJ" = (
@@ -34212,6 +34305,10 @@
 	},
 /turf/open/floor/cobblerock,
 /area/outdoors/town)
+"xHW" = (
+/obj/structure/carpet,
+/turf/open/floor/cobble,
+/area/indoors/town/tavern/saiga)
 "xIj" = (
 /obj/structure/fluff/hanging_banners,
 /obj/effect/decal/cobbleedge{
@@ -54403,7 +54500,7 @@ bZh
 jij
 mgy
 bZh
-fKl
+fKE
 lpy
 wbR
 ioA
@@ -66009,7 +66106,7 @@ suG
 iAs
 suG
 suG
-pbG
+aKq
 rzU
 jgF
 jzj
@@ -66127,12 +66224,12 @@ hUO
 mTr
 aJX
 suG
-iAs
-iAs
-iAs
+mlU
+mlU
+mlU
 qkF
 suG
-iAs
+mlU
 suG
 suG
 pMc
@@ -66528,7 +66625,7 @@ eDB
 qsB
 lUp
 rgk
-gqk
+oGR
 hCE
 suG
 rqP
@@ -66661,7 +66758,7 @@ qsB
 nnP
 iAs
 cFA
-suG
+mrn
 rQy
 ump
 tyz
@@ -66786,13 +66883,13 @@ nyd
 rcS
 siD
 deK
-iAs
+dKp
 owq
 hCW
 pPs
 imN
 wFf
-eZf
+xHW
 tLv
 pBH
 suG
@@ -66918,13 +67015,13 @@ qla
 uHu
 rcS
 mTr
-iAs
+dKp
 vNu
 xYt
 qsB
 gqk
 flA
-eZf
+hhC
 eZf
 aHG
 vNu
@@ -67054,7 +67151,7 @@ rQy
 hmc
 lQD
 qsB
-ebm
+gqk
 lHd
 qLL
 lkZ
@@ -67581,7 +67678,7 @@ vgD
 cVR
 hhL
 hhL
-gwC
+tRG
 hhL
 hhL
 sch
@@ -67710,20 +67807,20 @@ qla
 qla
 rcS
 hfO
-bRD
-mrn
-fIP
-bRD
-xkI
+pmQ
+hhL
+hhL
+gwC
+hhL
 hhL
 xfN
 xfN
 xfN
-gTg
-gTg
+mJD
+mJD
 bRD
 fIP
-gTg
+mJD
 bRD
 ivg
 hfO
@@ -67842,10 +67939,10 @@ nyd
 nyd
 mZO
 xci
-mlU
-bKC
-aJX
-dKp
+xfN
+xkI
+gTg
+bRD
 dcX
 hhL
 ccC
@@ -67975,11 +68072,11 @@ aJX
 aJX
 sYW
 wIT
-bKC
 aJX
-dKp
-gTg
-gTg
+aJX
+bRD
+mJD
+mJD
 bRD
 rFM
 sDG
@@ -79602,7 +79699,7 @@ lzi
 fXt
 xfN
 gch
-xnA
+nEy
 xnA
 kXH
 xfN
@@ -79734,8 +79831,8 @@ xnA
 hPc
 xfN
 gch
-xnA
-xnA
+nEy
+nEy
 xnA
 mfG
 dvc
@@ -79993,7 +80090,7 @@ fVZ
 kIP
 xnA
 xnA
-mgH
+uZu
 xnA
 mgH
 xnA
@@ -80646,7 +80743,7 @@ oDp
 iPp
 vAx
 aBt
-fNx
+cSx
 pdl
 ksX
 ksX
@@ -80658,7 +80755,7 @@ ifj
 iux
 xqC
 xqC
-xqC
+fKE
 xqC
 xqC
 eMr
@@ -81043,9 +81140,9 @@ dPe
 uJR
 phF
 cSx
-jpZ
-fNx
-fNx
+ydu
+dvc
+dvc
 dvc
 dvc
 dvc
