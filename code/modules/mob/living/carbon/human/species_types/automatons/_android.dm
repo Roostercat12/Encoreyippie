@@ -32,7 +32,15 @@
 /datum/species/automaton/android
 	name = "Automaton Android"
 	id = SPEC_ID_ANDROID
-	desc = "Ancient Arnkin mechanisms long lost to history have frequently left only faded memories. One of the most striking of these are autonomous machines, simply called automatons by the masses. Androids are costly, well-equipped automatons which have such potent Thauma so as to wrest intellect from the otherwise unsophisticated hardware of the current age. Their origin varies extensively, with some being merely ancient shells suddenly jolted with the blessing of life, and others manufactured to serve a purpose."
+	desc = "<b>Android</b><br>\
+	Ancient Arnkin mechanisms long lost to history have frequently left only faded memories. \
+	One of the most striking of these are autonomous machines, simply called automatons by the masses. \
+	Androids are costly, well-equipped automatons which have such potent Thauma so as to wrest intellect from the otherwise unsophisticated hardware of the current age. \
+	Their origin varies extensively, with some being merely ancient shells suddenly jolted with the blessing of life, and others manufactured to serve a purpose.<br> \
+	+2 Strength, +2 Constitution, +1 Endurance, -1 Speed (and -10% movespeed), -3 Fortune, \
+	+10 skill tier Unarmed Combat, +5 skill tier Wrestling, +45 skill tier Mathematics, +35 skill tier Reading. \
+	No Blood, No Organs, No Mood, No Metabolism, No Hunger, No Stamina, No Breathing, No Pain, Sleep Immune, Toxin Immune, Fearless, \
+	Easy Dismemberment, Limb Attachment without Tools, Minor Fall Damage Immunity, Resistant to Cold and Heat."
 
 	skin_tone_wording = "plating"
 	default_color = "FFFFFF"
@@ -41,7 +49,6 @@
 	meat = list(/obj/item/gear/metal = 2, /obj/item/ingot/thaumic = 3, /obj/item/ingot/steel = 2)
 
 	species_traits = list(
-		NO_UNDERWEAR,
 		NOTRANSSTING,
 		EYECOLOR,
 		HAIR,
@@ -129,8 +136,6 @@
 		OFFSET_ARMOR = list(0,1),\
 		OFFSET_UNDIES = list(0,1),\
 	)
-
-	actions = list()
 
 /datum/species/automaton/android/get_skin_list()
 	return sortList(list(

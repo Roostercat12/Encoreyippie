@@ -214,9 +214,17 @@
 	requirements = list(/obj/item/natural/cloth = 2,)
 	category = "Hat"
 
+/datum/repeatable_crafting_recipe/sewing/headband_monk
+	name = "headband"
+	output = /obj/item/clothing/head/headband/monk
+	requirements = list(/obj/item/natural/cloth = 2,
+				/obj/item/natural/fibers = 1)
+	category = "Hat"
+	craftdiff = 4
+
 /datum/repeatable_crafting_recipe/sewing/headband_naledi
 	name = "headband"
-	output = /obj/item/clothing/head/headband/naledi
+	output = /obj/item/clothing/head/headband/monk/naledi
 	requirements = list(/obj/item/natural/cloth = 2,
 				/obj/item/natural/fibers = 1)
 	category = "Hat"
@@ -419,6 +427,13 @@
 	name = "archeologist's hat"
 	requirements = list(/obj/item/natural/cloth = 1, /obj/item/natural/fibers = 1,)
 	output = /obj/item/clothing/head/fedora
+	craftdiff = 2
+	category = "Hat"
+
+/datum/repeatable_crafting_recipe/sewing/bonnet
+	name = "bonnet"
+	requirements = list(/obj/item/natural/cloth = 2, /obj/item/natural/fibers = 1,)
+	output = /obj/item/clothing/head/bonnet
 	craftdiff = 2
 	category = "Hat"
 

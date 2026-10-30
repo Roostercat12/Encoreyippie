@@ -26,16 +26,17 @@
 /turf/open/floor/carpet/royalblack,
 /area/indoors/town)
 "iP" = (
-/obj/structure/door{
-	name = "House VI";
-	lockid = "house6"
-	},
 /obj/effect/mapping_helpers/access/locker,
+/obj/structure/door/bolt{
+	name = "House VI";
+	dir = 1
+	},
 /turf/open/floor/wood,
 /area/indoors/town)
 "ka" = (
 /obj/structure/window,
 /obj/structure/curtain/bounty/dir{
+	opacity = 1;
 	dir = 1
 	},
 /turf/open/floor/ruinedwood/two,
@@ -116,6 +117,7 @@
 "uM" = (
 /obj/structure/window,
 /obj/structure/curtain/bounty/dir{
+	opacity = 1;
 	dir = 8
 	},
 /turf/open/floor/ruinedwood/two,
@@ -132,12 +134,8 @@
 /turf/open/floor/wood,
 /area/indoors/town)
 "Ad" = (
-/obj/structure/door{
-	name = "House VI";
-	lockid = "house6"
-	},
-/obj/effect/mapping_helpers/access/locker,
-/turf/open/floor/tile,
+/obj/structure/sign/property_sign/claim/town,
+/turf/closed/wall/mineral/stone/moss,
 /area/indoors/town)
 "Ae" = (
 /obj/structure/fluff/railing/tall/retaining/stone{
@@ -185,8 +183,8 @@
 /turf/open/water/bath,
 /area/indoors/town)
 "Fy" = (
-/obj/machinery/light/fueled/wallfire/candle/l,
 /obj/structure/fluff/railing/wood,
+/obj/machinery/light/fueled/wallfire/candle,
 /turf/open/floor/tile/bath,
 /area/indoors/town)
 "FN" = (
@@ -270,6 +268,7 @@
 "Px" = (
 /obj/structure/window,
 /obj/structure/curtain/bounty/dir{
+	opacity = 1;
 	dir = 4
 	},
 /turf/open/floor/ruinedwood/two,
@@ -323,12 +322,18 @@
 /area/indoors/town)
 "XK" = (
 /obj/structure/window,
-/obj/structure/curtain/bounty/dir,
+/obj/structure/curtain/bounty/dir{
+	opacity = 1
+	},
 /turf/open/floor/ruinedwood/two,
 /area/indoors/town)
 "Ym" = (
-/obj/structure/sign/property_sign/claim,
-/turf/closed/wall/mineral/stone/moss,
+/obj/structure/door{
+	name = "House VI";
+	lockid = "house6"
+	},
+/obj/effect/mapping_helpers/access/locker,
+/turf/open/floor/tile/bath,
 /area/indoors/town)
 "Ys" = (
 /turf/open/floor/tile,
@@ -344,8 +349,8 @@
 
 (1,1,1) = {"
 pH
-pH
-CF
+Ad
+Ym
 CF
 CF
 CF
@@ -353,7 +358,7 @@ CF
 (2,1,1) = {"
 Wy
 PN
-Fy
+sR
 DY
 CH
 CF
@@ -361,7 +366,7 @@ CF
 (3,1,1) = {"
 pH
 pH
-sR
+Fy
 Pe
 bO
 CF
@@ -402,7 +407,7 @@ pH
 (1,1,2) = {"
 pH
 pH
-Ad
+pH
 Px
 pH
 pH
@@ -453,7 +458,7 @@ pH
 uM
 uM
 pH
-Ym
+pH
 "}
 
 (1,1,3) = {"

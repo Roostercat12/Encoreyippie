@@ -50,11 +50,11 @@
 /obj/item/clothing/head/headband/colored/red
 	color = CLOTHING_BLOOD_RED
 
-/obj/item/clothing/head/headband/naledi
-	name = "sojourner's headband"
-	desc = "A traditional monk's headband, for those disciples who prefer the sweat out of their eyes."
+/obj/item/clothing/head/headband/monk
+	name = "monk's headband"
+	desc = "A winding length of cloth, meticulously lined with heavy leather strips. Errant impacts are thwarted, yet not a degree of vision is impaired; valuable traits, for the Monk who must enlighten their villains with a white-knuckled sermon."
 	icon_state = "headband"
-	color = "#48443b"
+	color = "#bfb8a9"
 	sewrepair = /datum/attribute/skill/misc/sewing/mending
 	dyeable = TRUE
 	resistance_flags = FIRE_PROOF
@@ -67,6 +67,11 @@
 	//dropshrink = 0.75
 	dynamic_hair_suffix = null
 	item_weight = 45 GRAMS
+
+/obj/item/clothing/head/headband/monk/naledi
+	name = "sojourner's headband"
+	desc = "A traditional monk's headband, for those disciples who prefer the sweat out of their eyes."
+	color = "#48443b"
 
 /obj/item/clothing/head/shawl
 	name = "shawl"
@@ -478,3 +483,14 @@
 /obj/item/clothing/head/rosa/six
 	name = "maroon cap"
 	icon_state = "rosahat6"
+
+/obj/item/clothing/head/bonnet
+	name = "bonnet"
+	desc = "A dainty and ladylike bonnet."
+	icon_state = "bonnet"
+	item_state = "bonnet"
+	detail_tag = "_detail"
+	icon = 'icons/roguetown/clothing/head/bonnet.dmi'
+	mob_overlay_icon = 'icons/roguetown/clothing/onmob/head/bonnet.dmi'
+	color = CLOTHING_ROYAL_BLACK
+	detail_color = CLOTHING_ROYAL_RED

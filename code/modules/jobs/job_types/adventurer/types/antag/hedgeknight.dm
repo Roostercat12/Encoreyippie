@@ -1,26 +1,40 @@
 /datum/attribute_holder/sheet/job/hedgeknight
 	raw_attribute_list = list(
-		STAT_STRENGTH = 2,
-		STAT_ENDURANCE = 1,
-		STAT_CONSTITUTION = 2,
+		STAT_STRENGTH = 3,
+		STAT_ENDURANCE = 4,
+		STAT_CONSTITUTION = 4,
 		STAT_INTELLIGENCE = 1,
 		STAT_SPEED = 1,
 		/datum/attribute/skill/combat/polearms = 30,
-		/datum/attribute/skill/combat/swords = 30,
-		/datum/attribute/skill/combat/shields = 30,
+		/datum/attribute/skill/combat/swords = 40,
+		/datum/attribute/skill/combat/shields = 40,
 		/datum/attribute/skill/combat/axesmaces = 30,
 		/datum/attribute/skill/combat/wrestling = 30,
 		/datum/attribute/skill/combat/unarmed = 30,
 		/datum/attribute/skill/misc/athletics = 30,
-		/datum/attribute/skill/misc/swimming = 10,
+		/datum/attribute/skill/misc/swimming = 30,
 		/datum/attribute/skill/misc/climbing = 30,
 		/datum/attribute/skill/misc/reading = 30,
 		/datum/attribute/skill/misc/riding = 40,
 		/datum/attribute/skill/craft/cooking = 10,
 		/datum/attribute/skill/labor/butchering = 10,
 		/datum/attribute/skill/labor/mathematics = 30,
+		/datum/attribute/skill/misc/medicine = 30,
+		/datum/attribute/skill/craft/weapon_repair = 20,
+		/datum/attribute/skill/craft/armor_repair = 20,
 	)
-
+/datum/attribute_holder/sheet/job/hedgeknight/polearms
+	raw_attribute_list = list(
+		/datum/attribute/skill/combat/polearms  = 10,
+	)
+/datum/attribute_holder/sheet/job/hedgeknight/axe
+	raw_attribute_list = list(
+		/datum/attribute/skill/combat/axesmaces = 10,
+	)
+/datum/attribute_holder/sheet/job/hedgeknight/spear
+	raw_attribute_list = list(
+		/datum/attribute/skill/combat/polearms = 10,
+	)
 /datum/job/advclass/bandit/hedgeknight //heavy knight class - just like black knight adventurer class. starts with heavy armor training and plate, but less weapon skills than brigand, sellsword and knave
 	title = "Hedge Knight"
 	tutorial = "A noble fallen from grace, your tarnished armor sits upon your shoulders as a heavy reminder of the life you've lost. Take back what is rightfully yours."
@@ -34,15 +48,40 @@
 		TRAIT_MEDIUMARMOR,
 		TRAIT_HEAVYARMOR,
 		TRAIT_NOBLE_BLOOD,
+		TRAIT_CLOSECOMBAT,
+		TRAIT_STEELHEARTED,
+		TRAIT_DEADNOSE,
 	)
 
+/datum/job/advclass/bandit/brigand/on_roundstart(mob/living/carbon/human/spawned, client/player_client)
+	. = ..()
+	var/static/list/weapons = list(
+		"Greataxe" = list(/obj/item/weapon/greataxe),
+		"Warhammer & Shield" = list(/obj/item/weapon/shield/heater, /obj/item/weapon/mace/warhammer),
+		"Greatsword" = list(/obj/item/weapon/sword/long/greatsword),
+		"Longsword" = list(/obj/item/weapon/sword/long)
+	)
+	var/weapon_choice = tgui_input_list(player_client,"CHOOSE YOUR WEAPON.", "ARMS TO SLAY THE OPPRESSORS", weapons)
+	switch(weapon_choice)
+		if("Greataxe")
+			spawned.put_in_hands(new /obj/item/weapon/greataxe)
+			spawned.attributes?.add_sheet(/datum/attribute_holder/sheet/job/hedgeknight/axe)
+		if("Warhammer & Shield")
+			spawned.put_in_hands(new /obj/item/weapon/shield/heater)
+			spawned.put_in_hands(new /obj/item/weapon/mace/warhammer)
+			spawned.attributes?.add_sheet(/datum/attribute_holder/sheet/job/hedgeknight/axe)
+		if("Greatsword")
+			spawned.put_in_hands(new /obj/item/weapon/sword/long/greatsword)
+		if("Longsword")
+			spawned.put_in_hands(new /obj/item/weapon/sword/long)
+		
 /datum/outfit/bandit/hedgeknight
 	name = "Hedge Knight (Bandit)"
-	head = /obj/item/clothing/head/helmet/heavy/rust
-	neck = /obj/item/clothing/neck/gorget
+	head = /obj/item/clothing/head/helmet/heavy/rust/bandit
+	neck = /obj/item/clothing/neck/gorget/ancient/bandit
 	armor = /obj/item/clothing/armor/plate/rust
-	shirt = /obj/item/clothing/armor/gambeson/heavy/colored/dark
-	wrists = /obj/item/clothing/wrists/bracers
+	shirt = /obj/item/clothing/armor/chainmail/hauberk/ancient/bandit
+	wrists = /obj/item/clothing/wrists/bracers/ancient/bandit
 	gloves = /obj/item/clothing/gloves/plate/rust
 	pants = /obj/item/clothing/pants/platelegs/rust
 	shoes = /obj/item/clothing/shoes/boots/armor/light/rust
@@ -50,4 +89,4 @@
 	beltr = /obj/item/weapon/sword/long
 	backr = /obj/item/storage/backpack/satchel/black
 	backl = /obj/item/weapon/shield/tower/metal
-	backpack_contents = list(/obj/item/weapon/knife/dagger = 1, /obj/item/clothing/face/shepherd/rag = 1)
+	backpack_contents = list(/obj/item/weapon/knife/dagger = 1, /obj/item/clothing/face/shepherd/rag = 1, /obj/item/needle = 1, /obj/item/natural/bundle/cloth/bandage/full = 1, /obj/item/weapon/hammer/iron = 1)

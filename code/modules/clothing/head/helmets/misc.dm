@@ -571,11 +571,11 @@
 	item_weight = 3.7 KILOGRAMS
 
 /obj/item/clothing/head/helmet/watchmen/lt
-	name = "town watch liutenant helmet"
+	name = "town watch lieutenant helmet"
 	desc = "An old helmet of iron, offers great visibility and suits well. This one have a feather on top, informing everybody, that wearer is a leader of city watch."
 	icon_state = "watchhelm_feather"
 	detail_tag = "_detail"
-	detail_color = CLOTHING_WHITE
+	detail_color = COLOR_SHIRLEIGH_BLUE
 	uses_lord_coloring = LORD_PRIMARY
 
 // It will stay here to make sure nothing breaks
@@ -618,7 +618,7 @@
 	sellprice = VALUE_IRON_ARMOR_UNUSUAL
 	item_weight = 3.7 KILOGRAMS
 	detail_tag = "_detail"
-	detail_color = CLOTHING_PLUM_PURPLE
+	detail_color = COLOR_SHIRLEIGH_BLUE
 	uses_lord_coloring = LORD_PRIMARY
 	misc_flags = CRAFTING_TEST_EXCLUDE
 
@@ -636,7 +636,7 @@
 	sellprice = VALUE_IRON_ARMOR_UNUSUAL
 	item_weight = 3.7 KILOGRAMS
 	detail_tag = "_detail"
-	detail_color = CLOTHING_PLUM_PURPLE
+	detail_color = COLOR_SHIRLEIGH_BLUE
 	uses_lord_coloring = LORD_PRIMARY
 	misc_flags = CRAFTING_TEST_EXCLUDE
 
@@ -652,7 +652,7 @@
 	flags_cover = HEADCOVERSEYES
 	body_parts_covered = HEAD|HAIR|EARS|EYES
 	detail_tag = "_detail"
-	detail_color = CLOTHING_PLUM_PURPLE
+	detail_color = COLOR_SHIRLEIGH_BLUE
 	uses_lord_coloring = LORD_PRIMARY
 	misc_flags = CRAFTING_TEST_EXCLUDE
 

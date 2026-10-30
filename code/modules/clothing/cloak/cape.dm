@@ -17,11 +17,13 @@
 	misc_flags = CRAFTING_TEST_EXCLUDE
 
 /obj/item/clothing/cloak/cape/colored/knight
-	color = CLOTHING_PLUM_PURPLE
+	name = "knight's cape"
+	color = COLOR_WHITE
+	uses_lord_coloring = LORD_SECONDARY
 
 /obj/item/clothing/cloak/cape/guard
 	name = "guard's cape"
-	color = CLOTHING_BLOOD_RED
+	color = COLOR_SHIRLEIGH_BLUE
 	uses_lord_coloring = LORD_PRIMARY
 
 /obj/item/clothing/cloak/captain
@@ -34,7 +36,7 @@
 	icon_state = "capcloak"
 	detail_tag = "_detail"
 	alternate_worn_layer = CLOAK_BEHIND_LAYER
-	detail_color = CLOTHING_BERRY_BLUE
+	detail_color = COLOR_SHIRLEIGH_BLUE
 	uses_lord_coloring = LORD_PRIMARY
 
 /obj/item/clothing/cloak/cape/archivist

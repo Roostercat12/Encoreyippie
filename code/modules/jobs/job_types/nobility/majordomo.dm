@@ -21,7 +21,7 @@
 	department_flag = NOBLEMEN
 	job_flags = (JOB_ANNOUNCE_ARRIVAL | JOB_SHOW_IN_CREDITS | JOB_EQUIP_RANK | JOB_NEW_PLAYER_JOINABLE)
 	display_order = JDO_MAJORDOMO
-	factions = list(FACTION_TOWN)
+	factions = list(FACTION_TOWN, SUB_FACTION_KEEP, SUB_FACTION_VAULT)
 	total_positions = 2
 	spawn_positions = 2
 	bypass_lastclass = TRUE
@@ -35,8 +35,8 @@
 	exp_type = list(EXP_TYPE_LIVING)
 	exp_types_granted = list(EXP_TYPE_NOBLE)
 
-	honorary = "Lord"
-	honorary_f = "Lady"
+	honorary = "Count"
+	honorary_f = "Countess"
 
 	attribute_sheet = /datum/attribute_holder/sheet/job/majordomo
 
@@ -60,19 +60,20 @@
 	shoes = /obj/item/clothing/shoes/simpleshoes/buckle
 	shirt = /obj/item/clothing/shirt/dress/stewarddress
 	head = /obj/item/clothing/head/stewardtophat
-	neck = /obj/item/storage/keyring/steward
+	neck = /obj/item/clothing/neck/mercator
 	cloak = /obj/item/clothing/cloak/raincloak/furcloak
 	armor = /obj/item/clothing/armor/gambeson/steward
 	belt = /obj/item/storage/belt/leather/plaquesilver
-	beltr = /obj/item/weapon/sword/rapier
-	beltl = /obj/item/weapon/mace/cane/merchant
+	beltr = /obj/item/weapon/sword/rapier/caneblade/merchant
+	beltl = /obj/item/book/secret/ledger
 	ring = /obj/item/clothing/ring/gold/guild_mercator
-	scabbards = list(/obj/item/weapon/scabbard/sword)
+	scabbards = list(/obj/item/weapon/scabbard/cane/merchant)
 	backr = /obj/item/storage/backpack/satchel
 	backpack_contents = list(
 		/obj/item/storage/belt/pouch/coins/rich = 1,
-		/obj/item/lockpickring/mundane = 1
-	)
+		/obj/item/lockpickring/mundane = 1,
+		/obj/item/storage/keyring/steward = 1,
+		)
 
 /datum/outfit/majordomo/pre_equip(mob/living/carbon/human/equipped_human, visuals_only)
 	. = ..()

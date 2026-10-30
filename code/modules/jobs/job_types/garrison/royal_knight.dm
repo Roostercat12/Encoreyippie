@@ -9,10 +9,11 @@
 	display_order = JDO_ROYALKNIGHT
 	factions = list(FACTION_TOWN, SUB_FACTION_KEEP, SUB_FACTION_VAULT)
 	outfit = /datum/outfit/royalknight
-	total_positions = 99
-	spawn_positions = 99
+	total_positions = 4
+	spawn_positions = 4
 	bypass_lastclass = TRUE
 	selection_color = "#920909"
+	max_apprentices = 2
 
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_OLD, AGE_IMMORTAL)
 	allowed_races = RACES_PLAYER_NONDISCRIMINATED
@@ -102,6 +103,7 @@
 		"Warhammer" = /obj/item/weapon/mace/warhammer/steel,
 		"Polehammer" = /obj/item/weapon/polearm/eaglebeak,
 		"Sabre" = /obj/item/weapon/sword/sabre/dec,
+		"Greatsword" = /obj/item/weapon/sword/long/greatsword,
 	)
 
 	var/choice = spawned.select_equippable(player_client, selectable, message = "Choose Your Specialisation", title = "KNIGHT")
@@ -126,6 +128,9 @@
 			grant_shield = FALSE
 		if("Sabre")
 			spawned.attributes?.add_sheet(/datum/attribute_holder/sheet/job/royalknight/sabre)
+		if("Greatsword")
+			spawned.attributes?.add_sheet(/datum/attribute_holder/sheet/job/royalknight/longsword)
+			grant_shield = FALSE
 
 	if(grant_shield)
 		var/obj/item/weapon/shield/tower/metal/shield = new /obj/item/weapon/shield/tower/metal()

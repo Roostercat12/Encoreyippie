@@ -27,7 +27,7 @@
 	color = CLOTHING_BERRY_BLUE
 
 /obj/item/clothing/shirt/undershirt/colored/blue
-	color = CLOTHING_SKY_BLUE
+	color = CLOTHING_MIDNIGHT_BLUE
 
 /obj/item/clothing/shirt/undershirt/colored/red
 	color = CLOTHING_RED_OCHRE
@@ -39,11 +39,11 @@
 	color = CLOTHING_FOREST_GREEN
 
 /obj/item/clothing/shirt/undershirt/colored/guard
-	color = CLOTHING_PLUM_PURPLE
+	color = COLOR_SHIRLEIGH_BLUE
 	uses_lord_coloring = LORD_PRIMARY
 
 /obj/item/clothing/shirt/undershirt/colored/guardsecond
-	color = CLOTHING_BLOOD_RED
+	color = COLOR_WHITE
 	uses_lord_coloring = LORD_SECONDARY
 
 /obj/item/clothing/shirt/undershirt/colored/random/Initialize()
@@ -150,7 +150,7 @@
 	sleeved = 'icons/roguetown/clothing/onmob/helpers/sleeves_courtphys.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/onmob/courtphys.dmi'
 	detail_tag = "_detail"
-	detail_color = CLOTHING_SCARLET
+	detail_color = CLOTHING_VICIOUS_RED
 	uses_lord_coloring = LORD_PRIMARY
 
 /obj/item/clothing/shirt/undershirt/courtphysician/female

@@ -796,6 +796,22 @@
 /mob/proc/get_contents()
 	return
 
+/**
+ * ToggleBust verb so that players can potentially override
+ *
+ */
+/mob/living/carbon/human/verb/toggle_bust()
+	set name = "Toggle Chest Alt"
+	set category = "IC"
+	if(!HAS_TRAIT(src, TRAIT_TOGGLEBUST))
+		ADD_TRAIT(src, TRAIT_TOGGLEBUST, "[type]")
+		to_chat(src, span_notice("Chest Alt Override Enabled! Only noticeable on supported clothes with species using a slender chest body type."))
+	else
+		REMOVE_TRAIT(src, TRAIT_TOGGLEBUST, "[type]")
+		to_chat(src, span_notice("Chest Alt Override Disabled! Back To Default Business!"))
+	update_body_parts(TRUE)
+	update_inv_cloak() // should transitively also call update for armor and shirt
+
 /mob/living/proc/lay_down()
 	set name = "Lay down"
 	set category = "IC.Interaction"
@@ -1359,20 +1375,26 @@
 
 	if(surrendering)
 		return
+
 	if(stat)
 		return
-	surrendering = 1
-	if(!tgui_alert(src, "Yield in surrender?","Yield", list("YES","NO")) == "YES")
+
+	if(tgui_alert(src, "Yield in surrender?","Beg for Mercy", list("YES","NO"), 15 SECONDS) != "YES")
 		return
+
+	if(surrendering)  // Additional surrender check in case they try to hold multiple TGUI
+		return
+
+	surrendering = TRUE
 
 	record_round_statistic(STATS_YIELDS)
 	changeNext_move(CLICK_CD_EXHAUSTED)
 	var/mutable_appearance/flaggy = mutable_appearance('icons/effects/effects.dmi', "surrender", ABOVE_MOB_LAYER, appearance_flags = RESET_TRANSFORM|KEEP_APART)
 	flaggy.pixel_y = 12
-	flick_overlay_view(flaggy, 150)
+	flick_overlay_view(flaggy, 15 SECONDS)
 	drop_all_held_items()
 	Stun(15 SECONDS)
-	visible_message("<span class='notice'>[src] yields!</span>")
+	visible_message(span_bignotice("<span class='bold'>[src]</span> yields!"), span_boldwarning("I yield!"))
 	playsound(src, 'sound/misc/surrender.ogg', 100, FALSE, -1)
 	toggle_cmode()
 	addtimer(VARSET_CALLBACK(src, surrendering, FALSE), 15 SECONDS)

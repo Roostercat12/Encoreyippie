@@ -119,11 +119,11 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 /obj/effect/landmark/start/courtphys
 	name = JOB_COURT_PHYSICIAN
 	jobs_to_spawn = list(JOB_COURT_PHYSICIAN)
-
+/*
 /obj/effect/landmark/start/guardsman
 	name = JOB_CITY_WATCH
 	jobs_to_spawn = list(JOB_CITY_WATCH)
-
+*/
 /obj/effect/landmark/start/lieutenant
 	name = JOB_CITY_WATCH_LIEUTENANT
 	jobs_to_spawn = list(JOB_CITY_WATCH_LIEUTENANT)
@@ -442,6 +442,17 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 /obj/effect/landmark/start/lich/Initialize()
 	. = ..()
 	GLOB.lich_starts += loc
+
+/obj/effect/landmark/start/shirleigh
+	name = "Shirleigh Spawn"
+	icon = 'icons/mob/landmarks.dmi'
+	icon_state = "arrow_purple"
+	jobs_to_spawn = list(ROLE_SHIRLEIGH_LACKEY, ROLE_SHIRLEIGH_QUEEN)
+	custom_handling = TRUE
+
+/obj/effect/landmark/start/shirleigh/Initialize()
+	. = ..()
+	GLOB.shirleigh_starts += loc
 
 /obj/effect/landmark/admin
 	name = "admin"

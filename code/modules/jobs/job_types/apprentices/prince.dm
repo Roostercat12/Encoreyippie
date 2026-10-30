@@ -23,7 +23,7 @@
 
 	allowed_races = RACES_PLAYER_ROYALTY
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_OLD, AGE_IMMORTAL)
-	allowed_patrons = /datum/devotion/inhumen/envy
+	allowed_patrons = /datum/patron/inhumen/envy
 	advclass_cat_rolls = list(CTAG_HEIR = 20)
 	honorary = "Prince"
 	honorary_f = "Princess"
@@ -48,6 +48,27 @@
 /datum/job/prince/after_spawn(mob/living/carbon/human/spawned, client/player_client)
 	. = ..()
 	addtimer(CALLBACK(SSfamilytree, TYPE_PROC_REF(/datum/controller/subsystem/familytree, AddRoyal), spawned, FAMILY_PROGENY), 10 SECONDS)
+
+/datum/job/prince/after_spawn(mob/living/carbon/human/spawned, client/player_client)
+	. = ..()
+	var/holder = spawned.patron?.devotion_holder
+	if(holder)
+		var/datum/devotion/devotion = new holder()
+		devotion.make_shirleigh_strong()
+		devotion.grant_to(spawned)
+
+
+/datum/job/prince/adjust_patron(mob/living/carbon/human/spawned)
+	var/datum/patron/old_patron = spawned.patron
+	if(old_patron?.type == /datum/patron/inhumen/envy)
+		return
+
+	spawned.set_patron(/datum/patron/inhumen/envy, TRUE)
+
+	var/datum/patron/new_patron = spawned.patron
+	if(old_patron != new_patron) // If the patron we selected first does not match the patron we end up with, display the message.
+		to_chat(spawned, span_warning("[old_patron.display_name ? old_patron.display_name : old_patron] holds no sway over me. For better or for worse, [new_patron.display_name ? new_patron.display_name : new_patron] is within me."))
+
 
 /datum/job/advclass/heir
 	inherit_parent_title = TRUE
@@ -92,13 +113,9 @@
 		TRAIT_MEDIUMARMOR
 	)
 
-/datum/job/advclass/heir/daring/after_spawn(mob/living/carbon/human/spawned, client/player_client)
-	. = ..()
-	var/holder = spawned.patron?.devotion_holder
-	if(holder)
-		var/datum/devotion/devotion = new holder()
-		devotion.make_shirleigh_strong()
-		devotion.grant_to(spawned)
+
+
+
 
 /datum/outfit/heir/daring
 	name = "Prideful Heir (Prince)"
@@ -178,3 +195,57 @@
 		shirt = /obj/item/clothing/shirt/dress/royal/princess
 		shoes = /obj/item/clothing/shoes/shortboots
 		pants = /obj/item/clothing/pants/tights/colored/random
+
+/datum/attribute_holder/sheet/job/heir/forgotten
+	raw_attribute_list = list(
+		STAT_STRENGTH = 2,
+		STAT_FORTUNE = 1,
+		STAT_CONSTITUTION = 1,
+		STAT_ENDURANCE = 2,
+		
+		/datum/attribute/skill/combat/crossbows = 10,
+		/datum/attribute/skill/combat/bows = 10,
+		/datum/attribute/skill/combat/swords = 30,
+		/datum/attribute/skill/combat/wrestling = 25,
+		/datum/attribute/skill/combat/unarmed = 25,
+		/datum/attribute/skill/combat/knives = 25,
+		/datum/attribute/skill/combat/shields = 30,
+		/datum/attribute/skill/misc/swimming = 20,
+		/datum/attribute/skill/misc/climbing = 20,
+		/datum/attribute/skill/misc/riding = 20,
+		/datum/attribute/skill/misc/reading = 30,
+		/datum/attribute/skill/craft/cooking = 10,
+		/datum/attribute/skill/misc/sewing = 10,
+		/datum/attribute/skill/labor/mathematics = 30,
+		/datum/attribute/skill/misc/athletics = 30,
+	)
+
+/datum/job/advclass/heir/forgotten
+	title = "Forgotten Child"
+	tutorial = "You are an unawakened child of the Shirleighs. Rather than be deterred, it only made sense that you studied the blade, to gain your own glory and prove yourself worthy of your name. Through martial prowess alone, perhaps your kin may see how great you really are."
+	outfit = /datum/outfit/heir/forgotten
+	category_tags = list(CTAG_HEIR)
+	attribute_sheet = /datum/attribute_holder/sheet/job/heir/forgotten
+
+	traits = list(
+		TRAIT_MEDIUMARMOR,
+	)
+
+/datum/job/advclass/heir/forgotten/after_spawn(mob/living/carbon/human/spawned, client/player_client)
+	. = ..()
+	var/holder = spawned.patron?.devotion_holder
+	if(holder)
+		var/datum/devotion/devotion = new holder()
+		devotion.make_shirleigh_weak()
+		devotion.grant_to(spawned)
+
+/datum/outfit/heir/forgotten
+	name = "Forgotten child (Prince)"
+	pants = /obj/item/clothing/pants/tights
+	shirt = /obj/item/clothing/armor/gambeson/arming
+	armor = /obj/item/clothing/armor/brigandine/light
+	gloves = /obj/item/clothing/gloves/fingerless
+	beltr = /obj/item/weapon/knife/dagger/steel/special
+	beltl = /obj/item/weapon/sword/rapier/ironestoc
+	belt = /obj/item/storage/belt/leather
+	shoes = /obj/item/clothing/shoes/nobleboot
